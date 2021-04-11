@@ -1,0 +1,13 @@
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\bin\Debug\netcoreapp3.1\ErrorHandlingExceptions.exe
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\bin\Debug\netcoreapp3.1\ErrorHandlingExceptions.deps.json
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\bin\Debug\netcoreapp3.1\ErrorHandlingExceptions.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\bin\Debug\netcoreapp3.1\ErrorHandlingExceptions.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\bin\Debug\netcoreapp3.1\ErrorHandlingExceptions.dll
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\bin\Debug\netcoreapp3.1\ErrorHandlingExceptions.pdb
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\obj\Debug\netcoreapp3.1\ErrorHandlingExceptions.csprojAssemblyReference.cache
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\obj\Debug\netcoreapp3.1\ErrorHandlingExceptions.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\obj\Debug\netcoreapp3.1\ErrorHandlingExceptions.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\obj\Debug\netcoreapp3.1\ErrorHandlingExceptions.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\obj\Debug\netcoreapp3.1\ErrorHandlingExceptions.dll
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\obj\Debug\netcoreapp3.1\ErrorHandlingExceptions.pdb
+D:\Learning Samples Projects\JobProjects\ErrorHandlingExceptions\obj\Debug\netcoreapp3.1\ErrorHandlingExceptions.genruntimeconfig.cache

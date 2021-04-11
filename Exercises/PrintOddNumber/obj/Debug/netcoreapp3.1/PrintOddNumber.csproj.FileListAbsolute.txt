@@ -1,0 +1,13 @@
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\obj\Debug\netcoreapp3.1\PrintOddNumber.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\obj\Debug\netcoreapp3.1\PrintOddNumber.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\obj\Debug\netcoreapp3.1\PrintOddNumber.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\bin\Debug\netcoreapp3.1\PrintOddNumber.exe
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\bin\Debug\netcoreapp3.1\PrintOddNumber.deps.json
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\bin\Debug\netcoreapp3.1\PrintOddNumber.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\bin\Debug\netcoreapp3.1\PrintOddNumber.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\bin\Debug\netcoreapp3.1\PrintOddNumber.dll
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\bin\Debug\netcoreapp3.1\PrintOddNumber.pdb
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\obj\Debug\netcoreapp3.1\PrintOddNumber.dll
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\obj\Debug\netcoreapp3.1\PrintOddNumber.pdb
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\obj\Debug\netcoreapp3.1\PrintOddNumber.genruntimeconfig.cache
+D:\Learning Samples Projects\JobProjects\PrintOddNumber\obj\Debug\netcoreapp3.1\PrintOddNumber.csprojAssemblyReference.cache

@@ -1,0 +1,13 @@
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\bin\Debug\netcoreapp3.1\FirstCharFrontAndBack.exe
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\bin\Debug\netcoreapp3.1\FirstCharFrontAndBack.deps.json
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\bin\Debug\netcoreapp3.1\FirstCharFrontAndBack.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\bin\Debug\netcoreapp3.1\FirstCharFrontAndBack.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\bin\Debug\netcoreapp3.1\FirstCharFrontAndBack.dll
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\bin\Debug\netcoreapp3.1\FirstCharFrontAndBack.pdb
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\obj\Debug\netcoreapp3.1\FirstCharFrontAndBack.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\obj\Debug\netcoreapp3.1\FirstCharFrontAndBack.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\obj\Debug\netcoreapp3.1\FirstCharFrontAndBack.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\obj\Debug\netcoreapp3.1\FirstCharFrontAndBack.dll
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\obj\Debug\netcoreapp3.1\FirstCharFrontAndBack.pdb
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\obj\Debug\netcoreapp3.1\FirstCharFrontAndBack.genruntimeconfig.cache
+D:\Learning Samples Projects\JobProjects\FirstCharFrontAndBack\obj\Debug\netcoreapp3.1\FirstCharFrontAndBack.csprojAssemblyReference.cache

@@ -1,0 +1,12 @@
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\bin\Debug\netcoreapp3.1\Multiplication3Numbers.exe
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\bin\Debug\netcoreapp3.1\Multiplication3Numbers.deps.json
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\bin\Debug\netcoreapp3.1\Multiplication3Numbers.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\bin\Debug\netcoreapp3.1\Multiplication3Numbers.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\bin\Debug\netcoreapp3.1\Multiplication3Numbers.dll
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\bin\Debug\netcoreapp3.1\Multiplication3Numbers.pdb
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\obj\Debug\netcoreapp3.1\Multiplication3Numbers.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\obj\Debug\netcoreapp3.1\Multiplication3Numbers.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\obj\Debug\netcoreapp3.1\Multiplication3Numbers.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\obj\Debug\netcoreapp3.1\Multiplication3Numbers.dll
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\obj\Debug\netcoreapp3.1\Multiplication3Numbers.pdb
+D:\Learning Samples Projects\JobProjects\Multiplication3Numbers\obj\Debug\netcoreapp3.1\Multiplication3Numbers.genruntimeconfig.cache

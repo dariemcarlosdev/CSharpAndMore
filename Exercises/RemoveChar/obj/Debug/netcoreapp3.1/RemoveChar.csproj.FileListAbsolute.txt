@@ -1,0 +1,13 @@
+D:\Learning Samples Projects\JobProjects\RemoveChar\bin\Debug\netcoreapp3.1\RemoveChar.exe
+D:\Learning Samples Projects\JobProjects\RemoveChar\bin\Debug\netcoreapp3.1\RemoveChar.deps.json
+D:\Learning Samples Projects\JobProjects\RemoveChar\bin\Debug\netcoreapp3.1\RemoveChar.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\RemoveChar\bin\Debug\netcoreapp3.1\RemoveChar.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\RemoveChar\bin\Debug\netcoreapp3.1\RemoveChar.dll
+D:\Learning Samples Projects\JobProjects\RemoveChar\bin\Debug\netcoreapp3.1\RemoveChar.pdb
+D:\Learning Samples Projects\JobProjects\RemoveChar\obj\Debug\netcoreapp3.1\RemoveChar.csprojAssemblyReference.cache
+D:\Learning Samples Projects\JobProjects\RemoveChar\obj\Debug\netcoreapp3.1\RemoveChar.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\RemoveChar\obj\Debug\netcoreapp3.1\RemoveChar.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\RemoveChar\obj\Debug\netcoreapp3.1\RemoveChar.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\RemoveChar\obj\Debug\netcoreapp3.1\RemoveChar.dll
+D:\Learning Samples Projects\JobProjects\RemoveChar\obj\Debug\netcoreapp3.1\RemoveChar.pdb
+D:\Learning Samples Projects\JobProjects\RemoveChar\obj\Debug\netcoreapp3.1\RemoveChar.genruntimeconfig.cache

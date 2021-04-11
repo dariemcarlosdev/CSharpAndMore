@@ -1,0 +1,12 @@
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\bin\Debug\netcoreapp3.1\Count3FirstChart.exe
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\bin\Debug\netcoreapp3.1\Count3FirstChart.deps.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\bin\Debug\netcoreapp3.1\Count3FirstChart.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\bin\Debug\netcoreapp3.1\Count3FirstChart.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\bin\Debug\netcoreapp3.1\Count3FirstChart.dll
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\bin\Debug\netcoreapp3.1\Count3FirstChart.pdb
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\obj\Debug\netcoreapp3.1\Count3FirstChart.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\obj\Debug\netcoreapp3.1\Count3FirstChart.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\obj\Debug\netcoreapp3.1\Count3FirstChart.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\obj\Debug\netcoreapp3.1\Count3FirstChart.dll
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\obj\Debug\netcoreapp3.1\Count3FirstChart.pdb
+D:\Learning Samples Projects\JobProjects\CSharpExercises\Count3FirstChart\obj\Debug\netcoreapp3.1\Count3FirstChart.genruntimeconfig.cache

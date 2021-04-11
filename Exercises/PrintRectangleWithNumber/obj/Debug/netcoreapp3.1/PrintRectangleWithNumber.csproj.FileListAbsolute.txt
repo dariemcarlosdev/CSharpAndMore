@@ -1,0 +1,12 @@
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\bin\Debug\netcoreapp3.1\PrintRectangleWithNumber.exe
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\bin\Debug\netcoreapp3.1\PrintRectangleWithNumber.deps.json
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\bin\Debug\netcoreapp3.1\PrintRectangleWithNumber.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\bin\Debug\netcoreapp3.1\PrintRectangleWithNumber.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\bin\Debug\netcoreapp3.1\PrintRectangleWithNumber.dll
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\bin\Debug\netcoreapp3.1\PrintRectangleWithNumber.pdb
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\obj\Debug\netcoreapp3.1\PrintRectangleWithNumber.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\obj\Debug\netcoreapp3.1\PrintRectangleWithNumber.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\obj\Debug\netcoreapp3.1\PrintRectangleWithNumber.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\obj\Debug\netcoreapp3.1\PrintRectangleWithNumber.dll
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\obj\Debug\netcoreapp3.1\PrintRectangleWithNumber.pdb
+D:\Learning Samples Projects\JobProjects\PrintRectangleWithNumber\obj\Debug\netcoreapp3.1\PrintRectangleWithNumber.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\bin\Debug\netcoreapp3.1\ConvertLowerCase.exe
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\bin\Debug\netcoreapp3.1\ConvertLowerCase.deps.json
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\bin\Debug\netcoreapp3.1\ConvertLowerCase.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\bin\Debug\netcoreapp3.1\ConvertLowerCase.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\bin\Debug\netcoreapp3.1\ConvertLowerCase.dll
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\bin\Debug\netcoreapp3.1\ConvertLowerCase.pdb
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\obj\Debug\netcoreapp3.1\ConvertLowerCase.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\obj\Debug\netcoreapp3.1\ConvertLowerCase.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\obj\Debug\netcoreapp3.1\ConvertLowerCase.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\obj\Debug\netcoreapp3.1\ConvertLowerCase.dll
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\obj\Debug\netcoreapp3.1\ConvertLowerCase.pdb
+D:\Learning Samples Projects\JobProjects\ConvertLowerCase\obj\Debug\netcoreapp3.1\ConvertLowerCase.genruntimeconfig.cache

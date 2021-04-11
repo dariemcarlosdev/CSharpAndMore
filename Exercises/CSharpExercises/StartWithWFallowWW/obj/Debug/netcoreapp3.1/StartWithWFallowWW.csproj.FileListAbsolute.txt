@@ -1,0 +1,13 @@
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\bin\Debug\netcoreapp3.1\StartWithWFallowWW.exe
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\bin\Debug\netcoreapp3.1\StartWithWFallowWW.deps.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\bin\Debug\netcoreapp3.1\StartWithWFallowWW.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\bin\Debug\netcoreapp3.1\StartWithWFallowWW.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\bin\Debug\netcoreapp3.1\StartWithWFallowWW.dll
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\bin\Debug\netcoreapp3.1\StartWithWFallowWW.pdb
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\obj\Debug\netcoreapp3.1\StartWithWFallowWW.csprojAssemblyReference.cache
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\obj\Debug\netcoreapp3.1\StartWithWFallowWW.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\obj\Debug\netcoreapp3.1\StartWithWFallowWW.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\obj\Debug\netcoreapp3.1\StartWithWFallowWW.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\obj\Debug\netcoreapp3.1\StartWithWFallowWW.dll
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\obj\Debug\netcoreapp3.1\StartWithWFallowWW.pdb
+D:\Learning Samples Projects\JobProjects\CSharpExercises\StartWithWFallowWW\obj\Debug\netcoreapp3.1\StartWithWFallowWW.genruntimeconfig.cache

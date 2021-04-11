@@ -1,0 +1,12 @@
+D:\Learning Samples Projects\JobProjects\CheckNegPos\bin\Debug\netcoreapp3.1\CheckNegPos.exe
+D:\Learning Samples Projects\JobProjects\CheckNegPos\bin\Debug\netcoreapp3.1\CheckNegPos.deps.json
+D:\Learning Samples Projects\JobProjects\CheckNegPos\bin\Debug\netcoreapp3.1\CheckNegPos.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\CheckNegPos\bin\Debug\netcoreapp3.1\CheckNegPos.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\CheckNegPos\bin\Debug\netcoreapp3.1\CheckNegPos.dll
+D:\Learning Samples Projects\JobProjects\CheckNegPos\bin\Debug\netcoreapp3.1\CheckNegPos.pdb
+D:\Learning Samples Projects\JobProjects\CheckNegPos\obj\Debug\netcoreapp3.1\CheckNegPos.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\CheckNegPos\obj\Debug\netcoreapp3.1\CheckNegPos.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\CheckNegPos\obj\Debug\netcoreapp3.1\CheckNegPos.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\CheckNegPos\obj\Debug\netcoreapp3.1\CheckNegPos.dll
+D:\Learning Samples Projects\JobProjects\CheckNegPos\obj\Debug\netcoreapp3.1\CheckNegPos.pdb
+D:\Learning Samples Projects\JobProjects\CheckNegPos\obj\Debug\netcoreapp3.1\CheckNegPos.genruntimeconfig.cache

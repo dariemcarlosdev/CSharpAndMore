@@ -1,0 +1,12 @@
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\bin\Debug\netcoreapp3.1\CreateStringLowUpper.exe
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\bin\Debug\netcoreapp3.1\CreateStringLowUpper.deps.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\bin\Debug\netcoreapp3.1\CreateStringLowUpper.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\bin\Debug\netcoreapp3.1\CreateStringLowUpper.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\bin\Debug\netcoreapp3.1\CreateStringLowUpper.dll
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\bin\Debug\netcoreapp3.1\CreateStringLowUpper.pdb
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\obj\Debug\netcoreapp3.1\CreateStringLowUpper.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\obj\Debug\netcoreapp3.1\CreateStringLowUpper.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\obj\Debug\netcoreapp3.1\CreateStringLowUpper.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\obj\Debug\netcoreapp3.1\CreateStringLowUpper.dll
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\obj\Debug\netcoreapp3.1\CreateStringLowUpper.pdb
+D:\Learning Samples Projects\JobProjects\CSharpExercises\CreateStringLowUpper\obj\Debug\netcoreapp3.1\CreateStringLowUpper.genruntimeconfig.cache

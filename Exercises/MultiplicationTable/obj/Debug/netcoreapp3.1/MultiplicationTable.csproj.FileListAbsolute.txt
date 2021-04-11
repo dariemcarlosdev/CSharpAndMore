@@ -1,0 +1,13 @@
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.exe
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.deps.json
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.dll
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.pdb
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.csprojAssemblyReference.cache
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.dll
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.pdb
+D:\Learning Samples Projects\JobProjects\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\bin\Debug\netcoreapp3.1\SumPrimeNum.exe
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\bin\Debug\netcoreapp3.1\SumPrimeNum.deps.json
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\bin\Debug\netcoreapp3.1\SumPrimeNum.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\bin\Debug\netcoreapp3.1\SumPrimeNum.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\bin\Debug\netcoreapp3.1\SumPrimeNum.dll
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\bin\Debug\netcoreapp3.1\SumPrimeNum.pdb
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\obj\Debug\netcoreapp3.1\SumPrimeNum.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\obj\Debug\netcoreapp3.1\SumPrimeNum.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\obj\Debug\netcoreapp3.1\SumPrimeNum.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\obj\Debug\netcoreapp3.1\SumPrimeNum.dll
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\obj\Debug\netcoreapp3.1\SumPrimeNum.pdb
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\obj\Debug\netcoreapp3.1\SumPrimeNum.genruntimeconfig.cache
+D:\Learning Samples Projects\JobProjects\SumPrimeNum\obj\Debug\netcoreapp3.1\SumPrimeNum.csprojAssemblyReference.cache

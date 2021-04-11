@@ -1,0 +1,13 @@
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\bin\Debug\netcoreapp3.1\StrFcharAndLcharChange.exe
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\bin\Debug\netcoreapp3.1\StrFcharAndLcharChange.deps.json
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\bin\Debug\netcoreapp3.1\StrFcharAndLcharChange.runtimeconfig.json
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\bin\Debug\netcoreapp3.1\StrFcharAndLcharChange.runtimeconfig.dev.json
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\bin\Debug\netcoreapp3.1\StrFcharAndLcharChange.dll
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\bin\Debug\netcoreapp3.1\StrFcharAndLcharChange.pdb
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\obj\Debug\netcoreapp3.1\StrFcharAndLcharChange.csprojAssemblyReference.cache
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\obj\Debug\netcoreapp3.1\StrFcharAndLcharChange.AssemblyInfoInputs.cache
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\obj\Debug\netcoreapp3.1\StrFcharAndLcharChange.AssemblyInfo.cs
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\obj\Debug\netcoreapp3.1\StrFcharAndLcharChange.csproj.CoreCompileInputs.cache
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\obj\Debug\netcoreapp3.1\StrFcharAndLcharChange.dll
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\obj\Debug\netcoreapp3.1\StrFcharAndLcharChange.pdb
+D:\Learning Samples Projects\JobProjects\StrFcharAndLcharChange\obj\Debug\netcoreapp3.1\StrFcharAndLcharChange.genruntimeconfig.cache
