@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Dariem Carlos\\.nuget\\packages\\": {}
+    "C:\\Users\\335286\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning Samples Projects\\JobProjects\\MoreExercisesCSharp\\ExercisesLearning\\ExercisesLearning.csproj",
+      "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\Exercises\\PracticalExercises\\ExercisesLearning.csproj",
       "projectName": "ExercisesLearning",
-      "projectPath": "D:\\Learning Samples Projects\\JobProjects\\MoreExercisesCSharp\\ExercisesLearning\\ExercisesLearning.csproj",
-      "packagesPath": "C:\\Users\\Dariem Carlos\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning Samples Projects\\JobProjects\\MoreExercisesCSharp\\ExercisesLearning\\obj\\",
+      "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\Exercises\\PracticalExercises\\ExercisesLearning.csproj",
+      "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\Exercises\\PracticalExercises\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dariem Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\335286\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
