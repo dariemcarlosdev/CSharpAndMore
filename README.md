@@ -1,2 +1,2 @@
 # CSharpAndMore
-czzxczxczxcczxczxc
+Some .NET projects and c# exercises.
