@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using ExercisesLearning.ExtensionMethods;
+using PracticalExercises.Services;
 
 namespace ExercisesLearning.BasicAlgorithms
 {
-  public class NumericalMethodsRepository
+  public class NumericalMethodsRepository : INumerical
   {
     /*
 Write a C# Sharp program to check a given integer and return true if it is within 10 of 100 or 200.
@@ -335,12 +336,12 @@ False
       if (val1 >= 10 && val1 <= 99 && val2 >= 10 && val2 <= 99)
       {
 
-        Console.WriteLine(val1 / 10 == val2 / 10 || val1 / 10 == val2 % 10 || val1%10 == val2/10 || val1%10 == val2%10);
-        
-        
-/* Another way to solve it: 
- Console.WriteLine(val1.ToString().Contains(val2.ToString().First()) || val1.ToString().Contains(val2.ToString().Last()));
- */
+        Console.WriteLine(val1 / 10 == val2 / 10 || val1 / 10 == val2 % 10 || val1 % 10 == val2 / 10 || val1 % 10 == val2 % 10);
+
+
+        /* Another way to solve it: 
+         Console.WriteLine(val1.ToString().Contains(val2.ToString().First()) || val1.ToString().Contains(val2.ToString().Last()));
+         */
       }
       else
       {
@@ -348,95 +349,183 @@ False
       }
     }
 
-/*54. Write a C# Sharp program to compute the sum of two given non-negative integers x and y as long as the sum has the same number of digits as x. 
-If the sum has more digits than x then return x without y. Go to the editor
+    /*54. Write a C# Sharp program to compute the sum of two given non-negative integers x and y as long as the sum has the same number of digits as x. 
+    If the sum has more digits than x then return x without y. Go to the editor
 
-Sample Input:
-4, 5 00
-7, 4
-10, 10
-101,10
-10,104
-Expected Output:
-9
-7
-20 */
+    Sample Input:
+    4, 5 00
+    7, 4
+    10, 10
+    101,10
+    10,104
+    Expected Output:
+    9
+    7
+    20 */
 
-public void CheckComputeSum(int x, int y){
-
-int sum = x + y;
-
-Console.WriteLine(x.ToString().Length == sum.ToString().Length ? sum :  x+ " and " + sum +" don't have same number of digit.");
-
-}
-
-/*55 -  Write a C# Sharp program to compute the sum of three given integers.
- If the two values are same return the third value.
- 
- Sample Input:
-4, 5, 7
-7, 4, 12
-10, 10, 12
-12, 12, 18
-Expected Output:
-16
-23
-12
-18
- 
- */
-
-public void ComputeSum3Int( int x, int y, int z){
-
-Console.WriteLine(x % 10 == y % 10 && x / 10 == y / 10? z : x+y+z);
-}
-
-/* 56. Write a C# Sharp program to compute the sum of the three integers.
- If one of the values is 13 then do not count it and its right towards the sum. Go to the editor
-
-Sample Input:
-4, 5, 7
-7, 4, 12
-10, 13, 12
-13, 12, 18
-Expected Output:
-16
-23
-10
-0 */
-
-public int CheckValueThenComputeSum(int[] intArr){
-int sum = 0;
-foreach (var item in intArr)
-{
-    if (item!=13)
+    public void CheckComputeSum(int x, int y)
     {
-        sum += item;
-        
-    } 
-    else{
-    break;
+
+      int sum = x + y;
+
+      Console.WriteLine(x.ToString().Length == sum.ToString().Length ? sum : x + " and " + sum + " don't have same number of digit.");
+
     }
-}
-return sum;
-}
 
-/*59. Write a C# Sharp program to check three given integers (small, medium and large) 
-and return true if the difference between small and medium and the difference between medium and large is same.
+    /*55 -  Write a C# Sharp program to compute the sum of three given integers.
+     If the two values are same return the third value.
 
-Sample Input:
-4, 5, 6
-7, 12, 13
--1, 0, 1
-Expected Output:
-True
-False
-True */ 
+     Sample Input:
+    4, 5, 7
+    7, 4, 12
+    10, 10, 12
+    12, 12, 18
+    Expected Output:
+    16
+    23
+    12
+    18
 
-public void CheckDifferenceIntegers(int x, int y, int z){
+     */
 
-Console.WriteLine(x - y == y -z);
-}
+    public void ComputeSum3Int(int x, int y, int z)
+    {
+
+      Console.WriteLine(x % 10 == y % 10 && x / 10 == y / 10 ? z : x + y + z);
+    }
+
+    /* 56. Write a C# Sharp program to compute the sum of the three integers.
+     If one of the values is 13 then do not count it and its right towards the sum. Go to the editor
+
+    Sample Input:
+    4, 5, 7
+    7, 4, 12
+    10, 13, 12
+    13, 12, 18
+    Expected Output:
+    16
+    23
+    10
+    0 */
+
+    public int CheckValueThenComputeSum(int[] intArr)
+    {
+      int sum = 0;
+      foreach (var item in intArr)
+      {
+        if (item != 13)
+        {
+          sum += item;
+
+        }
+        else
+        {
+          break;
+        }
+      }
+      return sum;
+    }
+
+    /*59. Write a C# Sharp program to check three given integers (small, medium and large) 
+    and return true if the difference between small and medium and the difference between medium and large is same.
+
+    Sample Input:
+    4, 5, 6
+    7, 12, 13
+    -1, 0, 1
+    Expected Output:
+    True
+    False
+    True */
+
+    public void CheckDifferenceIntegers(int x, int y, int z)
+    {
+
+      Console.WriteLine(x - y == y - z);
+    }
+
+    /* 
+    Write a C# Sharp program to check a given array of integers of length 1 or more and return true if 10 appears as either first or last element in the given array. 
+
+    Sample Input:
+    { 10, 20, 40, 50 }
+    { 5, 20, 40, 10 }
+    { 10, 20, 40, 10 }
+    { 12, 24, 35, 55 }
+    Expected Output:
+    True
+    True
+    True
+    False
+     */
+
+    public bool ValueAppearsinArrays(int[] intArray, int value)
+    {
+
+      bool appears = false;
+
+      foreach (var elmnt in intArray)
+      {
+        if (elmnt == value)
+        {
+          appears = true;
+        }
+      }
+
+      return appears;
+    }
+
+    /* 
+    Write a C# Sharp program to check a given array of integers of length 1 or more and return true if the first element and the last element are equal in the given array
+     Sample Input:
+    { 10, 20, 40, 50 }
+    { 10, 20, 40, 10 }
+    { 12, 24, 35, 55 }
+    Expected Output:
+    False
+    True
+    False
+
+     */
+
+    public bool ValueAppearsinArrays(int[] intArray)
+    {
+
+      if (intArray.First() == intArray.Last())
+      {
+        return true;
+      }
+
+      return false;
+    }
+
+    /* 
+    90.Write a C# Sharp program to check two given arrays of integers of length 1 or more 
+    and return true if they have the same first element or they have the same last element.
+
+    Sample Input:
+    { 10, 20, 40, 50 }, { 10, 20, 40, 50 }
+    { 10, 20, 40, 50 }, { 10, 20, 40, 5 }
+    { 10, 20, 40, 50 }, { 1, 20, 40, 5 }
+    Expected Output:
+    True
+    True
+    False
+     */
+
+    public bool ValueAppearsinArrays(int[] array1, int[] array2)
+    {
+
+      if (array1.First() == array2.First() || array1.First() == array2.Last())
+      {
+        return true;
+      }
+
+      return false;
+
+    }
+
+
 
   }
 }
