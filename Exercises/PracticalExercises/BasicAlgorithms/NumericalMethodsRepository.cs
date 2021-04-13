@@ -547,6 +547,50 @@ Rotated array: 20 -30 -40 10
         
         }
 
+       /*
+      93. Write a C# Sharp program to reverse a given array of integers and length 5. Go to the editor
+
+Sample Input:
+{ 10, 20, -30, -40, 50 }
+Expected Output:
+Reverse array: 50 -40 -30 20 10
+Click me to see the solution
+         */
+
+        public static void ReverseElementArray(List<int> intArray) { 
+        
+            intArray.Reverse();
+
+     foreach (var item in intArray)
+	{
+                Console.Write(item + " ");
+	}
+        }
+    
+
+
+ /*   95. Write a C# Sharp program to create a new array containing the middle elements from the two given arrays of integers, each length 5. Go to the editor
+
+Sample Input:
+{ 10, 20, -30, -40, 30 }, { 10, 20, 30, 40, 30 }
+Expected Output:
+New array: -30 30
+ 
+  */
+
+   public static void newArrayFrom2GivenOne(List<int[,]> list) {
+        
+       var newList = new List<int>();
+       
+       foreach (var item in list)
+	{
+            
+                
+	}
+
+
+        }
+
 
   }
 }
