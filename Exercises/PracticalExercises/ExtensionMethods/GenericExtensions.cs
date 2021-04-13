@@ -52,14 +52,13 @@ namespace ExercisesLearning.ExtensionMethods
       return index;
     }
 
-    public static List RotateToLeftElmnts<T>(this T[] array ) { 
+    public static List<T> rotateToLeftElmnts<T>(this List<T> array ) { 
         
-             int lenght = array.Length;
-            
+             int lenght =  array.Count();            
          
-            for (int i = 0; i < lenght -1; i++)
+            for (int i = 0; i < lenght-1;i++)
 			{
-                int temp = array[i+1];                
+                var temp = array[i+1];                
                 array[i+1]= array[i];
                 array[i] = temp;               
 

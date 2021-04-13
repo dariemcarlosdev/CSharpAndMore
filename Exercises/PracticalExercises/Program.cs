@@ -13,7 +13,7 @@ namespace ExercisesLearning
       var stringMethods = new BasicAlgorithms.StringsMethodsRepository();
 
       
-      BasicAlgorithms.NumericalMethodsRepository.RotateElmntsInArray(new int[]{10, 20, -30, -40 });
+      BasicAlgorithms.NumericalMethodsRepository.RotateElmntsInArray(new List<int>(){10, 20, -30, -40 });
  
     }
 

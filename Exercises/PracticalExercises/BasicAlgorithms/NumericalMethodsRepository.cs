@@ -536,11 +536,11 @@ Rotated array: 20 -30 -40 10
       
       */
 
-        public static void RotateElmntsInArray(int[] intArray)
+        public static void RotateElmntsInArray(List<int> intArray)
         {
-           intArray = intArray.RotateToLeftElmnts().ToArray();
+            var Array = intArray.rotateToLeftElmnts();
 
-            foreach (var item in intArray)
+            foreach (var item in Array)
 	{
                 Console.Write(item + " ");
 	}
