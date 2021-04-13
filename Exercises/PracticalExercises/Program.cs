@@ -13,7 +13,12 @@ namespace ExercisesLearning
       var stringMethods = new BasicAlgorithms.StringsMethodsRepository();
 
       
-      BasicAlgorithms.NumericalMethodsRepository.newArrayFrom2GivenOne(new List<int[,]>{{1,2},{4,1}});
+    
+      BasicAlgorithms.NumericalMethodsRepository.newArrayFromDictionary(new Dictionary<int, List<int>>(){
+        {3,new List<int>{2,3,5,3,4}},
+        {1,new List<int> {2,4,3}}
+        }
+        );
          
  
     }
