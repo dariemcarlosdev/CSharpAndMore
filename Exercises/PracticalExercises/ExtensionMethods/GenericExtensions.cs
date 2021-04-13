@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace ExercisesLearning.ExtensionMethods
 {
@@ -50,5 +51,22 @@ namespace ExercisesLearning.ExtensionMethods
       }
       return index;
     }
+
+    public static List RotateToLeftElmnts<T>(this T[] array ) { 
+        
+             int lenght = array.Length;
+            
+         
+            for (int i = 0; i < lenght -1; i++)
+			{
+                int temp = array[i+1];                
+                array[i+1]= array[i];
+                array[i] = temp;               
+
+			}
+
+            return array;
+        
+        }
   }
 }
