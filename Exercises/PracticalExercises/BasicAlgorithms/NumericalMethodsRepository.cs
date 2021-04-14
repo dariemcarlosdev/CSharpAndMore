@@ -618,7 +618,8 @@ True
    }
 
    /* 
-   101. Write a C# Sharp program to check a given array of integers, length 3 and create a new array. If there is a 5 in the given array immediately followed by a 7 then set 7 to 1. Go to the editor
+   101. Write a C# Sharp program to check a given array of integers, length 3 and create a new array. 
+   If there is a 5 in the given array immediately followed by a 7 then set 7 to 1. Go to the editor
 
 Sample Input:
 { 1, 5, 7 }
@@ -627,7 +628,84 @@ Original array:  1, 5, 7
 New array: 1 5 1
     */
 
-  }
+   public List<int> CheckArray(List<int> str) { 
+    
+   for (int i = 0; i < str.Count()-1; i++){
+    
+   if (str[i].Equals(5) && str[i+1].Equals(7))
+     str[i+1]=1;
+	}
+    
+   return str;
 
   }
+
+   /*
+    102. Compute the sum of the two given arrays of integers,
+   length 3 and find the array which has the largest sum. Go to the editor
+
+Sample Input:
+{ 10, 20, -30 }, { 10, 20, 30 }
+Expected Output :
+Original array:  1, 5, 7
+Larger array: 10 20 30
+    */
+
+   public static List<int> ComputeSumList(Dictionary<int, List<int>> dictionary) { 
+        
+        var largestArray = new List<int>();
+            var largestsum =0;
+
+     foreach (var item in dictionary)
+	{
+                if (item.Value.Sum()>largestsum)
+	{
+                    largestsum= item.Value.Sum();
+                    largestArray = item.Value;
+	}
+	}
+
+            return largestArray;
+
+        }
+
+
+    /*
+     107. Write a C# Sharp program to find the largest value from first, last, and middle elements of a given array of integers of odd length (atleast 1). Go to the editor
+
+Sample Input:
+{1}
+{1,2,9}
+{1,2,9,3,3}
+{1,2,3,4,5,6,7}
+{1,2,2,3,7,8,9,10,6,5,4}
+Expected Output :
+1
+9
+9
+7
+8    
+   */
+    public static List<int> FindLargestValueFirstLastMiddle() { 
+        
+        
+            var returnList = new List<int>();
+
+            return returnList;
+        
+        
+        }
+        
+
+        
+       
+
+
+
+
+
+
+        
+  }
+    }
 

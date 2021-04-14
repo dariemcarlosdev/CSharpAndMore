@@ -19,7 +19,17 @@ namespace ExercisesLearning
         }
         ); */
          
-       Console.Write(numericalMethods.ArrayContainElmnt(new List<int>{12, 20}, 12, 15));
+     var newDictionary= new Dictionary<int, List<int>>();
+        newDictionary.Add(1, new List<int> {10,20,34});
+        newDictionary.Add(2, new List<int>{10,20,30});
+
+
+      var arraylargestSum = BasicAlgorithms.NumericalMethodsRepository.ComputeSumList(newDictionary);
+
+            foreach (var item in arraylargestSum)
+	{
+                Console.Write(item + " ");
+	}
     }
 
 
