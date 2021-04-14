@@ -671,7 +671,8 @@ Larger array: 10 20 30
 
 
     /*
-     107. Write a C# Sharp program to find the largest value from first, last, and middle elements of a given array of integers of odd length (atleast 1). Go to the editor
+     107. Write a C# Sharp program to find the largest value from first, last, 
+    and middle elements of a given array of integers of odd length (atleast 1). Go to the editor
 
 Sample Input:
 {1}
@@ -686,15 +687,31 @@ Expected Output :
 7
 8    
    */
-    public static List<int> FindLargestValueFirstLastMiddle() { 
+    public static int FindLargestValueFirstLastMiddle(List<int> list) { 
+        
+     int max = list.First();
+         
+    if (list.Count > 1)
+	{
+     
+    if (list.ElementAt(list.Count/2) > max)
+	{
+     max = list.ElementAt(list.Count/2);
+     
+	}
+        
+     if (list.Last() > max)
+	{
+     max = list.Last();
+     
+	}       
+      
+    }
+     
+   return max;
         
         
-            var returnList = new List<int>();
-
-            return returnList;
-        
-        
-        }
+     }
         
 
         

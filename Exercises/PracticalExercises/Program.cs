@@ -17,46 +17,31 @@ namespace ExercisesLearning
         {3,new List<int>{2,3,5,3,4}},
         {1,new List<int> {2,4,3}}
         }
-        ); */
-         
-     var newDictionary= new Dictionary<int, List<int>>();
+        ); 
+          
+        var newDictionary= new Dictionary<int, List<int>>();
         newDictionary.Add(1, new List<int> {10,20,34});
         newDictionary.Add(2, new List<int>{10,20,30});
 
 
-      var arraylargestSum = BasicAlgorithms.NumericalMethodsRepository.ComputeSumList(newDictionary);
+        var arraylargestSum = BasicAlgorithms.NumericalMethodsRepository.ComputeSumList(newDictionary);
 
-            foreach (var item in arraylargestSum)
+        foreach (var item in arraylargestSum)
 	{
-                Console.Write(item + " ");
+        Console.Write(item + " ");
 	}
+           
+           */
+         
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1}));        
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1,2,9})); 
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1,2,9,3,3})); 
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1,2,3,4,5,6,7}));        
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1,2,2,3,7,8,9,10,6,5,4}));        
+
+
+
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
   }
 
