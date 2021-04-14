@@ -593,7 +593,39 @@ Click me to see the solution
     }
     }
 
+   /*
+    Write a C# Sharp program to check if a given array of integers and length 2, does not contain 15 or 20.
 
+Sample Input:
+{ 12, 20 }
+{ 14, 15 }
+{ 11, 21 }
+Expected Output :
+False
+False
+True
+   */
+
+   public bool ArrayContainElmnt(List<int> list, int elmnt, int elmnt2 ){
+   
+   if(!list.Contains(elmnt) || !list.Contains( elmnt2)){
+
+   return false;
+   }
+    
+    return true;
+
+   }
+
+   /* 
+   101. Write a C# Sharp program to check a given array of integers, length 3 and create a new array. If there is a 5 in the given array immediately followed by a 7 then set 7 to 1. Go to the editor
+
+Sample Input:
+{ 1, 5, 7 }
+Expected Output :
+Original array:  1, 5, 7
+New array: 1 5 1
+    */
 
   }
 
