@@ -732,7 +732,9 @@ Sample Input:
     public static int ComputeSumElmnts(List<int> list) {
             int sum = 0;
   for (int i = 0; i < list.Count() - 1;i++)
+
 			{
+                //check if element in this.pos and elmnt in pos.nextvalue are different from {5,6}
                 if (list) //complete this testing.
 	             {           
                     sum += list[i];
