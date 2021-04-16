@@ -733,7 +733,7 @@ Sample Input:
             int sum = 0;
   for (int i = 0; i < list.Count() - 1;i++)
 			{
-                if (list)
+                if (list) //complete this testing.
 	             {           
                     sum += list[i];
                     i+=2;
