@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BasicAlgorithms"
+    "\\BasicAlgorithms",
+    "\\bin",
+    "\\bin\\Debug",
+    "\\bin\\Debug\\net5.0"
   ],
+  "SelectedNode": "\\BasicAlgorithms\\NumericalMethodsRepository.cs",
   "PreviewInSolutionExplorer": false
 }

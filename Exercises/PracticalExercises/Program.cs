@@ -22,15 +22,14 @@ namespace ExercisesLearning
         var newDictionary= new Dictionary<int, List<int>>();
         newDictionary.Add(1, new List<int> {10,20,34});
         newDictionary.Add(2, new List<int>{10,20,30});
-
-
         var arraylargestSum = BasicAlgorithms.NumericalMethodsRepository.ComputeSumList(newDictionary);
 
         foreach (var item in arraylargestSum)
 	{
         Console.Write(item + " ");
-	}
-           
+
+            Testing new update.
+	}          
            */
          
     Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1}));        
