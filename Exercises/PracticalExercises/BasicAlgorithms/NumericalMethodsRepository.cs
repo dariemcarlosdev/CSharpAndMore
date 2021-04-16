@@ -716,7 +716,32 @@ Expected Output :
 
         
        
+    /*
+     112. Write a C# Sharp program to compute the sum of the numbers in a given array except those numbers starting with 5 followed by atleast one 6. Return 0 if the given array has no integer. Go to the editor
 
+Sample Input:
+{ 5, 6, 1, 5, 6, 9, 10, 17, 5, 6 }
+{ 5, 6, 1, 5, 6, 9, 10, 17 }
+{ 1, 5, 6, 9, 10, 17, 5, 6 }
+{ 1, 5, 9, 10, 17, 5, 6 }
+{ 1, 5, 9, 10, 17, 5}
+     
+     */
+        
+       
+    public static int ComputeSumElmnts(List<int> list) {
+            int sum = 0;
+  for (int i = 0; i < list.Count() - 1;i++)
+			{
+                if (list)
+	             {           
+                    sum += list[i];
+                    i+=2;
+	             }
+			}
+        
+        return sum;
+        }
 
 
 

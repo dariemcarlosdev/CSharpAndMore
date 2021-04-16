@@ -32,11 +32,10 @@ namespace ExercisesLearning
 	}          
            */
          
-    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1}));        
-    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1,2,9})); 
-    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1,2,9,3,3})); 
-    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1,2,3,4,5,6,7}));        
-    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.FindLargestValueFirstLastMiddle(new List<int>{1,2,2,3,7,8,9,10,6,5,4}));        
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 5, 6, 1, 5, 6, 9, 10, 17, 5, 6 }));        
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 5, 6, 1, 5, 6, 9, 10, 17 }));        
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 1, 5, 6, 9, 10, 17, 5, 6 }));        
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 1, 5, 9, 10, 17, 5, 6 }));        
 
 
 
