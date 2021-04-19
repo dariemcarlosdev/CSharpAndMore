@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BasicAlgorithms",
-    "\\bin\\Debug",
-    "\\bin\\Debug\\net5.0"
+    "\\BasicAlgorithms"
   ],
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
