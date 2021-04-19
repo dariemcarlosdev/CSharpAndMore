@@ -35,7 +35,9 @@ namespace ExercisesLearning
     Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 5, 6, 1, 5, 6, 9, 10, 17, 5, 6 }));        
     Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 5, 6, 1, 5, 6, 9, 10, 17 }));        
     Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 1, 5, 6, 9, 10, 17, 5, 6 }));        
-    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 1, 5, 9, 10, 17, 5, 6 }));        
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 1, 5, 9, 10, 17, 5, 6 }));    
+    Console.WriteLine(BasicAlgorithms.NumericalMethodsRepository.ComputeSumElmnts(new List<int>{ 1, 5, 9, 10, 17, 5}));        
+
 
 
 

@@ -13,8 +13,7 @@ Write a C# Sharp program to check a given integer and return true if it is withi
 */
     public void CheckInteger(int x)
     {
-      Console
-          .WriteLine(Math.Abs(x - 100) <= 10 || Math.Abs(x - 200) <= 10);
+      Console.WriteLine(Math.Abs(x - 100) <= 10 || Math.Abs(x - 200) <= 10);
     }
 
     /*
@@ -36,8 +35,7 @@ If the two values are the same, then return triple their sum.
   });    
 Console.WriteLine(lst.Contains(30) || val1 + val2 == 30);*/
       //Using extension methods:
-      Console
-          .WriteLine(30.IsContainedIn(val1, val2) || val1 + val2 == 30);
+      Console.WriteLine(30.IsContainedIn(val1, val2) || val1 + val2 == 30);
     }
 
     /*
@@ -65,8 +63,7 @@ False
     //temps.Exists(t => t < 0 )
     public void CheckingTemp(List<int> temps)
     {
-      Console
-          .WriteLine((temps.First() < 0 && temps.Last() > 100) ||
+      Console.WriteLine((temps.First() < 0 && temps.Last() > 100) ||
           (temps.First() > 100 && temps.Last() < 0));
     }
 
@@ -96,8 +93,7 @@ False
         }
       }
 
-      Console
-          .WriteLine("{0} - count={1}", count <= 1 ? true : false, count);
+      Console.WriteLine("{0} - count={1}", count <= 1 ? true : false, count);
     }
 
     public void CheckNearestTo(List<int> values, int point)
@@ -106,8 +102,7 @@ False
       List<int> OrderList = values.OrderBy(v => v).ToList();
       int rest = 0;
       int max = 0;
-      OrderList
-          .ForEach(delegate (int value)
+      OrderList.ForEach(delegate (int value)
           {
             if (value <= point)
             {
@@ -136,15 +131,13 @@ False*/
     {
       if ((new List<int> { val1, val2 }.Exists(val => val < 0)))
       {
-        Console
-            .Write("values:[{0}, {1}] --> Values must be non-negative",
+        Console.Write("values:[{0}, {1}] --> Values must be non-negative",
             val1,
             val2);
       }
       else
       {
-        Console
-            .WriteLine("values:[{0}, {1}] Last digits are equal? --> {2}",
+        Console.WriteLine("values:[{0}, {1}] Last digits are equal? --> {2}",
             val1,
             val2,
             val1 % 10 == val2 % 10);
@@ -246,7 +239,6 @@ True */
 
     public bool CheckStrictIncreasingOrder(int[] intArray, bool flag)
     {
-
       return flag ? intArray[0] <= intArray[1] && intArray[1] <= intArray[2] : intArray[0] < intArray[1] && intArray[1] < intArray[2];
     }
 
@@ -338,7 +330,6 @@ False
 
         Console.WriteLine(val1 / 10 == val2 / 10 || val1 / 10 == val2 % 10 || val1 % 10 == val2 / 10 || val1 % 10 == val2 % 10);
 
-
         /* Another way to solve it: 
          Console.WriteLine(val1.ToString().Contains(val2.ToString().First()) || val1.ToString().Contains(val2.ToString().Last()));
          */
@@ -363,7 +354,7 @@ False
     7
     20 */
 
-    public void CheckComputeSum(int x, int y)
+    public void ComputeSumElmnts(int x, int y)
     {
 
       int sum = x + y;
@@ -388,9 +379,8 @@ False
 
      */
 
-    public void ComputeSum3Int(int x, int y, int z)
+    public void ComputeSumElmnts(int x, int y, int z)
     {
-
       Console.WriteLine(x % 10 == y % 10 && x / 10 == y / 10 ? z : x + y + z);
     }
 
@@ -408,7 +398,7 @@ False
     10
     0 */
 
-    public int CheckValueThenComputeSum(int[] intArr)
+    public int ComputeSumElmnts(int[] intArr)
     {
       int sum = 0;
       foreach (var item in intArr)
@@ -440,7 +430,6 @@ False
 
     public void CheckDifferenceIntegers(int x, int y, int z)
     {
-
       Console.WriteLine(x - y == y - z);
     }
 
@@ -490,12 +479,10 @@ False
 
     public bool ValueAppearsinArrays(int[] intArray)
     {
-
       if (intArray.First() == intArray.Last())
       {
         return true;
       }
-
       return false;
     }
 
@@ -515,14 +502,11 @@ False
 
     public bool ValueAppearsinArrays(int[] array1, int[] array2)
     {
-
       if (array1.First() == array2.First() || array1.First() == array2.Last())
       {
         return true;
       }
-
       return false;
-
     }
 
 
@@ -559,7 +543,6 @@ Click me to see the solution
 
     public static void ReverseElementArray(List<int> intArray)
     {
-
       intArray.Reverse();
 
       foreach (var item in intArray)
@@ -581,93 +564,98 @@ Click me to see the solution
 
     public static void newArrayFromDictionary(Dictionary<int, List<int>> dictionary)
     {
-    var newArray = new List<int> ();
-    foreach (var item in dictionary)
-    {
-        newArray.Add(item.Value.ElementAt(Math.Abs(item.Value.Count/2)));
-    }
+      var newArray = new List<int>();
+      foreach (var item in dictionary)
+      {
+        newArray.Add(item.Value.ElementAt(Math.Abs(item.Value.Count / 2)));
+      }
 
-    foreach (var item in newArray)
-    {
+      foreach (var item in newArray)
+      {
         Console.Write(item + " ");
+      }
     }
-    }
 
-   /*
-    Write a C# Sharp program to check if a given array of integers and length 2, does not contain 15 or 20.
+    /*
+     Write a C# Sharp program to check if a given array of integers and length 2, does not contain 15 or 20.
 
-Sample Input:
-{ 12, 20 }
-{ 14, 15 }
-{ 11, 21 }
-Expected Output :
-False
-False
-True
-   */
-
-   public bool ArrayContainElmnt(List<int> list, int elmnt, int elmnt2 ){
-   
-   if(!list.Contains(elmnt) || !list.Contains( elmnt2)){
-
-   return false;
-   }
-    
-    return true;
-
-   }
-
-   /* 
-   101. Write a C# Sharp program to check a given array of integers, length 3 and create a new array. 
-   If there is a 5 in the given array immediately followed by a 7 then set 7 to 1. Go to the editor
-
-Sample Input:
-{ 1, 5, 7 }
-Expected Output :
-Original array:  1, 5, 7
-New array: 1 5 1
+ Sample Input:
+ { 12, 20 }
+ { 14, 15 }
+ { 11, 21 }
+ Expected Output :
+ False
+ False
+ True
     */
 
-   public List<int> CheckArray(List<int> str) { 
-    
-   for (int i = 0; i < str.Count()-1; i++){
-    
-   if (str[i].Equals(5) && str[i+1].Equals(7))
-     str[i+1]=1;
-	}
-    
-   return str;
+    public bool ArrayContainElmnt(List<int> list, int elmnt, int elmnt2)
+    {
 
-  }
+      if (!list.Contains(elmnt) || !list.Contains(elmnt2))
+      {
 
-   /*
-    102. Compute the sum of the two given arrays of integers,
-   length 3 and find the array which has the largest sum. Go to the editor
+        return false;
+      }
 
-Sample Input:
-{ 10, 20, -30 }, { 10, 20, 30 }
-Expected Output :
-Original array:  1, 5, 7
-Larger array: 10 20 30
-    */
+      return true;
 
-   public static List<int> ComputeSumList(Dictionary<int, List<int>> dictionary) { 
-        
-        var largestArray = new List<int>();
-            var largestsum =0;
+    }
 
-     foreach (var item in dictionary)
-	{
-                if (item.Value.Sum()>largestsum)
-	{
-                    largestsum= item.Value.Sum();
-                    largestArray = item.Value;
-	}
-	}
+    /* 
+    101. Write a C# Sharp program to check a given array of integers, length 3 and create a new array. 
+    If there is a 5 in the given array immediately followed by a 7 then set 7 to 1. Go to the editor
 
-            return largestArray;
+ Sample Input:
+ { 1, 5, 7 }
+ Expected Output :
+ Original array:  1, 5, 7
+ New array: 1 5 1
+     */
 
+    public List<int> CheckArray(List<int> str)
+    {
+
+      for (int i = 0; i < str.Count() - 1; i++)
+      {
+
+        if (str[i].Equals(5) && str[i + 1].Equals(7))
+          str[i + 1] = 1;
+      }
+
+      return str;
+
+    }
+
+    /*
+     102. Compute the sum of the two given arrays of integers,
+    length 3 and find the array which has the largest sum. Go to the editor
+
+ Sample Input:
+ { 10, 20, -30 }, { 10, 20, 30 }
+ Expected Output :
+ Original array:  1, 5, 7
+ Larger array: 10 20 30
+     */
+
+    public static List<int> ComputeSumElmnts(Dictionary<int, List<int>> dictionary)
+    {
+
+      var largestArray = new List<int>();
+      var largestsum = 0;
+
+      foreach (var item in dictionary)
+      {
+        if (item.Value.Sum() > largestsum)
+        {
+          largestsum = item.Value.Sum();
+          largestArray = item.Value;
         }
+      }
+
+      return largestArray;
+
+    }
 
 
     /*
@@ -687,37 +675,34 @@ Expected Output :
 7
 8    
    */
-    public static int FindLargestValueFirstLastMiddle(List<int> list) { 
-        
-     int max = list.First();
-         
-    if (list.Count > 1)
-	{
-     
-    if (list.ElementAt(list.Count/2) > max)
-	{
-     max = list.ElementAt(list.Count/2);
-     
-	}
-        
-     if (list.Last() > max)
-	{
-     max = list.Last();
-     
-	}       
-      
-    }
-     
-   return max;
-        
-        
-     }
-        
+    public static int FindLargestValueFirstLastMiddle(List<int> list)
+    {
 
-        
-       
+      int max = list.First();
+
+      if (list.Count > 1)
+      {
+
+        if (list.ElementAt(list.Count / 2) > max)
+        {
+          max = list.ElementAt(list.Count / 2);
+
+        }
+
+        if (list.Last() > max)
+        {
+          max = list.Last();
+
+        }
+
+      }
+
+      return max;
+
+
+    }
     /*
-     112. Write a C# Sharp program to compute the sum of the numbers in a given array except those numbers starting with 5 followed by atleast one 6. Return 0 if the given array has no integer. Go to the editor
+112. Write a C# Sharp program to compute the sum of the numbers in a given array except those numbers starting with 5 followed by atleast one 6. Return 0 if the given array has no integer. Go to the editor
 
 Sample Input:
 { 5, 6, 1, 5, 6, 9, 10, 17, 5, 6 }
@@ -727,29 +712,28 @@ Sample Input:
 { 1, 5, 9, 10, 17, 5}
      
      */
-        
-       
-    public static int ComputeSumElmnts(List<int> list) {
-            int sum = 0;
-  for (int i = 0; i < list.Count() - 1;i++)
 
-			{
-                //check if element in this.pos and elmnt in pos.nextvalue are different from {5,6}
-                if (list) //complete this testing.
-	             {           
-                    sum += list[i];
-                    i+=2;
-	             }
-			}
-        
-        return sum;
+    public static int ComputeSumElmnts(List<int> list)
+    {
+      int sum = 0;
+      for (int i = 0; i < list.Count - 1; i++)
+      {
+
+        if (list[i] + list[i + 1] == 11)
+        {
+          list.RemoveRange(i, 2);
         }
 
-
-
-
-
-        
-  }
+      }
+     sum += list.Sum();
+      return sum;
     }
+
+
+
+
+
+
+  }
+}
 
