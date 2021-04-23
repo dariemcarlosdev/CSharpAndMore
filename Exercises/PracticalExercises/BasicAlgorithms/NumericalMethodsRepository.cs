@@ -819,6 +819,47 @@ True
         
         }
 
+
+        /*
+         124. Write a C# Sharp program to check a given array of integers and return true if every 5 that appears in the given array is next to another 5. Go to the editor
+
+Sample Input:
+{ 3, 5, 5, 3, 7 }
+{ 3, 5, 5, 4, 1, 5, 7}
+{ 3, 5, 5, 5, 5, 5}
+{ 2, 4, 5, 5, 6, 5, 5}
+
+Expected Output :
+True
+False
+True
+False
+         */
+       
+        public void CheckValueAppearNextTo( List<int> list, int val) { 
+        
+            bool? flag = null;
+            int listLength = list.Count;
+            
+            for (int i = 0; i < listLength; i++)
+			{
+             if (list[i]==5)
+	          {
+                    if ((i > 0 && list[i-1]==5) || (i < listLength - 1 && list[i+1]==5 ))
+	                 {
+                        flag = true;
+	                 }
+                    else if (i == listLength - 1)
+	                 {
+                        flag = false;
+	                 }
+                    else
+                    flag = false;
+	          }   
+			}
+        Console.WriteLine(flag);
+        }
+
   }
 }
 

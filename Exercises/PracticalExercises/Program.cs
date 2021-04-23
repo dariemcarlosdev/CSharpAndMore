@@ -32,10 +32,10 @@ namespace ExercisesLearning
 	}          
            */
          
-     numericalMethods.CheckArrayContainElmts(new List<int>{ 5, 5, 5, 5, 5 }, 3, 5);    
-     numericalMethods.CheckArrayContainElmts(new List<int>{ 1, 2, 3, 4 }, 3, 5);
-     numericalMethods.CheckArrayContainElmts(new List<int>{ 3, 3, 5, 5, 5, 5}, 3, 5);
-     numericalMethods.CheckArrayContainElmts(new List<int>{ 1, 5, 5, 7, 8, 10}, 3, 5);
+     numericalMethods.CheckValueAppearNextTo(new List<int>{ 3, 5, 5, 3, 7 }, 5);    
+     numericalMethods.CheckValueAppearNextTo(new List<int>{ 3, 5, 5, 4, 1, 5, 7}, 5);
+     numericalMethods.CheckValueAppearNextTo(new List<int>{ 3, 5, 5, 5, 5, 5}, 5);
+     numericalMethods.CheckValueAppearNextTo(new List<int>{ 2, 4, 5, 5, 6, 7, 5}, 5);
 
 
 
