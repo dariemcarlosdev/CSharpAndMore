@@ -731,8 +731,93 @@ Sample Input:
 
 
 
+/*
+ 113. Write a C# Sharp program to check if a given array of integers contains 5 next to a 5 somewhere. Go to the editor
 
+Sample Input:
+{ 1, 5, 6, 9, 10, 17 }
+{ 1, 5, 5, 9, 10, 17 }
+{ 1, 5, 5, 9, 10, 17, 5, 5 }
+Expected Output :
+False
+True
+True
+ */
 
+    public void CheckArrayContainElmts( List<int> list) { 
+        
+            bool? result = null;      
+            for (int i = 0; i < list.Count-1; i++)
+			{
+            if (list[i]==5 && list[i+1]==5)
+	{
+            result = true;
+                    break;
+	}
+            result = false;
+			}   
+        Console.WriteLine(result);
+        
+        }
+
+/*
+ 115. Write a C# Sharp program to check if the sum of all 5' in the array exactly 15 in a given array of integers. Go to the editor
+
+Sample Input:
+{ 1, 5, 6, 9, 10, 17 }
+{ 1, 5, 5, 5, 10, 17 }
+{ 1, 1, 5, 5, 5, 5}
+Expected Output :
+ 
+ */
+
+    public void CheckSumValueInList(List<int> list) { 
+        
+        //int sum = 0;
+        int count =0;
+        int result = 0;
+            foreach (var item in list)
+	{
+                if (item == 5)
+	{
+                    count++;
+                    result = item * count;
+	}
+	}
+            Console.WriteLine(result);
+
+        
+        }
+
+/*
+ 119. Write a C# Sharp program to check if an array of integers contains a 3 next to a 3 or a 5 next to a 5 or both. Go to the editor
+
+Sample Input:
+{ 5, 5, 5, 5, 5 }
+{ 1, 2, 3, 4 }
+{ 3, 3, 5, 5, 5, 5}
+{ 1, 5, 5, 7, 8, 10}
+Expected Output :
+True
+False
+True
+True
+ */
+
+        public void CheckArrayContainElmts(List<int> list, int val, int val_1) { 
+        
+            bool? check_Values = false;
+            for (int i = 0; i < list.Count-1; i++)
+			{
+                if ((list[i]==val && list[i+1]==val) || (list[i]==val_1 && list[i+1]==val_1) )
+	{
+                    check_Values = true;
+	}
+			}
+
+            Console.WriteLine(check_Values);
+        
+        }
 
   }
 }

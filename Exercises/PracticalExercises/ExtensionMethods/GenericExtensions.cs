@@ -15,8 +15,19 @@ namespace ExercisesLearning.ExtensionMethods
     // it means, the type(Class) we are extending.
     public static bool IsContainedIn<T>(this T obj, params T[] args)
     {
+      /*Console.WriteLine(30.IsContainedIn(val1, val2) || val1 + val2 == 30*/
       return args.Contains(obj);
     }
+
+    /*public static bool IsLast<T>(this IEnumerable<T> arg) { 
+     
+        
+        }
+
+    public static bool GetNext<T>(this T obj, params T[] args) { 
+        
+        
+        }*/
 
     public static bool IsGreaterThan(this int obj, int value){
      return obj > value ? true : false;
