@@ -746,17 +746,17 @@ True
 
     public void CheckArrayContainElmts( List<int> list) { 
         
-            bool? result = null;      
+            bool? flag = null;      
             for (int i = 0; i < list.Count-1; i++)
 			{
             if (list[i]==5 && list[i+1]==5)
 	{
-            result = true;
+            flag = true;
                     break;
 	}
-            result = false;
+            flag = false;
 			}   
-        Console.WriteLine(result);
+        Console.WriteLine(flag);
         
         }
 
@@ -824,9 +824,9 @@ True
          124. Write a C# Sharp program to check a given array of integers and return true if every 5 that appears in the given array is next to another 5. Go to the editor
 
 Sample Input:
-{ 3, 5, 5, 3, 7 }
+{ 5, 6, 5, 3, 7 }
 { 3, 5, 5, 4, 1, 5, 7}
-{ 3, 5, 5, 5, 5, 5}
+{ 3, 5, 5, 5, 4, 5}
 { 2, 4, 5, 5, 6, 5, 5}
 
 Expected Output :
@@ -843,22 +843,94 @@ False
             
             for (int i = 0; i < listLength; i++)
 			{
-             if (list[i]==5)
-	          {
-                    if ((i > 0 && list[i-1]==5) || (i < listLength - 1 && list[i+1]==5 ))
+             if (list[i]==val)
+	          {     //checking from first lmnt to second last elmnt in the list.
+                    if ((i > 0 && list[i-1]==val) || (i < listLength - 1 && list[i+1]==val ))
 	                 {
                         flag = true;
 	                 }
+                   //checking last element in the list.
                     else if (i == listLength - 1)
 	                 {
                         flag = false;
 	                 }
+                   //if value was not found in the list.
                     else
                     flag = false;
 	          }   
 			}
         Console.WriteLine(flag);
         }
+  /*
+  125. Write a C# Sharp program to check a given array of integers and return true if the specified number of same elements appears at the start and end of the given array. Go to the editor
+
+Sample Input:
+{ 3, 7, 5, 5, 3, 7 }, 2
+{ 3, 7, 5, 5, 3, 7 }, 3
+{ 3, 7, 5, 5, 3, 7, 5 }, 3
+Expected Output :
+True
+False
+True
+  */
+
+  public bool ComparingSubList(List<int> list, int val){
+  
+  var list1 = new List<int>();
+  var list2 = new List<int>();
+  var Length = list.Count;
+
+  for (int i = 0; i < val; i++)
+  {
+      list1.Add(list[i]);
+  }
+  
+  for (int i = Length - val ; i < Length; i++)
+  {
+      list2.Add(list[i]);
+  }
+  
+   
+  return list1.SequenceEqual(list2);
+
+  }
+
+/*
+126. Write a C# Sharp program to check a given array of integers and return true if the array contains three increasing adjacent numbers.
+
+Sample Input:
+{ 1, 2, 3, 5, 3, 7 }
+{ 3, 7, 5, 5, 3, 7 }
+{ 3, 7, 5, 5, 6, 7, 5 }
+Expected Output :
+True
+False
+True
+*/
+
+public bool CheckingIncresingValuesInArray(List<int> list){
+
+int listLength = list.Count;
+bool isConsecutive = false;
+
+for (int i = 0; i < listLength; i++)
+{
+    if (i <= listLength - 3)
+    {
+      if ((list[i+1] - list[i] == 1) && (list[i+2] - list[i+1]==1))
+      {
+         
+       isConsecutive = true;  
+      }       
+    
+    }   
+}
+ return isConsecutive;
+}
+
+
+
+
 
   }
 }

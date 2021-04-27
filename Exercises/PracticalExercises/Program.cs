@@ -32,10 +32,9 @@ namespace ExercisesLearning
 	}          
            */
          
-     numericalMethods.CheckValueAppearNextTo(new List<int>{ 3, 5, 5, 3, 7 }, 5);    
-     numericalMethods.CheckValueAppearNextTo(new List<int>{ 3, 5, 5, 4, 1, 5, 7}, 5);
-     numericalMethods.CheckValueAppearNextTo(new List<int>{ 3, 5, 5, 5, 5, 5}, 5);
-     numericalMethods.CheckValueAppearNextTo(new List<int>{ 2, 4, 5, 5, 6, 7, 5}, 5);
+     Console.WriteLine(numericalMethods.CheckingIncresingValuesInArray(new List<int>{ 1, 2, 3, 5, 3, 7 }));
+     Console.WriteLine(numericalMethods.CheckingIncresingValuesInArray(new List<int>{ 3, 7, 5, 5, 3, 7 }));
+     Console.WriteLine(numericalMethods.CheckingIncresingValuesInArray(new List<int>{ 3, 7, 5, 5, 6, 7 }));
 
 
 
