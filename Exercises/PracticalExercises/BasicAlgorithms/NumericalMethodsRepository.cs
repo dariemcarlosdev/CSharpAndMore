@@ -929,6 +929,27 @@ for (int i = 0; i < listLength; i++)
 }
 
 
+/*
+ 127. shifting an element in left direction and return a new array. Go to the editor
+
+Sample Input:
+{ 10, 20, -30, -40, 50 }
+Expected Output :
+New array: 20 -30 -40 50 10
+ */
+
+public void ShiftingElmnInLeft( List<int> List) { 
+        
+ var listLenght = List.Count;
+ var newList = new List<int>(listLenght);          
+ 
+for (int i = 0; i < listLenght; i++)
+			{
+                newList.Add(Math.Abs(List.ElementAt((i+1) % listLenght)));
+                Console.Write(newList[i] + " ");
+			}
+
+        }
 
 
 

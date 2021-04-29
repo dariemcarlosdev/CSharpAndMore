@@ -32,9 +32,7 @@ namespace ExercisesLearning
 	}          
            */
          
-     Console.WriteLine(numericalMethods.CheckingIncresingValuesInArray(new List<int>{ 1, 2, 3, 5, 3, 7 }));
-     Console.WriteLine(numericalMethods.CheckingIncresingValuesInArray(new List<int>{ 3, 7, 5, 5, 3, 7 }));
-     Console.WriteLine(numericalMethods.CheckingIncresingValuesInArray(new List<int>{ 3, 7, 5, 5, 6, 7 }));
+     numericalMethods.ShiftingElmnInLeft(new List<int>{ 10, 20, -30, -40, 50  });
 
 
 
