@@ -950,9 +950,209 @@ for (int i = 0; i < listLenght; i++)
 			}
 
         }
+/*
+ 128. Create a new array taking the elements before the element value 5 from a given array of integers. Go to the editor
+
+Sample Input:
+{ 1, 2, 3, 5, 7 }
+Expected Output :
+New array: 1 2 3
+ 
+ */
+
+public List<int> TakingElmntsBeforeValue(List<int> List, int value) {
+        
+           List<int> tempList = new List<int>();
+    
+            
+            foreach (var item in List)
+	{
+                if (item != value)
+	{
+                    tempList.Add(item);
+	}  
+                else  break;
+	}
+            return tempList;
+        
+        }
+
+/*
+ 129. Create a new array taking the elements after the element value 5 from a given array of integers. Go to the editor
+
+Sample Input:
+{ 1, 2, 3, 5, 7, 9, 11 }
+Expected Output :
+New array: 7 9 11
+ */
 
 
+public List<int> TakingElmntsAfterValue(List<int> List, int value) {
+        
+           List<int> tempList = new List<int>();
+           var listLenght = List.Count();
+            var pos = List.IndexOf(value);
+            
+            for (int i = pos; i < listLenght-1; i++)
+			{
+	
+                    tempList.Add(List[i+1]);
+	
+			}
+            return tempList;
+        
+        }
+
+/*
+ 130. Create a new array from a given array of integers shifting all zeros to left direction. Go to the editor
+
+Sample Input:
+{ 1, 2, 0, 3, 5, 7, 0, 9, 11 }
+Expected Output :
+ */
+
+
+public List<int> ShiftingAllZerotoLeft(List<int> List) {
+            
+            var pos = 0;
+            for (int i = 0; i < List.Count; i++)
+			{
+                if (List[i]==0)
+	{
+                    List[i] = List[pos];
+                    List[pos++] = 0; 
+                    // same like List[pos] = 0;
+                    // pos++;
+	}
+			}
+
+           return List;
+        }
+
+
+/*
+ 132. Creating new array from a given array of integers shifting all even numbers before all odd numbers. Go to the editor
+
+Sample Input:
+{ 1, 2, 5, 3, 5, 4, 6, 9, 11 }
+Expected Output :
+New array: 2 4 6 3 5 1 5 9 11
+ */
+
+public List<int> ShiftingEveNumbersBeforeOdd(List<int> List) { 
+        
+           int pos = 0;
+
+            for (int i = 0; i < List.Count; i++)
+			{
+                if (Math.Abs(List[i]%2)== 0)
+	{               int temp= List[i];
+                    List[i] = List[pos];
+                    List[pos] = temp;
+                    pos ++;  // an element has been inserted at started position.
+	}
+			}
+
+            return List;
+
+        }
+
+/*
+  133.Check if the value of each element is equal or greater than the value of previous element of a given array of integers. Go to the editor
+
+Sample Input:
+{ 5, 5, 1, 5, 5 }
+{ 1, 2, 3, 4 }
+{ 3, 3, 5, 5, 5, 5}
+{ 1, 5, 5, 9, 8, 10}
+Expected Output:
+False
+True
+True
+True
+*/
+
+public bool CheckValueEqualorGreaterPrevElmt(List<int> List) { 
+        
+           int pos = 0;
+            bool check = true;
+            for (int i = 1; i < List.Count; i++)
+			{
+                if (List[i] >= List[pos] && i < List.Count)
+	{
+                 pos++;
+	}
+                else
+	{
+            check= false;
+	}
+			}
+
+            return check;
+
+        }
+
+/*
+ 135. Finding the larger average value between the first and the second half of a given array of integers and minimum length is at least 2. Assume that the second half begins at index (array length)/2. Go to the editor
+
+Sample Input:
+{ 1, 2, 3, 4, 6, 8 }
+{ 15, 2, 3, 4, 15, 11 }
+Expected Output:
+6
+10
+ 
+ */
+
+public int CalcLargestAvgBetweenFSHalf(List<int> List) { 
+        
+   var firtHalfAvg = Average(List, 0, List.Count/2);
+   var ScndHalfAvg = Average(List, List.Count/2, List.Count);
+   
+   if (firtHalfAvg>ScndHalfAvg)
+	{
+            return firtHalfAvg;
+	}         
+
+   else
+	{
+            return ScndHalfAvg;
+	}
 
   }
+
+ public static int Average(List<int> list, int start, int end) { 
+        
+           int sum = 0;
+           int count = 0;
+
+  for (int i = start; i < end; i++)
+			{
+                sum+= list[i];
+                count++;
+			}               
+  
+            return sum/count;
+                
+  }
+
+/*
+ 141. Create a new list from a given list of integers where each element is multiplied by 3. Go to the editor
+
+Sample Input:
+{ 1, 2, 3 , 4 }
+Expected Output :
+New array: 3 6 9 12
+ */
+
+ public List<int> NewArrayByNumber(List<int> List) {
+        
+        IEnumerable<int> newList = List.Select(e => e * 3);
+            
+            return newList.ToList<int>();
+
+        }
+
 }
 
+}

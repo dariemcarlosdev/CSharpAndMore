@@ -32,9 +32,15 @@ namespace ExercisesLearning
 	}          
            */
          
-     numericalMethods.ShiftingElmnInLeft(new List<int>{ 10, 20, -30, -40, 50  });
+     var List = numericalMethods.NewArrayByNumber(new List<int>{ 15, 2, 3, 4, 15, 11, 5 });
 
+          List.ForEach(delegate(int value)
+           { 
+           Console.Write(value.ToString() + ' ');
+           }
+           );
 
+     //Console.WriteLine(List);
 
     }
   
