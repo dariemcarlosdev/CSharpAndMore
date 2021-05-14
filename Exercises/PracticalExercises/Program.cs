@@ -32,16 +32,17 @@ namespace ExercisesLearning
 	}          
            */
          
-     var List = numericalMethods.NewArrayByNumber(new List<int>{ 15, 2, 3, 4, 15, 11, 5 });
+/*     var List = numericalMethods.ArrayWithNoMultipleOfValue(new List<int>{ 10, 22, 35 , 47, 53, 67 }, 7);
 
-          List.ForEach(delegate(int value)
-           { 
-           Console.Write(value.ToString() + ' ');
-           }
-           );
+        foreach (var item in List)
+	{
+                Console.Write(item + " ");
+	}
+  */        
 
      //Console.WriteLine(List);
 
+            numericalMethods.DisplayFunctionValue();
     }
   
   }

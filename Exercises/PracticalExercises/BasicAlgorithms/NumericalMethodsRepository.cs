@@ -1153,6 +1153,86 @@ New array: 3 6 9 12
 
         }
 
+/*
+ 150. Create a new list from a given list of integers removing those values end with 7. Go to the editor
+
+Sample Input:
+{ 10, 22, 35 , 47, 53, 67 }
+Expected Output :
+10 22 35 53
+ */
+
+public List<int> ArrayWithNoMultipleOfValue(List<int> list, int value) { 
+        
+        var newList = new List<int>();
+
+            foreach (var item in list)
+	{
+            if (item % 10 != value)
+	{
+                    newList.Add(item);
+	}
+	}
+            return newList;
+        
+        }
+
+/*
+Takes a number and a width also a number, as input and then displays a triangle of that width, using that number. Go to the editor
+Test Data
+Enter a number: 6
+Enter the desired width: 6
+Expected Output :
+
+666666                                                      
+66666                                                           
+6666                                                                  
+666                                                        
+66                                                                  
+6 
+ */
+
+public void PrintRect(int number, int width) { 
+        
+        var height = width;
+            Console.WriteLine("Triangle:");
+            for (int i = 0; i < height; i++)
+			{
+                for (int j = 0; j < width; j++)
+			{
+                Console.Write(number);
+			}
+                Console.WriteLine();
+                width--;
+			}
+        
+        
+        }
+
+/*
+ display certain values of the function x = y2 + 2y + 1 (using integer numbers for y , ranging from -5 to +5)
+ */
+
+public void DisplayFunctionValue() { 
+        
+            
+            for (int y = -5; y <= 5; y++)
+			{
+                int x = Math.Pow(y) + 2*y + 1;
+                Console.WriteLine("{0} = ({1})2 + 2*({1}) + 1", x, y);
+			}
+        
+        }
+
+/*
+ Display the n terms of odd natural number and their sum. Go to the editor
+Test Data
+Input number of terms : 10
+Expected Output :
+The odd numbers are :1 3 5 7 9 11 13 15 17 19
+The Sum of odd Natural Number upto 10 terms : 100
+ */
+
 }
 
 }

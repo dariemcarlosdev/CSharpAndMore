@@ -748,7 +748,31 @@ return str;
 }
 
 
+/*
+ 144. Write a C# Sharp program to create a new list from a given list of strings where each element is replaced by 4 copies of the string concatenated together. Go to the editor
 
+Sample Input:
+{ "1", "2", "3" , "4" }
+Expected Output :
+1111 2222 3333 4444
+ */
+
+public List<string> StringCopies(List<string> list, int numCopies) {
+        
+            var newList = new List<string>();
+            
+            foreach (var item in list)
+	{           var string1 = string.Empty;
+                for (int i = 0; i < numCopies; i++)
+			{
+                  string1 += item;
+			}
+            
+                newList.Add(string1);
+	}
+            
+            return newList;
+        }
 
 
 
