@@ -1,0 +1,13 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\bin\Debug\netcoreapp3.1\Different Shipping Providers.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\bin\Debug\netcoreapp3.1\Different Shipping Providers.deps.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\bin\Debug\netcoreapp3.1\Different Shipping Providers.runtimeconfig.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\bin\Debug\netcoreapp3.1\Different Shipping Providers.runtimeconfig.dev.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\bin\Debug\netcoreapp3.1\Different Shipping Providers.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\bin\Debug\netcoreapp3.1\Different Shipping Providers.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\obj\Debug\netcoreapp3.1\Different Shipping Providers.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\obj\Debug\netcoreapp3.1\Different Shipping Providers.AssemblyInfoInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\obj\Debug\netcoreapp3.1\Different Shipping Providers.AssemblyInfo.cs
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\obj\Debug\netcoreapp3.1\Different Shipping Providers.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\obj\Debug\netcoreapp3.1\Different Shipping Providers.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\obj\Debug\netcoreapp3.1\Different Shipping Providers.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL STRATEGY PATTERN\Different Shipping Providers\obj\Debug\netcoreapp3.1\Different Shipping Providers.genruntimeconfig.cache

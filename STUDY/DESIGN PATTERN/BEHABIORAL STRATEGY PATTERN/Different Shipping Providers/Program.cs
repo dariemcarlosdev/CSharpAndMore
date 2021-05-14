@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Different_Shipping_Providers.Business.Models;
+using System;
+using System.Collections.Generic;
 
 namespace Different_Shipping_Providers
 {
@@ -6,7 +8,26 @@ namespace Different_Shipping_Providers
     {
         static void Main(string[] args)
         {
-            /*Commit to bransh */
+
+            var Orders = new List<Order>();
+
+            var order1 = new Order(new List<Item>());
+            order1.lineItems.Add(new Item("dads", 3));
+            order1.lineItems.Add(new Item("dads", 10));
+
+            var order2 = new Order(new List<Item>());
+            order2.lineItems.Add(new Item("dads", 3));
+            order2.lineItems.Add(new Item("dads", 7));
+            order2.lineItems.Add(new Item("dads", 10));
+
+
+            Orders.Add(order1);
+            Orders.Add(order2);
+
+            foreach (var item in Orders)
+            {
+                Console.WriteLine("Nro Order:{0} Total Items:{1} SaleTax:{2}$",item.NroOrden, item.lineItems.Count, item.GetTax());
+            }
         }
     }
 }

@@ -6,8 +6,4 @@
     <RootNamespace>Different_Shipping_Providers</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Business\Strategies\" />
-  </ItemGroup>
-
 </Project>
