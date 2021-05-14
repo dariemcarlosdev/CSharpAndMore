@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EXERCISES",
+    "\\EXERCISES\\HAND_ON_EXERCISES"
   ],
-  "SelectedNode": "\\CSharpExercises.sln",
+  "SelectedNode": "\\EXERCISES\\HAND_ON_EXERCISES\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

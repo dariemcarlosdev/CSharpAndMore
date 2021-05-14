@@ -40,7 +40,7 @@ namespace ExercisesLearning
 	}
   */        
 
-     //Console.WriteLine(List);
+     //Console.WriteLine(List); commet
 
             numericalMethods.DisplayFunctionValue();
     }
