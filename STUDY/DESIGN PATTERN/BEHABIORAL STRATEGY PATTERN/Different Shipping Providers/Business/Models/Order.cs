@@ -28,7 +28,6 @@ namespace Different_Shipping_Providers.Business.Models
         {
             _lineItems = LineItems;
             var r = new Random();
-            _lineItems = LineItems;
             _nroOrder = r.Next(0,1000) ;
         }
 
@@ -42,6 +41,16 @@ namespace Different_Shipping_Providers.Business.Models
 
             return (int)((int)TotalCost * 0.2);
         
+        }
+
+        public string TotalWeight(){
+         
+        float sum = 0;
+        foreach (var item in _lineItems)
+        {
+            sum += item.ItemWeight;
+        }
+         return sum.ToString("0.00");
         }
        
     }
