@@ -21,25 +21,23 @@ namespace Different_Shipping_Providers.Business.Models
             }
         
         }
-        public List<Item> lineItems;
-
-        
+             
+        public List<Item> _lineItems;
 
         public Order(List<Item> LineItems)
         {
+            _lineItems = LineItems;
             var r = new Random();
-            this.lineItems = LineItems;
+            _lineItems = LineItems;
             _nroOrder = r.Next(0,1000) ;
         }
 
         public int GetTax() {
 
             int TotalCost = 0;
-            foreach (var item in lineItems)
+            foreach (var item in _lineItems)
             {
-
               TotalCost +=  item.ItemCost;
-
             }
 
             return (int)((int)TotalCost * 0.2);

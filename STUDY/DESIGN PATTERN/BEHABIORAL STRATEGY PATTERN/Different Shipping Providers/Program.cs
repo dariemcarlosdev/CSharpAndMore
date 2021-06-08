@@ -12,13 +12,13 @@ namespace Different_Shipping_Providers
             var Orders = new List<Order>();
 
             var order1 = new Order(new List<Item>());
-            order1.lineItems.Add(new Item("dads", 3));
-            order1.lineItems.Add(new Item("dads", 10));
+            order1._lineItems.Add(new Item("dads", 3));
+            order1._lineItems.Add(new Item("dads", 10));
 
             var order2 = new Order(new List<Item>());
-            order2.lineItems.Add(new Item("dads", 3));
-            order2.lineItems.Add(new Item("dads", 7));
-            order2.lineItems.Add(new Item("dads", 10));
+            order2._lineItems.Add(new Item("dads", 3));
+            order2._lineItems.Add(new Item("dads", 7));
+            order2._lineItems.Add(new Item("dads", 10));
 
 
             Orders.Add(order1);
@@ -26,7 +26,7 @@ namespace Different_Shipping_Providers
 
             foreach (var item in Orders)
             {
-                Console.WriteLine("Nro Order:{0} Total Items:{1} SaleTax:{2}$",item.NroOrden, item.lineItems.Count, item.GetTax());
+                Console.WriteLine("Nro Order:{0} Total Items:{1} SaleTax:{2}$",item.NroOrden, item._lineItems.Count, item.GetTax());
             }
         }
     }
