@@ -11,22 +11,42 @@ namespace Different_Shipping_Providers
 
             var Orders = new List<Order>();
 
-            var order1 = new Order(new List<Item>());
-            order1._lineItems.Add(new Item("dads", 3, 3.2f));
-            order1._lineItems.Add(new Item("dads", 10, 3.2f));
 
-            var order2 = new Order(new List<Item>());
-            order2._lineItems.Add(new Item("dads", 3, 0.2f));
-            order2._lineItems.Add(new Item("dads", 7, 3.2f));
-            order2._lineItems.Add(new Item("dads", 10, 0.4f));
+            var order1 = new Order{
+                
+                //Initializing Order->ShippingDetails property.
+                ShippingDetails = new ShippingDetails
+                {
+                    //Initializing ShippingDetails object properties.
+                    OriginCountry = "Sweeden",
+                    DestinationCountry = "Sweeden"
+                }
+            };
 
+            order1.lineItems = new List<Item>();
+            order1.lineItems.Add(new Item("dads", 3, 3.2f));
+            order1.lineItems.Add(new Item("xxx", 5, 8.2f));
+            
+
+            var order2 = new Order{
+                
+                //Initializing Order->ShippingDetails property.
+                ShippingDetails = new ShippingDetails
+                {
+                    //Initializing ShippingDetails object properties.
+                    OriginCountry = "Us",
+                    DestinationCountry = "Us"
+                }
+            };
+            order2.lineItems = new List<Item>();           
+            order2.lineItems.Add(new Item("dads", 10, 3.2f));
 
             Orders.Add(order1);
-            Orders.Add(order2);
+            Orders.Add(order2); 
 
-            foreach (var order in Orders)
+            foreach (var item in Orders)
             {
-                Console.WriteLine("Nro Order:{0} Total Items:{1} SaleTax:{2}$  Order Weight:{3} Kg",order.NroOrden, order._lineItems.Count, order.GetTax(), order.TotalWeight());
+                Console.WriteLine("Nro Order: Total Items:{0} SaleTax:{1}$  Order Weight:{2} Kg", item.lineItems.Count, item.GetTax(), item.TotalWeight());
             }
         }
     }
