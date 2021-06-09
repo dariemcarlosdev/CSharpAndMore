@@ -50,8 +50,10 @@ namespace Different_Shipping_Providers.Business.Models
              TotalCost += item.ItemCost;
             }
 
-            var tax = (int)((int)TotalCost * 0.2);
-         }         
+            return (int)((int)TotalCost * 0.2);
+         } 
+
+         return 0;        
      }
 
      if (destination == "Us")
@@ -63,12 +65,13 @@ namespace Different_Shipping_Providers.Business.Models
             {
              TotalCost += item.ItemCost;
             }
-            
+    
+            return (int)((int)TotalCost * 0.2);
+         }
 
-         }         
+         return 0;         
      }
 
-     return tax;
     }
 
     public string TotalWeight()
