@@ -5,6 +5,7 @@ using Different_Shipping_Providers.Business.Strategies.Shipping;
 
 namespace Different_Shipping_Providers.Business.Models
 {
+  //Context
   public class Order
   {
     private static int Tax {get; set;} 
@@ -21,12 +22,11 @@ namespace Different_Shipping_Providers.Business.Models
       }
 
     }
-
     public List<Item> lineItems;
     public ShippingDetails ShippingDetails { get; set; }
-  
+    private readonly IShippingProviderStrategy _shippingprovider;
 
-    /*private readonly IShippingProviderStrategy _IShippingStrategy;
+       /*private readonly IShippingProviderStrategy _IShippingStrategy;
 
     public Order(IShippingProviderStrategy IShippingStrategy)
     {

@@ -18,7 +18,7 @@ namespace Different_Shipping_Providers
                     OriginCountry = "Sweeden",
                     DestinationCountry = "Sweeden"
                 },
-                
+
                 lineItems = new List<Item>()
             };
 
