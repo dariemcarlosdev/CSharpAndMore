@@ -1,9 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EXERCISES",
-    "\\EXERCISES\\HAND_ON_EXERCISES"
+    "\\ASP.NET Angular\\DatingApp",
+    "\\ASP.NET Angular\\DatingApp\\DatingApp-SPA",
+    "\\ASP.NET Angular\\DatingApp\\DatingApp.API",
+    "\\EXERCISES\\HAND_ON_EXERCISES",
+    "\\STUDY",
+    "\\STUDY\\DESIGN PATTERN",
+    "\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN",
+    "\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers"
   ],
-  "SelectedNode": "\\EXERCISES\\HAND_ON_EXERCISES\\Program.cs",
+  "SelectedNode": "\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\Different Shipping Providers.sln",
   "PreviewInSolutionExplorer": false
 }
