@@ -7,6 +7,7 @@ namespace Different_Shipping_Providers.Business.Models
 {
   public class Order
   {
+    private static int Tax {get; set;} 
     private int _nroOrder;
     public int NroOrden
     {
@@ -32,11 +33,21 @@ namespace Different_Shipping_Providers.Business.Models
       _IShippingStrategy = IShippingStrategy;
     }*/
 
+    public int GetTotalCost(){
+        int TotalCost = 0;
+            foreach (var item in lineItems)
+            {
+             TotalCost += item.ItemCost;
+            }
+
+            return TotalCost;
+
+    }
+
     public int GetTax()
     {
-
-      int TotalCost = 0;
-
+      //int Tax = 0;
+      
      var destination = ShippingDetails.DestinationCountry.ToLowerInvariant();
 
      if (destination == "Sweeden")
@@ -44,34 +55,23 @@ namespace Different_Shipping_Providers.Business.Models
          var origin = ShippingDetails.OriginCountry.ToLowerInvariant();
          if (destination == origin)
          {
-            
-            foreach (var item in lineItems)
-            {
-             TotalCost += item.ItemCost;
-            }
-
-            return (int)((int)TotalCost * 0.2);
+          Tax = GetTotalCost() * 2;
          } 
-
-         return 0;        
+        
+        //return Tax;
      }
 
      if (destination == "Us")
      {
          var origin = ShippingDetails.OriginCountry.ToLowerInvariant();
          if (destination == origin)
-         {
-            foreach (var item in lineItems)
-            {
-             TotalCost += item.ItemCost;
-            }
-    
-            return (int)((int)TotalCost * 0.2);
-         }
-
-         return 0;         
+         {           
+           Tax = GetTotalCost() * 5;  
+         } 
+         
+        //return Tax;    
      }
-
+     return Tax;
     }
 
     public string TotalWeight()
