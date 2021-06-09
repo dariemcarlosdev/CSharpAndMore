@@ -9,9 +9,6 @@ namespace Different_Shipping_Providers
         static void Main(string[] args)
         {
 
-            var Orders = new List<Order>();
-
-
             var order1 = new Order{
                 
                 //Initializing Order->ShippingDetails property.
@@ -21,6 +18,7 @@ namespace Different_Shipping_Providers
                     OriginCountry = "Sweeden",
                     DestinationCountry = "Sweeden"
                 },
+                
                 lineItems = new List<Item>()
             };
 
@@ -37,11 +35,14 @@ namespace Different_Shipping_Providers
                     OriginCountry = "Us",
                     DestinationCountry = "Us"
                 },
+
                 lineItems = new List<Item>()
             };
 
             order2.lineItems.Add(new Item("dads", 10, 3.2f));
 
+            //Initialazing List of Orders.
+            var Orders = new List<Order>();
             Orders.Add(order1);
             Orders.Add(order2); 
 
