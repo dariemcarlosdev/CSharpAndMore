@@ -35,8 +35,9 @@ namespace Different_Shipping_Providers
                 ShippingDetails = new ShippingDetails
                 {
                     //Initializing ShippingDetails object properties.
-                    OriginCountry = "Us",
-                    DestinationCountry = "Us"
+                    OriginCountry = "Sweeden",
+                    DestinationCountry = "Us",
+                    DestinationState = "ny"
                 },
                 lineItems = new List<Item>()
             };

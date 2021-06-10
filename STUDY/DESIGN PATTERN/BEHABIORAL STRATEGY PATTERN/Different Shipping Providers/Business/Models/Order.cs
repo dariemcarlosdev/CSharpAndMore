@@ -63,8 +63,13 @@ namespace Different_Shipping_Providers.Business.Models
 
      if (destination == "us")
      {
-                           
-           Tax = GetTotalCost() * 5;  
+                switch (ShippingDetails.DestinationState)
+                {
+                    case "la": return Tax = GetTotalCost() * 5;
+                    case "ny": return Tax = GetTotalCost() * 1;
+                    default: return Tax = 0;
+                      
+                }
        
         //return Tax;    
      }
