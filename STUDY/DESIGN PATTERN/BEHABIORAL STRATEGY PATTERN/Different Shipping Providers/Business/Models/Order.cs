@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Different_Shipping_Providers.Business.Strategies.SalesTax;
 using Different_Shipping_Providers.Business.Strategies.Shipping;
 
 namespace Different_Shipping_Providers.Business.Models
@@ -8,7 +9,7 @@ namespace Different_Shipping_Providers.Business.Models
   //Context
   public class Order
   {
-    private static int Tax {get; set;} 
+
     private int _nroOrder;
     public int NroOrden
     {
@@ -24,57 +25,41 @@ namespace Different_Shipping_Providers.Business.Models
     }
     public List<Item> lineItems;
     public ShippingDetails ShippingDetails { get; set; }
+<<<<<<< HEAD
     private readonly IShippingProviderStrategy _shippingprovider;
 
        /*private readonly IShippingProviderStrategy _IShippingStrategy;
+=======
+    public ISaleTaxStrategy SaleTaxStrategy { get; set; }
+  
 
-    public Order(IShippingProviderStrategy IShippingStrategy)
-    {
-      _IShippingStrategy = IShippingStrategy;
-    }*/
+>>>>>>> 92b3aa5c37f8c46f1421e1b244b80ca46c42fa82
 
-    public int GetTotalCost(){
-        int TotalCost = 0;
+        public int GetTax() {
+
+            if (SaleTaxStrategy == null)
+            {
+                return 0;
+            }
+
+            return SaleTaxStrategy.GetTaxFor(this);
+
+        }
+
+
+        public int GetTotalCost()
+        {
+            int TotalCost = 0;
             foreach (var item in lineItems)
             {
-             TotalCost += item.ItemCost;
+                TotalCost += item.ItemCost;
             }
 
             return TotalCost;
 
-    }
+        }
 
-    public int GetTax()
-    {
-      //int Tax = 0;
-      
-     var destination = ShippingDetails.DestinationCountry.ToLowerInvariant();
-
-     if (destination == "Sweeden")
-     {
-         var origin = ShippingDetails.OriginCountry.ToLowerInvariant();
-         if (destination == origin)
-         {
-          Tax = GetTotalCost() * 2;
-         } 
-        
-        //return Tax;
-     }
-
-     if (destination == "Us")
-     {
-         var origin = ShippingDetails.OriginCountry.ToLowerInvariant();
-         if (destination == origin)
-         {           
-           Tax = GetTotalCost() * 5;  
-         } 
-         
-        //return Tax;    
-     }
-     return Tax;
-    }
-
-    public string TotalWeight()
+        public string TotalWeight()
     {
       float sum = 0;
       foreach (var item in lineItems)
