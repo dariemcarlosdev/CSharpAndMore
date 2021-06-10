@@ -50,25 +50,22 @@ namespace Different_Shipping_Providers.Business.Models
       
      var destination = ShippingDetails.DestinationCountry.ToLowerInvariant();
 
-     if (destination == "Sweeden")
+     if (destination == "sweeden")
      {
          var origin = ShippingDetails.OriginCountry.ToLowerInvariant();
          if (destination == origin)
          {
           Tax = GetTotalCost() * 2;
          } 
-        
+         
         //return Tax;
      }
 
-     if (destination == "Us")
+     if (destination == "us")
      {
-         var origin = ShippingDetails.OriginCountry.ToLowerInvariant();
-         if (destination == origin)
-         {           
+                           
            Tax = GetTotalCost() * 5;  
-         } 
-         
+       
         //return Tax;    
      }
      return Tax;

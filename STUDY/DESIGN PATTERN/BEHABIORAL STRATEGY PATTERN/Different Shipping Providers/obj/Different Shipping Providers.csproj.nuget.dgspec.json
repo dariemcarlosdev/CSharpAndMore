@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers_last\\Different Shipping Providers.csproj": {}
+    "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\Different Shipping Providers.csproj": {}
   },
   "projects": {
-    "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers_last\\Different Shipping Providers.csproj": {
+    "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\Different Shipping Providers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers_last\\Different Shipping Providers.csproj",
+        "projectUniqueName": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\Different Shipping Providers.csproj",
         "projectName": "Different Shipping Providers",
-        "projectPath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers_last\\Different Shipping Providers.csproj",
+        "projectPath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\Different Shipping Providers.csproj",
         "packagesPath": "C:\\Users\\Dariem Carlos\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers_last\\obj\\",
+        "outputPath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dariem Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",

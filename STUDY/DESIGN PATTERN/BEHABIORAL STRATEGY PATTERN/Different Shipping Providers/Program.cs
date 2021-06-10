@@ -12,18 +12,19 @@ namespace Different_Shipping_Providers
             var Orders = new List<Order>();
 
 
-            var order1 = new Order{
-                
+            var order1 = new Order {
+
                 //Initializing Order->ShippingDetails property.
                 ShippingDetails = new ShippingDetails
                 {
                     //Initializing ShippingDetails object properties.
                     OriginCountry = "Sweeden",
                     DestinationCountry = "Sweeden"
-                }
+                },
+                lineItems = new List<Item>()
             };
 
-            order1.lineItems = new List<Item>();
+            
             order1.lineItems.Add(new Item("dads", 3, 3.2f));
             order1.lineItems.Add(new Item("xxx", 5, 8.2f));
             
@@ -36,9 +37,10 @@ namespace Different_Shipping_Providers
                     //Initializing ShippingDetails object properties.
                     OriginCountry = "Us",
                     DestinationCountry = "Us"
-                }
+                },
+                lineItems = new List<Item>()
             };
-            order2.lineItems = new List<Item>();           
+            
             order2.lineItems.Add(new Item("dads", 10, 3.2f));
 
             Orders.Add(order1);
