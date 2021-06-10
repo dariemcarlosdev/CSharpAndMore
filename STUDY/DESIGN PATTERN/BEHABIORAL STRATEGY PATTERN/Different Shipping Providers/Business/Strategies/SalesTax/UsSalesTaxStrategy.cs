@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Different_Shipping_Providers.Business.Strategies.SalesTax
 {
-    class UsSalesTaxStrategy : ISaleTaxStrategy
+    public class UsSalesTaxStrategy : ISaleTaxStrategy
     {
-        public int GetTax(Order order)
+        public int GetTaxFor(Order order)
         {
             switch (order.ShippingDetails.DestinationState.ToLowerInvariant())
             {

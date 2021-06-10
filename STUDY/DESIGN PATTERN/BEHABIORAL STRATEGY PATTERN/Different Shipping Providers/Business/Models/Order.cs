@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Different_Shipping_Providers.Business.Strategies.SalesTax;
 using Different_Shipping_Providers.Business.Strategies.Shipping;
 
 namespace Different_Shipping_Providers.Business.Models
@@ -24,29 +25,35 @@ namespace Different_Shipping_Providers.Business.Models
 
     public List<Item> lineItems;
     public ShippingDetails ShippingDetails { get; set; }
+    public ISaleTaxStrategy SaleTaxStrategy { get; set; }
   
 
-    /*private readonly IShippingProviderStrategy _IShippingStrategy;
 
-    public Order(IShippingProviderStrategy IShippingStrategy)
-    {
-      _IShippingStrategy = IShippingStrategy;
-    }*/
+        public int GetTax() {
 
-    public int GetTotalCost(){
-        int TotalCost = 0;
+            if (SaleTaxStrategy == null)
+            {
+                return 0;
+            }
+
+            return SaleTaxStrategy.GetTaxFor(this);
+
+        }
+
+
+        public int GetTotalCost()
+        {
+            int TotalCost = 0;
             foreach (var item in lineItems)
             {
-             TotalCost += item.ItemCost;
+                TotalCost += item.ItemCost;
             }
 
             return TotalCost;
 
-    }
+        }
 
-  
-
-    public string TotalWeight()
+        public string TotalWeight()
     {
       float sum = 0;
       foreach (var item in lineItems)

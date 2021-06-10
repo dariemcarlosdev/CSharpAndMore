@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Different_Shipping_Providers.Business.Strategies.SalesTax
 {
-    interface ISaleTaxStrategy
+    public interface ISaleTaxStrategy
     {
-        public int GetTax(Order order);
+        public int GetTaxFor(Order order);
     }
 }
