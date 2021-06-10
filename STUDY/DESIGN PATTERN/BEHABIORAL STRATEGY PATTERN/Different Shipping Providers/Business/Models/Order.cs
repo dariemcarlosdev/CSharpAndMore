@@ -7,7 +7,7 @@ namespace Different_Shipping_Providers.Business.Models
 {
   public class Order
   {
-    private static int Tax {get; set;} 
+
     private int _nroOrder;
     public int NroOrden
     {
@@ -44,37 +44,7 @@ namespace Different_Shipping_Providers.Business.Models
 
     }
 
-    public int GetTax()
-    {
-      //int Tax = 0;
-      
-     var destination = ShippingDetails.DestinationCountry.ToLowerInvariant();
-
-     if (destination == "sweeden")
-     {
-         var origin = ShippingDetails.OriginCountry.ToLowerInvariant();
-         if (destination == origin)
-         {
-          Tax = GetTotalCost() * 2;
-         } 
-         
-        //return Tax;
-     }
-
-     if (destination == "us")
-     {
-                switch (ShippingDetails.DestinationState)
-                {
-                    case "la": return Tax = GetTotalCost() * 5;
-                    case "ny": return Tax = GetTotalCost() * 1;
-                    default: return Tax = 0;
-                      
-                }
-       
-        //return Tax;    
-     }
-     return Tax;
-    }
+  
 
     public string TotalWeight()
     {
