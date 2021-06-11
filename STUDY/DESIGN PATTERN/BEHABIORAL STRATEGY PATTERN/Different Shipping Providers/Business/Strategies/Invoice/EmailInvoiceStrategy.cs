@@ -17,10 +17,10 @@ namespace Different_Shipping_Providers.Business.Strategies.Invoice
             {
                 //Logic to send email using Sendgrid API.
 
-                NetworkCredential credentials = new NetworkCredential("dariemdev", "", "");
+                NetworkCredential credentials = new NetworkCredential("darneder", "", "");
                 client.Credentials = credentials;
 
-                MailMessage mail = new MailMessage("softevolutionsl@dariem.dev", "softevolutionsl@gmail.com", "dasdasdd.", "dadasdasdasd.")
+                MailMessage mail = new MailMessage("softevolutionsl@dariem.dev", "softevolutionsl@gmail.com", "dasdadasd.", "dasdadasd.")
                 {
                     Body = body,
                     Subject = "dasdadasd"

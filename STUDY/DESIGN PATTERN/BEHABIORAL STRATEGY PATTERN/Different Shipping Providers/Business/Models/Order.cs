@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using Different_Shipping_Providers.Business.Strategies.SalesTax;
 using Different_Shipping_Providers.Business.Strategies.Shipping;
+using Different_Shipping_Providers.Business.Strategies.Invoice;
 
 namespace Different_Shipping_Providers.Business.Models
 {
@@ -26,6 +27,7 @@ namespace Different_Shipping_Providers.Business.Models
     }
     public List<Item> lineItems;
     public ShippingDetails ShippingDetails { get; set; }
+    public IInvoiceStrategy InvoiceStrategy { get; set; }
 
     //private readonly IShippingProviderStrategy _shippingprovider;
 
@@ -35,7 +37,7 @@ namespace Different_Shipping_Providers.Business.Models
 
 
         //Using the Strategy
-        //If we dont pass the Strategy to our method, we´re going to use the one that's been set on our Context.
+        //If we don't pass the Strategy to our method, we´re going to use the one that's been set on our Context.
         //optional parameter to our GetTax method.
 
         //Whenever a method take an interface to allow alternative outcome of computation we are leveraging the strategy pattern.
