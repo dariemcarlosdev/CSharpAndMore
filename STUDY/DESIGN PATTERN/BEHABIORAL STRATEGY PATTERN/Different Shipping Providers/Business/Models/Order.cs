@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 using Different_Shipping_Providers.Business.Strategies.SalesTax;
 using Different_Shipping_Providers.Business.Strategies.Shipping;
@@ -30,18 +31,25 @@ namespace Different_Shipping_Providers.Business.Models
 
 
     public ISaleTaxStrategy SaleTaxStrategy { get; set; }
-  
 
 
 
-        public int GetTax() {
+        //Using the Strategy
+        //If we dont pass the Strategy to our method, we´re going to use the one that's been set on our Context.
+        //optional parameter to our GetTax method.
 
-            if (SaleTaxStrategy == null)
+        //Whenever a method take an interface to allow alternative outcome of computation we are leveraging the strategy pattern.
+        public int GetTax( [Optional] ISaleTaxStrategy saleTaxStrategy)
+        {
+            //The null-coalescing operator ?? returns the value of its left-hand operand if it isn't null; otherwise, it evaluates the right-hand operand and returns its result
+            var strategy = saleTaxStrategy ?? SaleTaxStrategy;
+
+            if (strategy == null)
             {
                 return 0;
             }
 
-            return SaleTaxStrategy.GetTaxFor(this);
+            return strategy.GetTaxFor(this);
 
         }
 
@@ -51,6 +59,7 @@ namespace Different_Shipping_Providers.Business.Models
             int TotalCost = 0;
             foreach (var item in lineItems)
             {
+                
                 TotalCost += item.ItemCost;
             }
 
