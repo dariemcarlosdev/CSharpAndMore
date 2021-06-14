@@ -11,7 +11,7 @@ namespace Different_Shipping_Providers.Business.Models
   //Context
   public class Order
   {
-
+  
     private int _nroOrder;
     public int NroOrden
     {
@@ -27,6 +27,7 @@ namespace Different_Shipping_Providers.Business.Models
     }
     public List<Item> lineItems;
     public ShippingDetails ShippingDetails { get; set; }
+    public ShippingStatus ShippingStatus {get; set;} = ShippingStatus.WaitingForPayment;
     public IInvoiceStrategy InvoiceStrategy { get; set; }
 
     //private readonly IShippingProviderStrategy _shippingprovider;
@@ -77,6 +78,16 @@ namespace Different_Shipping_Providers.Business.Models
         sum += item.ItemWeight;
       }
       return sum.ToString("0.00");
+    }
+
+    public void FinalizeOrder(){
+
+      if (SelectedPayments.Any(x=>x.PaymentProvider==ShippingStatus.WaitingForPayment))
+      {
+        InvoiceStrategy.Generate(this);
+        ShippingStatus = ShippingStatus.ReadyForShippment;
+      }
+
     }
 
   }
