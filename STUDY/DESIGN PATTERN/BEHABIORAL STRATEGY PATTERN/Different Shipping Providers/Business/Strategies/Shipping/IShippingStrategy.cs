@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Different_Shipping_Providers.Business.Strategies.Shipping
 {
-    public interface IShippingProviderStrategy
+    public interface IShippingStrategy
     {
-        void ShipOrder(Order order);
+        void Ship(Order order);
     }
 }

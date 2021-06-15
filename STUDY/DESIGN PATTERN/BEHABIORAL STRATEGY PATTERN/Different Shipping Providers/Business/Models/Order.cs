@@ -5,6 +5,7 @@ using System.Text;
 using Different_Shipping_Providers.Business.Strategies.SalesTax;
 using Different_Shipping_Providers.Business.Strategies.Shipping;
 using Different_Shipping_Providers.Business.Strategies.Invoice;
+using System.Linq;
 
 namespace Different_Shipping_Providers.Business.Models
 {
@@ -27,13 +28,23 @@ namespace Different_Shipping_Providers.Business.Models
     }
     public List<Item> lineItems;
     public ShippingDetails ShippingDetails { get; set; }
-    public ShippingStatus ShippingStatus {get; set;} = ShippingStatus.WaitingForPayment;
+    public ShippingStatus ShippingStatus { get; set; } = ShippingStatus.WaitingForPayment;
     public IInvoiceStrategy InvoiceStrategy { get; set; }
 
     //private readonly IShippingProviderStrategy _shippingprovider;
 
-
+    public IShippingStrategy ShippingStrategy { get; set; }
     public ISaleTaxStrategy SaleTaxStrategy { get; set; }
+    public List<Payment> SelectedPayments { get; set; }
+    public int AmountDue {
+
+            get 
+            {
+                return this.GetTax() + this.GetTotalCost();
+            
+            }
+                
+                }
 
 
 
@@ -80,14 +91,24 @@ namespace Different_Shipping_Providers.Business.Models
       return sum.ToString("0.00");
     }
 
+     
+            
     public void FinalizeOrder(){
 
-      if (SelectedPayments.Any(x=>x.PaymentProvider==ShippingStatus.WaitingForPayment))
+      if (SelectedPayments.Any( x => x.PaymentProvider == PaymentProvider.Invoice) &&
+                AmountDue > 0 &&
+                ShippingStatus == ShippingStatus.WaitingForPayment
+                )
       {
         InvoiceStrategy.Generate(this);
         ShippingStatus = ShippingStatus.ReadyForShippment;
       }
 
+            else if (AmountDue > 0)
+            {
+                throw new Exception("Unable to process Order");
+            }
+            ShippingStrategy.Ship(this);
     }
 
   }

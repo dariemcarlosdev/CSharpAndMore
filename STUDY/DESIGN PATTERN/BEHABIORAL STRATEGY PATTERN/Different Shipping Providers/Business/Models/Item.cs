@@ -7,8 +7,6 @@
 
         public float ItemWeight { get; set; }
 
-       
-
         public Item(string ItemName, int ItemCost, float Weight)
         {
             this.ItemName = ItemName;

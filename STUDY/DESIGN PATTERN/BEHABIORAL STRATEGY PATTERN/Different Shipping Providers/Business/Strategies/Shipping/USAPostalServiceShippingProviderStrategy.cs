@@ -4,9 +4,9 @@ using Different_Shipping_Providers.Business.Models;
 
 namespace Different_Shipping_Providers.Business.Strategies.Shipping
 {
-  public class USAPostalServiceShippingProviderStrategy : IShippingProviderStrategy
+  public class USAPostalServiceShippingProviderStrategy : IShippingStrategy
   {
-    public void ShipOrder(Order order)
+    public void Ship(Order order)
     {
       using (var client = new HttpClient())
       {

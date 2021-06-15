@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Different_Shipping_Providers.Business.Strategies.Shipping
 {
-    public class FEDEXShippingProviderStrategy : IShippingProviderStrategy
+    public class FEDEXShippingProviderStrategy : IShippingStrategy
     {
-        public void ShipOrder(Order order)
+        public void Ship(Order order)
         {
             using (var client = new HttpClient())
             {
