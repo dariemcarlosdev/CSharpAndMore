@@ -1,0 +1,9 @@
+INVOICE DATE: 6/15/2021 5:38:42 PM -04:00
+NAME|PRICE|WEIGHT
+dads|3|3.2
+
+xxx|5|8.2
+
+TAX TOTAL: 16
+TOTAL: 24
+CHIPPED WITH: Different_Shipping_Providers.Business.Strategies.Shipping.DHLShippingProviderStrategy

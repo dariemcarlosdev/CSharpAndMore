@@ -53,7 +53,6 @@ namespace Different_Shipping_Providers
                 },
 
                 lineItems = new List<Item>(),
-
                 SelectedPayments = new List<Payment>(),
               
                 //Setting our Strategy as a property on a particular Order (our Context )
@@ -69,7 +68,7 @@ namespace Different_Shipping_Providers
             order.SelectedPayments.Add(new Payment { PaymentProvider = PaymentProvider.Invoice });
 
             order.lineItems.Add(new Item("dads", 3, 3.2f));
-            order.lineItems.Add(new Item("xxx", 5, 8.2f));
+            order.lineItems.Add(new Item("zdsddd", 5, 8.2f));
 
 
 

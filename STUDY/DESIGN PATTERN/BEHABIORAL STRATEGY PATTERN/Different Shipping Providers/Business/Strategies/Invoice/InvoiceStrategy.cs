@@ -21,9 +21,11 @@ namespace Different_Shipping_Providers.Business.Strategies.Invoice
             foreach (var item in order.lineItems)
             {
                 invoice += $"{item.ItemName}|{item.ItemCost}|{item.ItemWeight}";
+              
+                invoice += Environment.NewLine + Environment.NewLine;
             }
 
-            invoice += Environment.NewLine + Environment.NewLine;
+            
 
             var tax = order.GetTax();
             var total = order.GetTotalCost() + tax;
