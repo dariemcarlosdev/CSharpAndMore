@@ -1,0 +1,36 @@
+using System;
+
+namespace Singleton.Singleton
+{
+    /*
+    Thread-safe Singleton Design Pattern implementations.
+    */
+    public sealed class Singleton
+    {
+        private static int counter = 0;
+        private static Singleton instance = null;
+        public static Singleton GetSingleton 
+        {
+             get
+        {
+            if (instance == null)
+            {
+                instance = new Singleton();                
+            }
+            return instance;
+        } 
+        }
+
+        private Singleton()
+        {
+            counter++;
+            Console.WriteLine("{0} object instance have been created", counter.ToString());
+        }
+
+        public void PrintMessage(string message)
+        {
+            Console.WriteLine(message);
+        }
+        
+    }
+}
