@@ -13,18 +13,15 @@ namespace Singleton.Singleton
         {
              get
         {
-            if (instance == null)
-            {
-                instance = new Singleton();                
-            }
-            return instance;
-        } 
+           
+             return  instance ?? new Singleton();                
+           
         }
 
         private Singleton()
         {
             counter++;
-            Console.WriteLine("{0} object instance have been created", counter.ToString());
+            Console.WriteLine("{0} objects instance have been created", counter.ToString());
         }
 
         public void PrintMessage(string message)

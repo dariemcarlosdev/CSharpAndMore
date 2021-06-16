@@ -67,10 +67,8 @@ namespace Singleton.Singleton
 
             get {
 
-                if (instance == null) {
-                    instance = new Singleton1();
-                }
-                return instance;
+               return instance ?? new Singleton1();
+               
             }
 
         }

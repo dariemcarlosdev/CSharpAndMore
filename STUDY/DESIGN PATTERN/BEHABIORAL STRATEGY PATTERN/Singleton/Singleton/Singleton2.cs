@@ -14,11 +14,9 @@ namespace Singleton.Singleton
         {
             get
             {
-                if (instance == null)
-                {
-                    instance = new Singleton2();
-                }
-                return instance;
+                
+                 return   instance ??= new Singleton2();
+                
             }
 
         }
