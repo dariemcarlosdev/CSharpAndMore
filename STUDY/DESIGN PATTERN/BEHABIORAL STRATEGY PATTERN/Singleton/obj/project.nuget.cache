@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QWUIPK/fcpDcr1ScNeVbnSbNxtccZeztRDoFTGuyiAx/b3QxqyklPHkTH8tyZYjnwYuIegTq7BtlwTCZNwFwpg==",
+  "dgSpecHash": "lbIfCIODxweeiuRETa2DhQ0ug4uJjcmjC/2xTLqgORowMuAPr7CYFbMX3ejwgnJNmwSp2H96tlcHxj9ez5N+0w==",
   "success": true,
-  "projectFilePath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Singleton\\Singleton.csproj",
+  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Singleton\\Singleton.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
