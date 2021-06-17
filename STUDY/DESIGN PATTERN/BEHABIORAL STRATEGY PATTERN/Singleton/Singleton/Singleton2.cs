@@ -1,10 +1,16 @@
 using System;
 namespace Singleton.Singleton
 {
-    
-    /*why do we need to use the sealed keyword in the singleton class as we already have a private constructor within the class which will restrict the class for further inheritance.
-    Sealed prevent the class inheritance. This implementation is not thread-safe. The way we implement the Singleton class allows two different threads at the same time to be evaluated
+
+    /*
+     why do we need to use the sealed keyword in the singleton class as we already have a private constructor within the class which will restrict the class for further inheritance.
+     Sealed prevent the class inheritance. This implementation is not thread-safe. The way we implement the Singleton class allows two different threads at the same time to be evaluated
      the test if (instance == null) and found it to be true and they both create the instances, which violates the singleton design pattern.
+
+    By removing the sealed keyword we can inherit the singleton class, and also possible to create multiple objects of the singleton class. 
+    This violates singleton design principles. This Singleton implementation is not thread-safe.
+
+    No Thread safety in a multithread environment:
     */
     public class Singleton2
     {

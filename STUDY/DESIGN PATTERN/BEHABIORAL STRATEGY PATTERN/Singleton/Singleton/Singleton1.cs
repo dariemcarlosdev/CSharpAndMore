@@ -49,7 +49,7 @@ namespace Singleton.Singleton
     
     -How to Implement Singleton Pattern in C# code?
 
-    1. No Thread Safe Singleton implementation.
+    1. not Thread safety in a multithread environment:
     */
     public sealed class Singleton1
     {

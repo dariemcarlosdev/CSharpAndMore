@@ -27,13 +27,36 @@ namespace Singleton
             derivedObject.PrintMessage("From derived");
             */
 
-            Parallel.EventHandler temp = MyEvent;
-            if (temp != null)
-            {
-                temp();
-            }
+            
+            /*
+             * Example 3 using multi-thread programming:
+             * 
+             * To invoke method to access the GetInstance property parallely, means at the same time multiple thread are accessing the GetInstance property.
+            Multithread enviroment*/
+            Parallel.Invoke(
+                () => PrintTeacherDetails(),
+                () => PrintStudentDetails()
+                );
 
             Console.ReadKey();
         }
+
+
+        private static void PrintTeacherDetails()
+        {
+            //Invoke get instance property on Singleton Class.
+            var fromTeacher = Singleton3.GetInstance;
+            fromTeacher.PrintMessage("From Teacher");
+        }
+
+        private static void PrintStudentDetails()
+        { 
+            //Invoke get instance property on Singleton Class.
+            var fromStudent = Singleton3.GetInstance;
+            fromStudent.PrintMessage("From Student");
+
+        }
+
+
     }
 }
