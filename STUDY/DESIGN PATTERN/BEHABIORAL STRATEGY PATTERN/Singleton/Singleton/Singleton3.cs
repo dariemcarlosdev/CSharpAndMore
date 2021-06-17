@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,8 +11,7 @@ namespace Singleton.Singleton
 
         Handler Thread-safe Singleton Design Pattern implementations use Locks to control the thread race condition in a multithread enviroment.
         
-
-        
+        To remember: Locks are the best option to handle the singleton instance.        
 
         Lazy Initialization in the Singleton Design Pattern:
 
