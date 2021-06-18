@@ -11,7 +11,7 @@ namespace Singleton.Singleton
     You need to use Lazy loading when the cost of object creation is to high as well as the use of that object is very rare, and improve the app performance. We can use Lazy keyword to make the singleton instance as Lazy loading.
 
      */
-    class Singleton5
+    public sealed class Singleton5
     {
 
         private static int counter = 0;

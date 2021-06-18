@@ -17,7 +17,7 @@ namespace Singleton.Singleton
 
 
     //This class is thread-safety without using Lock variable, because the CLR take care of the variable initialization as well as thread safety in eager loading.
-    class Singleton4
+    public sealed class Singleton4
     {
 
         private static int counter = 0;
