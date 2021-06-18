@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Singleton\\Singleton.csproj",
+      "projectUniqueName": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Singleton\\Singleton.csproj",
       "projectName": "Singleton",
-      "projectPath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Singleton\\Singleton.csproj",
+      "projectPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Singleton\\Singleton.csproj",
       "packagesPath": "C:\\Users\\Dariem Carlos\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Singleton\\obj\\",
+      "outputPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Singleton\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dariem Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",

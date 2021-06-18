@@ -37,3 +37,16 @@ D:\Learning\C#\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Deb
 D:\Learning\C#\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.dll
 D:\Learning\C#\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.pdb
 D:\Learning\C#\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.genruntimeconfig.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\bin\Debug\netcoreapp3.1\Singleton.exe
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\bin\Debug\netcoreapp3.1\Singleton.deps.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.dev.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\bin\Debug\netcoreapp3.1\Singleton.dll
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\bin\Debug\netcoreapp3.1\Singleton.pdb
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.csprojAssemblyReference.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfoInputs.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfo.cs
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.csproj.CoreCompileInputs.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.dll
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.pdb
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Singleton\obj\Debug\netcoreapp3.1\Singleton.genruntimeconfig.cache
