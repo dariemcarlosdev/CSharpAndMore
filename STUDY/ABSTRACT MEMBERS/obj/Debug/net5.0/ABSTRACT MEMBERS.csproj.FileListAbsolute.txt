@@ -1,0 +1,16 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\bin\Debug\net5.0\ABSTRACT MEMBERS.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\bin\Debug\net5.0\ABSTRACT MEMBERS.deps.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\bin\Debug\net5.0\ABSTRACT MEMBERS.runtimeconfig.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\bin\Debug\net5.0\ABSTRACT MEMBERS.runtimeconfig.dev.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\bin\Debug\net5.0\ABSTRACT MEMBERS.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\bin\Debug\net5.0\ref\ABSTRACT MEMBERS.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\bin\Debug\net5.0\ABSTRACT MEMBERS.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ABSTRACT MEMBERS.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ABSTRACT MEMBERS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ABSTRACT MEMBERS.AssemblyInfoInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ABSTRACT MEMBERS.AssemblyInfo.cs
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ABSTRACT MEMBERS.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ABSTRACT MEMBERS.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ref\ABSTRACT MEMBERS.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ABSTRACT MEMBERS.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ABSTRACT MEMBERS\obj\Debug\net5.0\ABSTRACT MEMBERS.genruntimeconfig.cache
