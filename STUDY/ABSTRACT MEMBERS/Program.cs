@@ -30,8 +30,7 @@ namespace ABSTRACT_MEMBERS
              var obj7 = new StaticNonStaticConstructor();
               Console.ReadKey();
 
-             // //Output Example Static Class.
-
+             //Output Example Static Class.
              Console.WriteLine("Select convertion type.");
              Console.WriteLine("1. Celsius to Fahrenheit");
              Console.WriteLine("2. Fahrenheit to Celsius");
