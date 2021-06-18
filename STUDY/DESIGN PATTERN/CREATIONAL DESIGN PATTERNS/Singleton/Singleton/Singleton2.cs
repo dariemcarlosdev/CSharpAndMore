@@ -12,21 +12,41 @@ namespace Singleton.Singleton
 
     No Thread safety in a multithread environment:
     */
+
+
+    // The Singleton class defines the `GetInstance` method that serves as an
+    // alternative to constructor and lets clients access the same instance of
+    // this class over and over.
     public class Singleton2
     {
         private static int counter = 0;
-        private static Singleton2 instance  = null;
+
+        // The Singleton's instance is stored in a static field. There there are
+        // multiple ways to initialize this field, all of them have various pros
+        // and cons. In this example we'll show the simplest of these ways,
+        // which, however, doesn't work really well in multithreaded program.
+        private static Singleton2 _instance  = null;
+
+
+
+
+        // This is the static method that controls the access to the singleton
+        // instance. On the first run, it creates a singleton object and places
+        // it into the static field. On subsequent runs, it returns the client
+        // existing object stored in the static field
         public static Singleton2  GetInstance
         {
             get
             {
                 
-                 return   instance ??= new Singleton2();
+                 return   _instance ??= new Singleton2();
                 
             }
 
         }
         //Private constructor prevent external instantiations of the class.
+        // The Singleton's constructor should always be private to prevent
+        // direct construction calls with the `new` operator.
         private Singleton2()
         {
             counter++;

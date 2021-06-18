@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\335286\\.nuget\\packages\\": {}
+    "C:\\Users\\Dariem Carlos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\ABSTRACT MEMBERS\\ABSTRACT MEMBERS.csproj",
+      "projectUniqueName": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\ABSTRACT MEMBERS\\ABSTRACT MEMBERS.csproj",
       "projectName": "ABSTRACT MEMBERS",
-      "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\ABSTRACT MEMBERS\\ABSTRACT MEMBERS.csproj",
-      "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\ABSTRACT MEMBERS\\obj\\",
+      "projectPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\ABSTRACT MEMBERS\\ABSTRACT MEMBERS.csproj",
+      "packagesPath": "C:\\Users\\Dariem Carlos\\.nuget\\packages\\",
+      "outputPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\ABSTRACT MEMBERS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\335286\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dariem Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
