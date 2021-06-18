@@ -27,7 +27,7 @@ namespace ABSTRACT_MEMBERS
     public class StaticMembersExamples
     {
         public int x;
-        public static int y =20;
+        public static int y = 20;
         public StaticMembersExamples(int x)
         {
             this.x = x;
