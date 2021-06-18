@@ -2,7 +2,7 @@ namespace ABSTRACT_MEMBERS
 {
     /*
     A static class can contain only static members in it. It is not possible to create an instance of a static class,because it contains only static members.
-     And we know we can access the static members of a class by using the class name. 
+     and as we know we can access the static members of a class by using the class name. 
     */
     public static class StaticClass
     {
