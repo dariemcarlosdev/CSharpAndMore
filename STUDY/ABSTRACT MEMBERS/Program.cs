@@ -11,7 +11,6 @@ namespace ABSTRACT_MEMBERS
             Console.WriteLine($"static member: {StaticMembersExamples.y}");
 
             var obj1 = new StaticMembersExamples(30);
-
             var obj2 = new StaticMembersExamples(40);
 
             Console.WriteLine($"obj1 x: {obj1.x} obj2 x: {obj2.x}");
