@@ -1,0 +1,46 @@
+﻿Why do we need the Dependency Injection in C#?
+
+The Dependency Injection is a design pattern that allows to develop loosely coupled software components. 
+It's used to reduce the tight coupling between the software components. As a result, we can easily manage future changes and other complexity in any application.
+
+What is Tight Coupling in Software Design?
+
+Tight coupling means classes and objects are dependent on each other. When a class is dependent on another concrete class,
+then it is said to be a tight coupling between these two classes. If we change the dependent object, then we also need to change the classes where this dependent object is used.
+
+What is Loose Coupling in Software Design?
+
+Loosely coupling means two objects are independent of each other. That means if we change one object then it will not affect another object.
+The loosely coupled nature of software development allows us to manage future changes easily and also allows us to manage the complexity of the application.
+
+What is Dependency Injection Design Pattern in C#?
+
+It a process in which we inject the object of a class into a class that depends on that object.
+The Dependency Injection design pattern is the most commonly used design pattern nowadays to remove the dependencies between the objects.
+
+Dependency Injection (DI) is a design pattern used to implement IoC(Inversion of Control). 
+It allows the creation of dependency objects outside of a class and provides those objects to a class in different ways.
+Using DI, we move the creation and binding of the dependent objects outside of the class that depends on them. 
+
+Dependency Injection pattern involves 3 types of classes:
+
+Client Class: The Client class (dependent class) is a class that depends on the service class.
+Service Class: The Service class (dependency) is a class that provides service to the client class.
+Injector Class: The Injector class injects the service class object into the client class.
+
+For better understanding, please have a look at the following diagram.
+
+https://dotnettutorials.net/wp-content/uploads/2018/07/Dependency-Injection-Design-Pattern.png
+
+the injector class creates an object of the service class and injects that object to a client class. 
+In this way, the Dependency Injection pattern separates the responsibility of creating an object of the service class out of the client class.
+
+Different Types of Dependency Injection in C#?
+
+The injector class injects the dependency object to a class in three different ways:
+
+Constructor Injection: When the Injector injects the dependency object (i.e. service) through the client class constructor, then it is called as Constructor Injection.
+
+Property Injection: When the Injector injects the dependency object (i.e. service) through the public property of the client class, then it is called as Property Injection. This is also called as the Setter Injection.
+
+Method Injection: When the Injector injects the dependency object (i.e. service) through a public method of the client class, then it is called as Method Injection. In this case, the client class implements an interface that declares the method(s) to supply the dependency object and the injector uses this interface to supply the dependency object (i.e. service) to the client class.

@@ -1,0 +1,13 @@
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\bin\Debug\netcoreapp3.1\DepedencyInjection.exe
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\bin\Debug\netcoreapp3.1\DepedencyInjection.deps.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\bin\Debug\netcoreapp3.1\DepedencyInjection.runtimeconfig.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\bin\Debug\netcoreapp3.1\DepedencyInjection.runtimeconfig.dev.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\bin\Debug\netcoreapp3.1\DepedencyInjection.dll
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\bin\Debug\netcoreapp3.1\DepedencyInjection.pdb
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\obj\Debug\netcoreapp3.1\DepedencyInjection.csprojAssemblyReference.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\obj\Debug\netcoreapp3.1\DepedencyInjection.AssemblyInfoInputs.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\obj\Debug\netcoreapp3.1\DepedencyInjection.AssemblyInfo.cs
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\obj\Debug\netcoreapp3.1\DepedencyInjection.csproj.CoreCompileInputs.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\obj\Debug\netcoreapp3.1\DepedencyInjection.dll
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\obj\Debug\netcoreapp3.1\DepedencyInjection.pdb
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\DepedencyInjection\obj\Debug\netcoreapp3.1\DepedencyInjection.genruntimeconfig.cache

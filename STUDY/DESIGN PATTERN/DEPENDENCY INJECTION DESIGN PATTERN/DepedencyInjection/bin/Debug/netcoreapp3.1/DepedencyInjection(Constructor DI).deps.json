@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DepedencyInjection(Constructor DI)/1.0.0": {
+        "runtime": {
+          "DepedencyInjection(Constructor DI).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DepedencyInjection(Constructor DI)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

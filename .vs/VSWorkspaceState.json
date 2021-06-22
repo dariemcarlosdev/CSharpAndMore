@@ -1,15 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ASP.NET Angular\\DatingApp",
-    "\\ASP.NET Angular\\DatingApp\\DatingApp-SPA",
-    "\\ASP.NET Angular\\DatingApp\\DatingApp.API",
-    "\\EXERCISES\\HAND_ON_EXERCISES",
     "\\STUDY",
     "\\STUDY\\DESIGN PATTERN",
-    "\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN",
-    "\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers"
+    "\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS",
+    "\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Singleton"
   ],
-  "SelectedNode": "\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\Different Shipping Providers.sln",
+  "SelectedNode": "\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Singleton\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

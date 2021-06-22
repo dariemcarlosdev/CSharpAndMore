@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection.csproj": {}
+    "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection(Constructor DI).csproj": {}
   },
   "projects": {
-    "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection.csproj": {
+    "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection(Constructor DI).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection.csproj",
-        "projectName": "DepedencyInjection",
-        "projectPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection.csproj",
+        "projectUniqueName": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection(Constructor DI).csproj",
+        "projectName": "DepedencyInjection(Constructor DI)",
+        "projectPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection(Constructor DI).csproj",
         "packagesPath": "C:\\Users\\Dariem Carlos\\.nuget\\packages\\",
         "outputPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\obj\\",
         "projectStyle": "PackageReference",
