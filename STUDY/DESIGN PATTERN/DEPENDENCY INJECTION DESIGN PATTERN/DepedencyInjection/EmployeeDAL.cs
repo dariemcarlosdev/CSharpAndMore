@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace DepedencyInjection
-{
+{   
+    //Dedendency Class Interface based. EmployeeDAL object is the dependency object as this object is going to be used by EmployeeBL Class, 
+    //so we create the interface and then this EmployeeDAL implement that interface.
     public class EmployeeDAL : IEmployeeDAL
     {
         public  List<Employee> SelectAllEmployees()

@@ -6,7 +6,7 @@ using System.Text;
 namespace DepedencyInjection
 {
 
-    //Client Class: Depend on the Service Class.
+    //Client Class (Dependent Class): Depend on the Service Class.
  public  class EmployeeBL
 
     /*
@@ -25,7 +25,16 @@ namespace DepedencyInjection
         }
 
         public List<Employee> GetEmployees()
-        {
+        {   
+            /*
+            This is tight coupling because the EmployeeDAL is tightly coupled with the EmployeeBL class ( EmployeeBL depend on the class EmployeeDL class). 
+            Every time the EmployeeDAL class changes, the EmployeeBL class also needs to change.             
+            
+            var employeeDAL = new EmployeeDAL();
+            return employeeDAL.SelectAllEmployees();
+
+            */
+            
             return employeeDAL.SelectAllEmployees();
         }
  }
