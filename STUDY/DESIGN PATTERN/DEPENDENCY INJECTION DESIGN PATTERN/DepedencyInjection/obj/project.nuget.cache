@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nv9Q5WrAw0uzrsrjaHvAHg0Ymbb8NjoIqyzpMT2S7Jy4ujGhsdaUFcq1GTg/8Hz/7T873IqumE+RAcFiBqT0lA==",
+  "dgSpecHash": "eCDBS45wymiiHiMizUvHLWNu+SE+ICe7OWqrOOAe506yx14zAczGMUrF/u+1V7nstbQyoQnTry2yI5ZKBSuLlQ==",
   "success": true,
-  "projectFilePath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\DepedencyInjection(Constructor DI).csproj",
+  "projectFilePath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\ConstructorDI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

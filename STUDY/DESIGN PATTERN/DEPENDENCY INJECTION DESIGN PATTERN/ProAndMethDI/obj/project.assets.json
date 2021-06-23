@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\ConstructorDI.csproj",
-      "projectName": "ConstructorDI",
-      "projectPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\ConstructorDI.csproj",
+      "projectUniqueName": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\ProAndMethDI\\PropertyDI.csproj",
+      "projectName": "PropertyDI",
+      "projectPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\ProAndMethDI\\PropertyDI.csproj",
       "packagesPath": "C:\\Users\\Dariem Carlos\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\DepedencyInjection\\obj\\",
+      "outputPath": "D:\\Learning\\C#\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\DEPENDENCY INJECTION DESIGN PATTERN\\ProAndMethDI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dariem Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,4 @@
+﻿What is Property Dependency Injection?
+
+In PDI we need to supply the dependency object through a public property in the Client Class.
+

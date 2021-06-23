@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DepedencyInjection
 {   
-    //Dedendency Class Interface based. EmployeeDAL object is the dependency object as this object is going to be used by EmployeeBL Class, 
+    //Dedendency Class Interface based. EmployeeDAL object is the dependency object as this object is going to be used by EmployeeBL Class (Dependent Class), 
     //so we create the interface and then this EmployeeDAL implement that interface.
     public class EmployeeDAL : IEmployeeDAL
     {

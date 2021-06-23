@@ -1,0 +1,13 @@
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\bin\Debug\netcoreapp3.1\PropertyDI.exe
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\bin\Debug\netcoreapp3.1\PropertyDI.deps.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\bin\Debug\netcoreapp3.1\PropertyDI.runtimeconfig.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\bin\Debug\netcoreapp3.1\PropertyDI.runtimeconfig.dev.json
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\bin\Debug\netcoreapp3.1\PropertyDI.dll
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\bin\Debug\netcoreapp3.1\PropertyDI.pdb
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\obj\Debug\netcoreapp3.1\PropertyDI.csprojAssemblyReference.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\obj\Debug\netcoreapp3.1\PropertyDI.AssemblyInfoInputs.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\obj\Debug\netcoreapp3.1\PropertyDI.AssemblyInfo.cs
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\obj\Debug\netcoreapp3.1\PropertyDI.csproj.CoreCompileInputs.cache
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\obj\Debug\netcoreapp3.1\PropertyDI.dll
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\obj\Debug\netcoreapp3.1\PropertyDI.pdb
+D:\Learning\C#\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\obj\Debug\netcoreapp3.1\PropertyDI.genruntimeconfig.cache

@@ -26,7 +26,7 @@ Using DI, we move the creation and binding of the dependent objects outside of t
 
 Client Class: The Client class (dependent class) is a class that depends on the service class.
 Service Class: The Service class (dependency) is a class that provides service to the client class.
-Injector Class: The Injector class injects the service class object into the client class.
+Injector Class: The Injector class injects the service class object (dependency object) into the client class (dependent Class).
 
 For better understanding, please have a look at the following diagram.
 
