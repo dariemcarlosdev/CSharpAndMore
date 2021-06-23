@@ -49,3 +49,19 @@ This design pattern support testing as the dependencies are passed through the c
 Property Injection: When the Injector injects the dependency object (i.e. service) through the public property of the client class, then it is called as Property Injection. This is also called as the Setter Injection.
 
 Method Injection: When the Injector injects the dependency object (i.e. service) through a public method of the client class, then it is called as Method Injection. In this case, the client class implements an interface that declares the method(s) to supply the dependency object and the injector uses this interface to supply the dependency object (i.e. service) to the client class.
+
+
+What are the advantages of using Dependency Injection in C#?.
+
+1- The Dependency Injection Design Pattern allows us to develop loosely coupled software components.
+2- Using Dependency Injection, it is very easy to swap with a different implementation of a component, as long as the new component just implements the interface type.
+
+Dependency Injection Container:
+
+There are a lot of Dependency Injection Containers are available in the market which implements the dependency injection design pattern.
+Some of the commonly used Dependency Injection Containers are as follows.
+
+Unity
+Castle Windsor
+StructureMap
+Spring.NET

@@ -8,8 +8,8 @@ namespace PropertyDI
         {
             var employeeBL = new EmployeeBL();
 
-            //We are using the public property employeeDataObject in order to access the instance of ImployeeID and setting the dependency object throught the public porperty setter method.(Setter Dependency Injection)
-            employeeBL.employeeDataObject = new EmployeeDAL();
+            //We are using the public property EmployeeDAL in order to access the instance of ImployeeDAL and setting the dependency object throught the public porperty setter method.(Setter Dependency Injection)
+            employeeBL.EmployeeDAL = new EmployeeDAL();
 
 
             var listEmployees = employeeBL.GetEmployees();

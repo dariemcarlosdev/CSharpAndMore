@@ -17,11 +17,11 @@ namespace DepedencyInjection
     As we are injecting the dependency object through the constructor, it is called as constructor dependency injection in C#.
      */
     {
-        private readonly IEmployeeDAL employeeDAL;
+        private readonly IEmployeeDAL _employeeDAL;
 
         public EmployeeBL(IEmployeeDAL employeeDAL)
         {
-            this.employeeDAL = employeeDAL;
+            this._employeeDAL = employeeDAL;
         }
 
         public List<Employee> GetEmployees()

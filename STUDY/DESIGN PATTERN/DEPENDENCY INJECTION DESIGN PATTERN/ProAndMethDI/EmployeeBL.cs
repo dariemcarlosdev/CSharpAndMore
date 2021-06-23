@@ -14,7 +14,7 @@ namespace PropertyDI
         //how we can implement the Property or you can say setter dependency injection in C#.
 
         //We are injecting the dependency object troughout the public property employeeDataObject. This property allow to access the instance of IEmployeeID
-        public IEmployeeDAL employeeDataObject
+        public IEmployeeDAL EmployeeDAL
         {
             //we are setting the object through the setter property, we can call this as Setter Dependency Injection in C#.
             set
@@ -24,7 +24,7 @@ namespace PropertyDI
 
             get 
             {
-                if (employeeDataObject == null)
+                if (EmployeeDAL == null)
                 {
                     throw new Exception("The Employee object is not initialized");
                 }

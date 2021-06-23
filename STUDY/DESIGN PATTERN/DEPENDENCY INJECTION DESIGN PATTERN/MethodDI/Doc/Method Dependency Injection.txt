@@ -1,0 +1,7 @@
+﻿What is Method Dependency Injection in C#?
+
+In Method Dependency Injection, we need to supply the dependency object through a public method of the client class. 
+
+When do we need to use the Method Dependency Injection in C#?
+
+when the entire class does not depend on the dependency object but, a single method of that class depends on the dependency object.
