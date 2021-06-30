@@ -1,0 +1,15 @@
+﻿- A factory is an object which is used for creating other objects.	In simple words, a class with a method which one will create and return different objects types based on the input parameter, it received.
+
+- In the Factory Design Pattern, we create an object without exposing the creation logic to the client and the client will refer to the newly created object using a commun interface.
+
+- If we have a superclass/SuperInterface and n number of subclasses, and based on the data provided, if we have to create and return the object of one of the subclasses, then we need to use the factory design pattern.
+
+The basic principle behind the factory design pattern is that, at run time, we get an object of similar type based on the parameter we pass. 
+
+Understanding the Factory Design Pattern with one real-time example:
+
+
+We have three credit card classes i.e. MoneyBack, Titanium, and Platinum and these three classes are the subclasses of CreditCard superclass or super interface.
+The CreditCard superclass or super interface has three methods i.e. GetCardType, GetCreditLimit, and GetAnnualCharge. The subclasses i.e. MoneyBack, Titanium, and Platinum have implemented the above three methods.
+
+https://dotnettutorials.net/lesson/factory-design-pattern-csharp/
