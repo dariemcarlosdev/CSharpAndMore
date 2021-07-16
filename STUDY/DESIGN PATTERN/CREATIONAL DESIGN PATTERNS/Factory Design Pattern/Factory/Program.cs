@@ -8,8 +8,12 @@ namespace Factory
     {
         static void Main(string[] args)
         {
-            string cardType = "Titanium";
 
+            Console.Write("Enter Card Type: ");
+            string cardType = Console.ReadLine();
+
+
+            //Create an empty object of type ICreditCard. Based on user selection Credit Card, we create an instance of any one three product implementation class.
             ICreditCard cardDetails = null;
 
             if (cardType == "Monkey")
