@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Factory
 {
+    //Product
     public class Titanium : ICreditCard
     {
         public int GetAnnualCharge()

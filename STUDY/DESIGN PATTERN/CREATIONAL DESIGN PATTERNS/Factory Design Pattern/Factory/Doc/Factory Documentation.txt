@@ -1,6 +1,6 @@
-﻿- A factory is an object which is used for creating other objects.	In simple words, a class with a method which one will create and return different objects types based on the input parameter, it received.
+﻿- A factory is an object which is used for creating other objects.	In simple words, a class with a method which one will create and return different objects types based on the input parameter, it received. (requirements or specifications					)
 
-- In the Factory Design Pattern, we create an object without exposing the creation logic to the client and the client will refer to the newly created object using a commun interface.
+- In the Factory Design Pattern, we create an object without exposing the creation logic to the client and the client will refer to the newly created object using a common interface.
 
 - If we have a superclass/SuperInterface and n number of subclasses, and based on the data provided, if we have to create and return the object of one of the subclasses, then we need to use the factory design pattern.
 
@@ -11,5 +11,19 @@ Understanding the Factory Design Pattern with one real-time example:
 
 We have three credit card classes i.e. MoneyBack, Titanium, and Platinum and these three classes are the subclasses of CreditCard superclass or super interface.
 The CreditCard superclass or super interface has three methods i.e. GetCardType, GetCreditLimit, and GetAnnualCharge. The subclasses i.e. MoneyBack, Titanium, and Platinum have implemented the above three methods.
+
+Real-Life Example of Factory Pattern:
+From Lehman’s point of view, we can say that a factory is a place where products are created. In order words, we can say that it is a centralized place for creating products. Later, based on the order, it received, the appropriate product is delivered by the factory.
+
+For example, a car factory can produce different types of cars. If you are ordering a car to the car factory, then based on your requirements or specifications, the factory will create the appropriate car and then delivered that car to you.
+
+The same thing also happens in the factory design pattern. A factory (i.e. a class) will create and deliver products (i.e. objects) based on the incoming parameters.
+
+This design pattern provides the client with a simple mechanism to create the object. So, we need to use the Factory Design Pattern in C# when:
+
+The Object needs to be extended to the subclasses
+Classes don’t know what exact sub-classes it has to create
+The Product implementation going to change over time and the Client remains unchanged
+Problems of Simple Factory Pattern in C#
 
 https://dotnettutorials.net/lesson/factory-design-pattern-csharp/
