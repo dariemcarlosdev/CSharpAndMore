@@ -1,0 +1,42 @@
+﻿Factory Method Design Pattern:
+
+The Factory Method Design Pattern belongs to the Creational Pattern category and is one of the most frequently used design patterns in real-time applications.
+Is not the same as the Simple Factory Design Patter.
+
+
+What is the Factory Method Design Pattern?
+
+Define an Interface for creating an object, but let the Subclasses decide which class to instantiate.It's used, when we need to create an object (i.e instance of the Product Class)
+whithout exposing the logical creational logic to the client. To achieve this we will create an Abstract Class as a Factory class which will create and return an instance of the product,
+but it let the subclasses decide which class to instantiate.
+
+Implementing Factory method design pattern:
+
+1- Creating Product Interface.
+
+Provide the signature of the common functionalities which should be implemented by the concrete product.
+
+2- Creating concrete Products.
+
+This is a class implementing the Product Interface. In our examples I hace three type of diferent Credict cars so I'm going to create three clasees.
+MoneyBack, Titanium and Platinium that implement Credit Card Interface.
+
+3- Creating the Abstract Creator Class.
+
+The abstract creator declare the abstract method, which returns an object of type product. As per the definition, I need to create an abstract Class or Interface for creating the object.
+This abstract class will be my Factory class whith a public exposed method (this method is nothing but the factory method), that returns the instance of the product.
+
+4- Creating Concrete Creator.
+
+The concrete Creator object overrides the factory method to return an instance of a Concret Product.
+
+And that's it...
+
+According to Gang of Four Definition, we need to define an interface or abstract class for creating an object. In our example, it is an abstract class i.e. CreditCardFactory class. 
+The second part of the definition saying that let the subclasses decide which class to instantiate. In our example, the subclasses are PlatinumFactory, MoneyBackFactory, 
+and TitaniumFactory. So these subclasses will decide which class to instantiate, for example, MoneyBack, Titanium, and Platinum.
+
+5- Consuming the factory method in Client.
+
+Now, If you want to create an instance of the Platinum CreditCard then call the CreateProduct method of the PlatinumFactory instance, similarly,
+if you want the instance of Titanium CreditCard, then call the CreateProduct method of the TitaniumFactory instance.

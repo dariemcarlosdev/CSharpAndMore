@@ -6,8 +6,4 @@
     <RootNamespace>Factory_Method_Design_Pattern</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Doc\" />
-  </ItemGroup>
-
 </Project>

@@ -10,3 +10,4 @@ C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Factory Design Pattern\Factory\obj\Debug\netcoreapp3.1\Factory.dll
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Factory Design Pattern\Factory\obj\Debug\netcoreapp3.1\Factory.pdb
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Factory Design Pattern\Factory\obj\Debug\netcoreapp3.1\Factory.genruntimeconfig.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\CREATIONAL DESIGN PATTERNS\Factory Design Pattern\Factory\obj\Debug\netcoreapp3.1\Factory.csprojAssemblyReference.cache
