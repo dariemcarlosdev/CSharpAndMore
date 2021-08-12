@@ -35,4 +35,31 @@ the same for Sea Animal object.
 
 The client use the Abstract Factory and Abtract Product Interface to create a family of related objects.
 
+- Create Abstract Factory object passing the Factory Type.
+- Create the concrete product passing the product type.
+
+Point to remember:
+
+- Abstract Factory Pattern provide an interface for creating a family of related dependent objects without specify their concrets classes.
+- The Abstract Factory provide a way of encapsulate a group of individual factories that have a common theme without especifying their concret classes.
+- The abstract Factory Design Pattern is merely an extension to the factory method pattern, that allow you to create object without being concerned about the actual class of the object being created.
+- Abstract means hiding some information and factory means which produces the products and pattern means a design.
+  So, the Abstract Factory Pattern is a software design pattern that provides a way to encapsulate a group of individual factories that have a common theme.
+
+  When to use Abstract Factory Design Pattern?
+
+- When you want to create a group of related objects or dependent objects which must be used together.
+- When the system shoud configured to work with multiple families of products.
+- When the concrete Classes should be decoupled from clients.
+
+Differences between Abstract Factory and Factory Method Design Pattern:
+
+- Abstract Factory Design Pattern adds a layer of abstraction to the Factory Method Design Pattern
+- The Abstract Factory design pattern implementation can have multiple factory methods
+- Similar products of a factory implementation are grouped in Abstract factory
+- The Abstract Factory Pattern uses object composition to decouple applications from specific implementations
+- The Factory Method Pattern uses inheritance to decouple applications from specific implementations
+
+
+
 
