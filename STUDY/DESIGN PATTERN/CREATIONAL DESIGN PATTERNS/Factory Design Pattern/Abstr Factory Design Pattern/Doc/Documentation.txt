@@ -11,3 +11,23 @@ Implementation of Abstract Factory Desig Pattern:
 
 1. Creating Abstract Product.
 
+Create an Interface, this interface declare the method of the Product.
+
+2. Create concret products.
+
+This is the classes that implements the Abstract Factory Interface to create concret products.
+
+3. Creating the Abstract Factory.
+
+4. Creating Concret Factory.
+
+This is a class that implements the Abstract Factory class. n our example, this class is going to implement the GetAnimal method of Animal factory class. 
+There are two types of concrete abstract factories in our example i.e. LandAnimalfactory and SeaAnimalfactory.
+In the example project, the GetAnimal method creates and return the appropriate Land Animal object (i.e. Dog, cat, and Lion) based on the input parameter.
+the same for Sea Animal object.
+
+5. Client.
+
+The client use the Abstract Factory and Abtract Product Interface to create a family of related objects.
+
+
