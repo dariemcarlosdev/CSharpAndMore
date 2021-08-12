@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "Factory\Factory.csproj", "{728F517C-CCDD-4599-8E92-A3D1820D9418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory Method Design Pattern", "Method Design Pattern\Factory Method Design Pattern.csproj", "{F3088F12-7CDB-406C-B881-C91063B249C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory Method Design Pattern", "Method Design Pattern\Factory Method Design Pattern.csproj", "{F3088F12-7CDB-406C-B881-C91063B249C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstr Factory Design Pattern", "Abstr Factory Design Pattern\Abstr Factory Design Pattern.csproj", "{728C0BD7-9CFC-4E40-931D-654338DBEA37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F3088F12-7CDB-406C-B881-C91063B249C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3088F12-7CDB-406C-B881-C91063B249C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3088F12-7CDB-406C-B881-C91063B249C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{728C0BD7-9CFC-4E40-931D-654338DBEA37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{728C0BD7-9CFC-4E40-931D-654338DBEA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{728C0BD7-9CFC-4E40-931D-654338DBEA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{728C0BD7-9CFC-4E40-931D-654338DBEA37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

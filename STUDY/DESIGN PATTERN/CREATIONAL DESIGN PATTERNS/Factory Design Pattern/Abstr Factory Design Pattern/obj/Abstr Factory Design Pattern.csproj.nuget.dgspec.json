@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj": {}
+    "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Factory Design Pattern\\Abstr Factory Design Pattern\\Abstr Factory Design Pattern.csproj": {}
   },
   "projects": {
-    "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj": {
+    "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Factory Design Pattern\\Abstr Factory Design Pattern\\Abstr Factory Design Pattern.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj",
-        "projectName": "DECOGenerator",
-        "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Factory Design Pattern\\Abstr Factory Design Pattern\\Abstr Factory Design Pattern.csproj",
+        "projectName": "Abstr Factory Design Pattern",
+        "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Factory Design Pattern\\Abstr Factory Design Pattern\\Abstr Factory Design Pattern.csproj",
         "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\obj\\",
+        "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\CREATIONAL DESIGN PATTERNS\\Factory Design Pattern\\Abstr Factory Design Pattern\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\335286\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,9 +52,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"

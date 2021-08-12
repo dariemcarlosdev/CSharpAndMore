@@ -1,0 +1,13 @@
+﻿Abstract Factory Design Pattern.
+ref: https://dotnettutorials.net/lesson/abstract-factory-design-pattern-csharp/
+
+What is Abstract Factory Design Pattern?
+
+According to Gang of 4 definition provide a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes.
+
+In Simple words, Abstract Factory is a super factory that creates other factories. This factory is also called Factory of factories.
+
+Implementation of Abstract Factory Desig Pattern:
+
+1. Creating Abstract Product.
+

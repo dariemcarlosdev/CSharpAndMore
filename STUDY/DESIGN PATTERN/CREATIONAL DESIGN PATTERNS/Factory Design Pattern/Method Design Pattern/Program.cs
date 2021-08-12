@@ -12,9 +12,9 @@ namespace Factory_Method_Design_Pattern
             ICreditCard platinium = new PlatiniumFactory().CreateProduct();
             if (platinium != null)
             {
-                Console.WriteLine("Card Type is: {1}", platinium.GetCardType());
-                Console.WriteLine("Card Limit is: {1}", platinium.GetCreditLimit());
-                Console.WriteLine("Unnual charge is: {1}", platinium.GetAnnualCharge());
+                Console.WriteLine("Card Type is: {0}", platinium.GetCardType());
+                Console.WriteLine("Card Limit is: {0}", platinium.GetCreditLimit());
+                Console.WriteLine("Unnual charge is: {0}", platinium.GetAnnualCharge());
             }
             else
             {
@@ -26,9 +26,9 @@ namespace Factory_Method_Design_Pattern
             ICreditCard titanium = new TitaniumFactory().CreateProduct();
             if (titanium != null)
             {
-                Console.WriteLine("Card Tyoe is: {1}", titanium.GetCardType());
-                Console.WriteLine("Card Limit is: {1}", titanium.GetCreditLimit());
-                Console.WriteLine("Annual charge is: {1}", titanium.GetAnnualCharge()); 
+                Console.WriteLine("Card Tyoe is: {0}", titanium.GetCardType());
+                Console.WriteLine("Card Limit is: {0}", titanium.GetCreditLimit());
+                Console.WriteLine("Annual charge is: {0}", titanium.GetAnnualCharge()); 
             }
 
             else
@@ -37,6 +37,14 @@ namespace Factory_Method_Design_Pattern
             }
 
             Console.WriteLine("------------------");
+
+            var moneyBack = new MoneyBackFactory().CreateProduct();
+            if ( moneyBack != null)
+            {
+                Console.WriteLine("Card Tyoe is: {0}", moneyBack.GetCardType());
+                Console.WriteLine("Card Limit is: {0}", moneyBack.GetCreditLimit());
+                Console.WriteLine("Annual charge is: {0}", moneyBack.GetAnnualCharge());
+            }
         }
     }
 }
