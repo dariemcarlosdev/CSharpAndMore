@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Abstr_Factory_Design_Pattern
 {
+    //Abstract Factory
     public abstract class AnimalFactory
     {
         public abstract IAnimal GetAnimal(string AnimalType);
