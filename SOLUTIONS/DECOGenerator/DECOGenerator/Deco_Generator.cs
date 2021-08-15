@@ -19,7 +19,21 @@ namespace DECOGenerator
         public Deco_Generator()
         {
             InitializeComponent();
+            UpdateSubtitle(); // Display initial value
+
+            advancedDataGridView1.RowsAdded += (sender, args) => UpdateSubtitle();
+            advancedDataGridView1.RowsRemoved += (sender, args) => UpdateSubtitle();
+            advancedDataGridView1.ColumnAdded += (sender, args) => UpdateSubtitle();
+            advancedDataGridView1.ColumnRemoved += (sender, args) => UpdateSubtitle();
+
         }
+
+        private void UpdateSubtitle()
+        {
+            Total.Text = advancedDataGridView1.RowCount.ToString();
+            TotalF.Text = advancedDataGridView1.ColumnCount.ToString();
+        }
+
 
 
 
@@ -60,7 +74,8 @@ namespace DECOGenerator
             table.Columns.Add("SEX", typeof(string));
             table.Columns.Add("CLAIM", typeof(string));
 
-            dataGridView1.DataSource = table;
+           // dataGridView1.DataSource = table;
+            advancedDataGridView1.DataSource = table;
 
 
         }
@@ -109,8 +124,8 @@ namespace DECOGenerator
         //Method for copying all data from DataGridView.
         public void CopyAllToClipboard()
         {
-            dataGridView1.SelectAll();
-            var dataObject = dataGridView1.GetClipboardContent();
+            advancedDataGridView1.SelectAll();
+            var dataObject = advancedDataGridView1.GetClipboardContent();
             if (dataObject != null)
             {
                 Clipboard.SetDataObject(dataObject);
@@ -155,18 +170,18 @@ namespace DECOGenerator
                         ExcelApp.Columns.ColumnWidth = 20;
 
                         //storing header part in excel.
-                        for (int i = 1; i < dataGridView1.Columns.Count; i++)
+                        for (int i = 1; i < advancedDataGridView1.Columns.Count; i++)
                         {
-                            ExcelApp.Cells[1, i] = dataGridView1.Columns[i - 1].HeaderText;
+                            ExcelApp.Cells[1, i] = advancedDataGridView1.Columns[i - 1].HeaderText;
                         }
 
                         //storing each row and column value to excel.
 
-                        for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                        for (int i = 0; i < advancedDataGridView1.Rows.Count; i++)
                         {
-                            for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                            for (int j = 0; j < advancedDataGridView1.Columns.Count; j++)
                             {
-                                ExcelApp.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
+                                ExcelApp.Cells[i + 2, j + 1] = advancedDataGridView1.Rows[i].Cells[j].Value.ToString();
                             }
                         }
 
@@ -174,10 +189,7 @@ namespace DECOGenerator
                         ExcelApp.ActiveWorkbook.Saved = true;
                         ExcelApp.Quit();
 
-                        var customMessageBox = new MessageBox();
-                        customMessageBox.
-
-                        //customMessageBox.Show("You have successfully exported your data.", "Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("You have successfully exported your data.", "Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
                     catch (Exception ex)
@@ -237,10 +249,23 @@ namespace DECOGenerator
         */
         }
 
-        private void topMenuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+     
+
+        private void advancedDataGridView1_SortStringChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void advancedDataGridView1_FilterStringChanged(object sender, EventArgs e)
         {
 
         }
+
+        private void advancedDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 
 }

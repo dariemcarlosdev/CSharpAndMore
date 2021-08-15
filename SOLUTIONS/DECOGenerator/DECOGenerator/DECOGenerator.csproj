@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ADGV" Version="0.1.0.10" />
     <PackageReference Include="ClosedXML" Version="0.95.4" />
   </ItemGroup>
 
