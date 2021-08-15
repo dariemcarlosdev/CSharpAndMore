@@ -31,7 +31,7 @@ namespace DECOGenerator
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deco_Generator));
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialogBox = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.topMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +49,7 @@ namespace DECOGenerator
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.saveFileDialogBox = new System.Windows.Forms.SaveFileDialog();
             this.advancedDataGridView1 = new ADGV.AdvancedDataGridView();
             this.Total = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -272,7 +272,7 @@ namespace DECOGenerator
         }
 
         #endregion
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialogBox;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.MenuStrip topMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
@@ -291,7 +291,7 @@ namespace DECOGenerator
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogBox;
         private ADGV.AdvancedDataGridView advancedDataGridView1;
         private System.Windows.Forms.Label Total;
         private System.Windows.Forms.Label label1;

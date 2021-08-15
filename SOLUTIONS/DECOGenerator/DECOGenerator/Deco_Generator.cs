@@ -85,14 +85,14 @@ namespace DECOGenerator
         private void Button_Import_Click(object sender, EventArgs e)
         {
 
-            saveFileDialog1.Title = "Select the DECO file";
-            saveFileDialog1.Filter = "Text Files (*.txt)|*.txt" + "|" +
+            saveFileDialogBox.Title = "Select the DECO file";
+            saveFileDialogBox.Filter = "Text Files (*.txt)|*.txt" + "|" +
                     "Excel Files (*.xlsx)|*.xlsx" + "|" +
                     "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
                     "All Files (*.*)|*.*";
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            if (saveFileDialogBox.ShowDialog() == DialogResult.OK)
             {
-                string file = saveFileDialog1.InitialDirectory;
+                string file = saveFileDialogBox.InitialDirectory;
             }
         }
 
@@ -100,14 +100,14 @@ namespace DECOGenerator
         private void OpenTool_StripMenuItem_Click(object sender, EventArgs e)
         {
 
-            openFileDialog1.Title = "Select the DECO file";
-            openFileDialog1.Filter = "Text Files (*.txt)|*.txt" + "|" +
+            openFileDialogBox.Title = "Select the DECO file";
+            openFileDialogBox.Filter = "Text Files (*.txt)|*.txt" + "|" +
                     "Excel Files (*.xlsx)|*.xlsx " + "|" +
                     "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
                     "All Files (*.*)|*.*";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialogBox.ShowDialog() == DialogResult.OK)
             {
-                string file = openFileDialog1.FileName;
+                string file = openFileDialogBox.FileName;
             }
         }
 
@@ -150,15 +150,15 @@ namespace DECOGenerator
             xlexel.Visible = true;*/
             using (SaveFileDialog sfd = new SaveFileDialog() 
             {
-                Filter = saveFileDialog1.Filter = "Excel Files (*.xlsx)|*.xlsx" + "|" +
+                Filter = saveFileDialogBox.Filter = "Excel Files (*.xlsx)|*.xlsx" + "|" +
                       "Text Files (*.txt)|*.txt" + "|" +
                      "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
                      "All Files (*.*)|*.*",
-                Title = saveFileDialog1.Title = "Save as Excel file"
+                Title = saveFileDialogBox.Title = "Save as Excel file"
             })
 
             {
-                if (saveFileDialog1.ShowDialog() != DialogResult.Cancel)
+                if (saveFileDialogBox.ShowDialog() != DialogResult.Cancel)
                 {
 
                     
@@ -185,7 +185,7 @@ namespace DECOGenerator
                             }
                         }
 
-                        ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialog1.FileName.ToString());
+                        ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
                         ExcelApp.ActiveWorkbook.Saved = true;
                         ExcelApp.Quit();
 
