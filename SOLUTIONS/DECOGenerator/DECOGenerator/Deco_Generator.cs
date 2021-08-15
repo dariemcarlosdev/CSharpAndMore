@@ -1,9 +1,13 @@
-﻿using System;
+﻿
+using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,7 +23,7 @@ namespace DECOGenerator
 
 
 
-        DataTable table = new DataTable();
+        System.Data.DataTable table = new System.Data.DataTable();
         private void Deco_Generator_Load(object sender, EventArgs e)
         {
             //This fields should be created dinamicaly in future.
@@ -58,17 +62,17 @@ namespace DECOGenerator
 
             dataGridView1.DataSource = table;
 
-           
+
         }
-        
-        
+
+
         //The event over this button was desable.
         private void Button_Import_Click(object sender, EventArgs e)
         {
-             
-           saveFileDialog1.Title = "Select the DECO file";
+
+            saveFileDialog1.Title = "Select the DECO file";
             saveFileDialog1.Filter = "Text Files (*.txt)|*.txt" + "|" +
-                    "Excel Files (*.xsl)|*.xsl" + "|" +
+                    "Excel Files (*.xlsx)|*.xlsx" + "|" +
                     "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
                     "All Files (*.*)|*.*";
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -83,7 +87,7 @@ namespace DECOGenerator
 
             openFileDialog1.Title = "Select the DECO file";
             openFileDialog1.Filter = "Text Files (*.txt)|*.txt" + "|" +
-                    "Excel Files (*.xsl)|*.xsl" + "|" +
+                    "Excel Files (*.xlsx)|*.xlsx " + "|" +
                     "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
                     "All Files (*.*)|*.*";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -94,19 +98,20 @@ namespace DECOGenerator
 
         private void ExitTool_StripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure To Exit?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure you want to Exit?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                Application.Exit();
+                
+                System.Windows.Forms.Application.ExitThread();
             }
 
         }
 
         //Method for copying all data from DataGridView.
-        public void CopyAllToClipboard ()
+        public void CopyAllToClipboard()
         {
             dataGridView1.SelectAll();
             var dataObject = dataGridView1.GetClipboardContent();
-            if (dataObject!=null)
+            if (dataObject != null)
             {
                 Clipboard.SetDataObject(dataObject);
             }
@@ -114,7 +119,7 @@ namespace DECOGenerator
 
         private void releaseObject(object obj)
         {
-           
+
         }
 
 
@@ -128,41 +133,115 @@ namespace DECOGenerator
             Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet;
 
             xlexel.Visible = true;*/
-
-
-            openFileDialog1.Title = "Export data to";
-            openFileDialog1.Filter = "Excel Files (*.xsl)|*.xsl" + "|" +
-                     "Text Files (*.txt)|*.txt" + "|" +
-                    "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
-                    "All Files (*.*)|*.*";
-            
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            using (SaveFileDialog sfd = new SaveFileDialog() 
             {
-                string exportFile = openFileDialog1.InitialDirectory;
-                MessageBox.Show(exportFile);
+                Filter = saveFileDialog1.Filter = "Excel Files (*.xlsx)|*.xlsx" + "|" +
+                      "Text Files (*.txt)|*.txt" + "|" +
+                     "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
+                     "All Files (*.*)|*.*",
+                Title = saveFileDialog1.Title = "Save as Excel file"
+            })
 
+            {
+                if (saveFileDialog1.ShowDialog() != DialogResult.Cancel)
+                {
+
+                    
+                    try
+                    {
+                        Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
+                        ExcelApp.Application.Workbooks.Add(Type.Missing);
+
+                        ExcelApp.Columns.ColumnWidth = 20;
+
+                        //storing header part in excel.
+                        for (int i = 1; i < dataGridView1.Columns.Count; i++)
+                        {
+                            ExcelApp.Cells[1, i] = dataGridView1.Columns[i - 1].HeaderText;
+                        }
+
+                        //storing each row and column value to excel.
+
+                        for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                        {
+                            for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                            {
+                                ExcelApp.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
+                            }
+                        }
+
+                        ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialog1.FileName.ToString());
+                        ExcelApp.ActiveWorkbook.Saved = true;
+                        ExcelApp.Quit();
+
+                        var customMessageBox = new MessageBox();
+                        customMessageBox.
+
+                        //customMessageBox.Show("You have successfully exported your data.", "Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    catch (Exception ex)
+                    {
+
+                        MessageBox.Show(ex.Message, "The operation could not be completed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    
+                }
+            
             }
 
-            
+            /*     saveFileDialog1.Title = 
+             saveFileDialog1.Filter = "Excel Files (*.xlsx)|*.xlsx" + "|" +
+                      "Text Files (*.txt)|*.txt" + "|" +
+                     "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
+                     "All Files (*.*)|*.*";
+             saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+             */
+
+            /* This method doesn't work.
+             * 
+             * DataTable data = table;
+             var excel = new OfficeOpenXml.ExcelPackage();
+             var ws = excel.Workbook.Worksheets.Add("worksheet-name");
+             // you can also use LoadFromCollection with an `IEnumerable<SomeType>`
+             ws.Cells["A1"].LoadFromDataTable(data, true, OfficeOpenXml.Table.TableStyles.Light1);
+             ws.Cells[ws.Dimension.Address.ToString()].AutoFitColumns();
+
+             using (var file = File.Create(saveFileDialog1.FileName))
+                 excel.SaveAs(file);
+            */
+            /*
+            if (sfd.Rows.Count > 0)
+            {
+                Microsoft.Office.Interop.Excel.Application excelExport = new Microsoft.Office.Interop.Excel.Application();
+                excelExport.Application.Workbooks.Add(Type.Missing);
+                for (int i = 0; i < dataGridView1.Columns.Count + 1; i++)
+                {
+                    excelExport.Cells[1, i] = "dasdas";
+                }
+
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    for (int j = 0; j <  dataGridView1.Columns.Count; j++)
+                    {
+                        excelExport.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value;
+                    }
+                }
+
+                excelExport.Columns.AutoFit();
+                excelExport.Visible = true;
+            }
+
+        */
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void topMenuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
-
-
-        //Showing message on MouseHover event.
-        private void Button_Import_MouseHover(object sender, EventArgs e)
-        {
-            toolTip1.Show("Select a file to import", button_Import);
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        
     }
+
 }
+

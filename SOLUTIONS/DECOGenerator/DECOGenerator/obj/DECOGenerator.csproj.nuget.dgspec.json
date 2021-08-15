@@ -40,9 +40,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.Office.Interop.Excel": {
+            "ClosedXML": {
               "target": "Package",
-              "version": "[15.0.4795.1000, )"
+              "version": "[0.95.4, )"
             }
           },
           "imports": [

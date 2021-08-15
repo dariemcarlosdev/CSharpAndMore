@@ -14,5 +14,10 @@ C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerat
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\DECOGenerator.dll
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\DECOGenerator.pdb
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\DECOGenerator.genruntimeconfig.cache
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\bin\Debug\netcoreapp3.1\Microsoft.Office.Interop.Excel.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\bin\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\DECOGenerator.csproj.ResolveComReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\bin\Debug\netcoreapp3.1\ClosedXML.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\bin\Debug\netcoreapp3.1\ExcelNumberFormat.dll
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\DECOGenerator.csproj.CopyComplete
