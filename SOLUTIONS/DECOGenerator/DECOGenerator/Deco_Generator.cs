@@ -81,21 +81,7 @@ namespace DECOGenerator
         }
 
 
-        //The event over this button was desable.
-        private void Button_Import_Click(object sender, EventArgs e)
-        {
-
-            saveFileDialogBox.Title = "Select the DECO file";
-            saveFileDialogBox.Filter = "Text Files (*.txt)|*.txt" + "|" +
-                    "Excel Files (*.xlsx)|*.xlsx" + "|" +
-                    "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
-                    "All Files (*.*)|*.*";
-            if (saveFileDialogBox.ShowDialog() == DialogResult.OK)
-            {
-                string file = saveFileDialogBox.InitialDirectory;
-            }
-        }
-
+       
         //Import Text file to DataGrid View.
         private void OpenTool_StripMenuItem_Click(object sender, EventArgs e)
         {
@@ -107,7 +93,11 @@ namespace DECOGenerator
                     "All Files (*.*)|*.*";
             if (openFileDialogBox.ShowDialog() == DialogResult.OK)
             {
-                string file = openFileDialogBox.FileName;
+                using (var file = new StreamReader(openFileDialogBox.FileName.ToString()))
+                {
+                    
+                    MessageBox.Show(openFileDialogBox.FileName.ToString());
+                }
             }
         }
 
