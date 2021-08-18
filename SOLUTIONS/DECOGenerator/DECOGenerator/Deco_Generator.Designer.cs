@@ -31,6 +31,7 @@ namespace DECOGenerator
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deco_Generator));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.openFileDialogBox = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.topMenuStrip = new System.Windows.Forms.MenuStrip();
@@ -55,6 +56,10 @@ namespace DECOGenerator
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TotalF = new System.Windows.Forms.Label();
+            this.SCHLINST = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.YEAR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SUR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
             this.topMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -68,8 +73,8 @@ namespace DECOGenerator
             this.helpToolStripMenuItem});
             this.topMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.topMenuStrip.Name = "topMenuStrip";
-            this.topMenuStrip.Padding = new System.Windows.Forms.Padding(6, 0, 0, 2);
-            this.topMenuStrip.Size = new System.Drawing.Size(1151, 24);
+            this.topMenuStrip.Padding = new System.Windows.Forms.Padding(7, 0, 0, 3);
+            this.topMenuStrip.Size = new System.Drawing.Size(1315, 27);
             this.topMenuStrip.TabIndex = 6;
             this.topMenuStrip.Text = "menuStrip1";
             // 
@@ -82,7 +87,7 @@ namespace DECOGenerator
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // openToolStripMenuItem
@@ -92,14 +97,14 @@ namespace DECOGenerator
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenTool_StripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(178, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -107,18 +112,18 @@ namespace DECOGenerator
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitTool_StripMenuItem_Click);
             // 
@@ -128,7 +133,7 @@ namespace DECOGenerator
             this.exportToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 22);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // exportToolStripMenuItem
@@ -137,14 +142,14 @@ namespace DECOGenerator
             this.exportToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             this.exportToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.exportToolStripMenuItem.Text = "&Export";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.ExportTool_StripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -156,53 +161,63 @@ namespace DECOGenerator
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.contentsToolStripMenuItem.Text = "&Contents";
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.indexToolStripMenuItem.Text = "&Index";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.searchToolStripMenuItem.Text = "&Search";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(147, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // advancedDataGridView1
             // 
+            this.advancedDataGridView1.AllowDrop = true;
+            this.advancedDataGridView1.AllowUserToAddRows = false;
             this.advancedDataGridView1.AllowUserToOrderColumns = true;
             this.advancedDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.advancedDataGridView1.AutoGenerateContextFilters = true;
+            this.advancedDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.advancedDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.advancedDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.advancedDataGridView1.DateWithTime = false;
-            this.advancedDataGridView1.Location = new System.Drawing.Point(5, 40);
-            this.advancedDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.advancedDataGridView1.DateWithTime = true;
+            this.advancedDataGridView1.Location = new System.Drawing.Point(12, 53);
             this.advancedDataGridView1.Name = "advancedDataGridView1";
             this.advancedDataGridView1.RowHeadersWidth = 51;
             this.advancedDataGridView1.RowTemplate.Height = 29;
-            this.advancedDataGridView1.Size = new System.Drawing.Size(1130, 340);
+            this.advancedDataGridView1.Size = new System.Drawing.Size(1291, 474);
             this.advancedDataGridView1.TabIndex = 7;
             this.advancedDataGridView1.TimeFilter = false;
             this.advancedDataGridView1.SortStringChanged += new System.EventHandler(this.advancedDataGridView1_SortStringChanged);
@@ -213,9 +228,9 @@ namespace DECOGenerator
             // 
             this.Total.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Total.AutoSize = true;
-            this.Total.Location = new System.Drawing.Point(970, 405);
+            this.Total.Location = new System.Drawing.Point(1121, 540);
             this.Total.Name = "Total";
-            this.Total.Size = new System.Drawing.Size(32, 15);
+            this.Total.Size = new System.Drawing.Size(42, 20);
             this.Total.TabIndex = 8;
             this.Total.Text = "Total";
             // 
@@ -223,9 +238,9 @@ namespace DECOGenerator
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(876, 405);
+            this.label1.Location = new System.Drawing.Point(1021, 540);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 15);
+            this.label1.Size = new System.Drawing.Size(102, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Total records: ";
             // 
@@ -233,27 +248,54 @@ namespace DECOGenerator
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1012, 405);
+            this.label2.Location = new System.Drawing.Point(1177, 540);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 15);
+            this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Total Fields: ";
+            this.label2.Text = "Total Cols: ";
             // 
             // TotalF
             // 
             this.TotalF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.TotalF.AutoSize = true;
-            this.TotalF.Location = new System.Drawing.Point(1097, 405);
+            this.TotalF.Location = new System.Drawing.Point(1254, 540);
             this.TotalF.Name = "TotalF";
-            this.TotalF.Size = new System.Drawing.Size(38, 15);
+            this.TotalF.Size = new System.Drawing.Size(49, 20);
             this.TotalF.TabIndex = 11;
             this.TotalF.Text = "TotalF";
             // 
+            // SCHLINST
+            // 
+            this.SCHLINST.HeaderText = "SCHL-INST";
+            this.SCHLINST.MinimumWidth = 22;
+            this.SCHLINST.Name = "SCHLINST";
+            this.SCHLINST.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.SCHLINST.Width = 125;
+            // 
+            // YEAR
+            // 
+            this.YEAR.HeaderText = "YEAR";
+            this.YEAR.MinimumWidth = 6;
+            this.YEAR.Name = "YEAR";
+            this.YEAR.Width = 125;
+            // 
+            // SUR
+            // 
+            this.SUR.HeaderText = "SUR";
+            this.SUR.MinimumWidth = 6;
+            this.SUR.Name = "SUR";
+            this.SUR.Width = 125;
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(222, 6);
+            // 
             // Deco_Generator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 435);
+            this.ClientSize = new System.Drawing.Size(1315, 580);
             this.Controls.Add(this.TotalF);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -261,7 +303,6 @@ namespace DECOGenerator
             this.Controls.Add(this.advancedDataGridView1);
             this.Controls.Add(this.topMenuStrip);
             this.MainMenuStrip = this.topMenuStrip;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Deco_Generator";
             this.Text = "DECOGenerator V.0.01";
             this.Load += new System.EventHandler(this.Deco_Generator_Load);
@@ -299,6 +340,10 @@ namespace DECOGenerator
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label TotalF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SCHLINST;
+        private System.Windows.Forms.DataGridViewTextBoxColumn YEAR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SUR;
+        private System.Windows.Forms.ToolStripSeparator saveToolStripMenuItem;
     }
 }
 

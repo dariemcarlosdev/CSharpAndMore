@@ -36,11 +36,11 @@ namespace DECOGenerator
 
 
 
-
+        
         System.Data.DataTable table = new System.Data.DataTable();
         private void Deco_Generator_Load(object sender, EventArgs e)
         {
-            //This fields should be created dinamicaly in future.
+            //This fields should be created dinamicaly throughout that Layout defined (grab data from db.)
 
             table.Columns.Add("DIST-INST", typeof(string));
             table.Columns.Add("SCHL-INST", typeof(string));
@@ -48,7 +48,7 @@ namespace DECOGenerator
             table.Columns.Add("SUR", typeof(string));
             table.Columns.Add("DIST NAME", typeof(string));
             table.Columns.Add("LAST NAME", typeof(string));
-            table.Columns.Add("FIRST NAME", typeof(string));
+            /*table.Columns.Add("FIRST NAME", typeof(string));
             table.Columns.Add("BIRTHDATE", typeof(string));
             table.Columns.Add("GRADE", typeof(string));
             table.Columns.Add("DIST", typeof(string));
@@ -72,11 +72,12 @@ namespace DECOGenerator
             table.Columns.Add("FTE-VIRT_EST", typeof(string));
             table.Columns.Add("MIDDLE NAME", typeof(string));
             table.Columns.Add("SEX", typeof(string));
-            table.Columns.Add("CLAIM", typeof(string));
+            table.Columns.Add("CLAIM", typeof(string));*/
 
-           // dataGridView1.DataSource = table;
+            // dataGridView1.DataSource = table;
+            // advancedDataGridView1.DataSource = table;
+            
             advancedDataGridView1.DataSource = table;
-
 
         }
 
@@ -87,31 +88,104 @@ namespace DECOGenerator
         {
 
             openFileDialogBox.Title = "Select the DECO file";
-            openFileDialogBox.Filter = "Text Files (*.txt)|*.txt" + "|" +
-                    "Excel Files (*.xlsx)|*.xlsx " + "|" +
-                    "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
-                    "All Files (*.*)|*.*";
+            openFileDialogBox.Filter ="Text Files (*.txt)|*.txt" + "|" +
+                                      "Excel Files (*.xlsx)|*.xlsx " + "|" +
+                                      "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
+                                      "All Files (*.*)|*.*";
+
             if (openFileDialogBox.ShowDialog() == DialogResult.OK)
             {
-                using (var file = new StreamReader(openFileDialogBox.FileName.ToString()))
+                try
                 {
-                    
-                    MessageBox.Show(openFileDialogBox.FileName.ToString());
+                    string[] lines = File.ReadAllLines(openFileDialogBox.FileName.ToString());
+                    string[] data;
+
+                    for (int i = 0; i < lines.Length; i++)
+                    {
+                            
+                        
+                        data = lines[i].ToString().Split(' ');
+
+                         string[] p = removeSpaces(data);
+                        
+                        string[] row = new string[p.Length];
+
+                        for (int j = 0; j < p.Length; j++)
+                        {
+
+                            row[j] = p[j].Trim();
+
+                        }
+
+                        table.Rows.Add(row);
+                    }
+
+
+                    //----------------------------------------------------------------->
+
+                    /*
+                    var lines = File.ReadAllLines(openFileDialogBox.FileName.ToString());
+                    string[] data;
+
+                    for (int i = 0; i < lines.Length; i++)
+                    {
+                        data = lines[i].ToString().Split(" ");
+
+                        string[] row = new string[data.Length];
+
+                        for (int j = 0; j < data.Length; i++)
+                        {
+                            row[j] = data[j];
+                        }
+
+                        table2.Rows.Add(row);
+                    }
+
+                   // advancedDataGridView1.DataSource = dataTable2;*/
+
+
+                    //-----------------------------------------------------------------------
+
+                    MessageBox.Show("Your data have been imported successfuly.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 }
+                catch (Exception ex )
+                {
+
+                    MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+             
+
             }
         }
 
+        private string[] removeSpaces(string[] data)
+        {
+            var list = new List<string>();
+
+            foreach (var item in data)
+            {
+                if (item != "")
+                {
+
+                    list.Add(item); 
+                }
+            }
+
+            return list.ToArray();
+        }
+
         private void ExitTool_StripMenuItem_Click(object sender, EventArgs e)
+        
         {
             if (MessageBox.Show("Are You Sure you want to Exit?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                
                 System.Windows.Forms.Application.ExitThread();
             }
 
         }
 
-        //Method for copying all data from DataGridView.
+        //Method for copying all data from DataGridView is not in use.
         public void CopyAllToClipboard()
         {
             advancedDataGridView1.SelectAll();
@@ -185,7 +259,7 @@ namespace DECOGenerator
                     catch (Exception ex)
                     {
 
-                        MessageBox.Show(ex.Message, "The operation could not be completed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     
@@ -256,6 +330,10 @@ namespace DECOGenerator
 
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }
