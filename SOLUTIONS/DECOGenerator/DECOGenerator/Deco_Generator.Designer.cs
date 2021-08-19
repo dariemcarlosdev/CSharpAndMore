@@ -61,6 +61,9 @@ namespace DECOGenerator
             this.YEAR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SUR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lablStatusBar = new System.Windows.Forms.Label();
+            this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.topMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -226,7 +229,7 @@ namespace DECOGenerator
             this.advancedDataGridView1.Name = "advancedDataGridView1";
             this.advancedDataGridView1.RowHeadersWidth = 51;
             this.advancedDataGridView1.RowTemplate.Height = 29;
-            this.advancedDataGridView1.Size = new System.Drawing.Size(1130, 356);
+            this.advancedDataGridView1.Size = new System.Drawing.Size(1130, 313);
             this.advancedDataGridView1.TabIndex = 7;
             this.advancedDataGridView1.TimeFilter = false;
             this.advancedDataGridView1.SortStringChanged += new System.EventHandler(this.advancedDataGridView1_SortStringChanged);
@@ -237,7 +240,7 @@ namespace DECOGenerator
             // 
             this.Total.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Total.AutoSize = true;
-            this.Total.Location = new System.Drawing.Point(981, 405);
+            this.Total.Location = new System.Drawing.Point(998, 372);
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(32, 15);
             this.Total.TabIndex = 8;
@@ -247,7 +250,7 @@ namespace DECOGenerator
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(893, 405);
+            this.label1.Location = new System.Drawing.Point(921, 371);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 15);
             this.label1.TabIndex = 9;
@@ -257,7 +260,7 @@ namespace DECOGenerator
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1030, 405);
+            this.label2.Location = new System.Drawing.Point(1039, 371);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 10;
@@ -267,7 +270,7 @@ namespace DECOGenerator
             // 
             this.TotalF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.TotalF.AutoSize = true;
-            this.TotalF.Location = new System.Drawing.Point(1097, 405);
+            this.TotalF.Location = new System.Drawing.Point(1097, 371);
             this.TotalF.Name = "TotalF";
             this.TotalF.Size = new System.Drawing.Size(38, 15);
             this.TotalF.TabIndex = 11;
@@ -300,11 +303,40 @@ namespace DECOGenerator
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(222, 6);
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.Location = new System.Drawing.Point(10, 365);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(865, 23);
+            this.progressBar1.TabIndex = 12;
+            // 
+            // lablStatusBar
+            // 
+            this.lablStatusBar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lablStatusBar.AutoSize = true;
+            this.lablStatusBar.Location = new System.Drawing.Point(403, 397);
+            this.lablStatusBar.Name = "lablStatusBar";
+            this.lablStatusBar.Size = new System.Drawing.Size(89, 15);
+            this.lablStatusBar.TabIndex = 13;
+            this.lablStatusBar.Text = "Processing...0%";
+            // 
+            // backgroundWorker
+            // 
+            this.backgroundWorker.WorkerReportsProgress = true;
+            this.backgroundWorker.WorkerSupportsCancellation = true;
+            this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
+            this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
+            this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
+            // 
             // Deco_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 435);
+            this.ClientSize = new System.Drawing.Size(1151, 424);
+            this.Controls.Add(this.lablStatusBar);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.TotalF);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -355,6 +387,9 @@ namespace DECOGenerator
         private System.Windows.Forms.DataGridViewTextBoxColumn SUR;
         private System.Windows.Forms.ToolStripSeparator saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lablStatusBar;
+        private System.ComponentModel.BackgroundWorker backgroundWorker;
     }
 }
 

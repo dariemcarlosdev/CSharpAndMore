@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -252,8 +253,7 @@ namespace DECOGenerator
                         ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
                         ExcelApp.ActiveWorkbook.Saved = true;
                         ExcelApp.Quit();
-
-                        MessageBox.Show("You have successfully exported your data.", "Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        backgroundWorker.RunWorkerAsync(sfd.FileName);
 
                     }
                     catch (Exception ex)
@@ -338,6 +338,28 @@ namespace DECOGenerator
         private void topMenuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            progressBar1.Value = e.ProgressPercentage;
+            lablStatusBar.Text = string.Format("Processing...{0}", e.ProgressPercentage);
+            progressBar1.Update();
+        }
+
+        private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (e.Error == null)
+            {
+                Thread.Sleep(100);
+
+                MessageBox.Show("You have successfully exported your data.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 
