@@ -38,11 +38,12 @@ namespace DECOGenerator
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,21 +74,24 @@ namespace DECOGenerator
             this.helpToolStripMenuItem});
             this.topMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.topMenuStrip.Name = "topMenuStrip";
-            this.topMenuStrip.Padding = new System.Windows.Forms.Padding(7, 0, 0, 3);
-            this.topMenuStrip.Size = new System.Drawing.Size(1315, 27);
+            this.topMenuStrip.Padding = new System.Windows.Forms.Padding(6, 0, 0, 2);
+            this.topMenuStrip.Size = new System.Drawing.Size(1151, 24);
             this.topMenuStrip.TabIndex = 6;
             this.topMenuStrip.Text = "menuStrip1";
+            this.topMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.topMenuStrip_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
             this.toolStripSeparator,
-            this.printToolStripMenuItem,
+            this.exportToolStripMenuItem,
             this.toolStripSeparator2,
+            this.printToolStripMenuItem,
+            this.toolStripSeparator3,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // openToolStripMenuItem
@@ -97,44 +101,14 @@ namespace DECOGenerator
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenTool_StripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(178, 6);
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.printToolStripMenuItem.Text = "&Print";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitTool_StripMenuItem_Click);
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exportToolStripMenuItem,
-            this.optionsToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
-            this.toolsToolStripMenuItem.Text = "&Tools";
+            this.toolStripSeparator.Size = new System.Drawing.Size(145, 6);
             // 
             // exportToolStripMenuItem
             // 
@@ -142,14 +116,48 @@ namespace DECOGenerator
             this.exportToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             this.exportToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.exportToolStripMenuItem.Text = "&Export";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.ExportTool_StripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(145, 6);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.printToolStripMenuItem.Text = "&Print";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(145, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitTool_StripMenuItem_Click);
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionsToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 22);
+            this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -161,36 +169,36 @@ namespace DECOGenerator
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.contentsToolStripMenuItem.Text = "&Contents";
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.indexToolStripMenuItem.Text = "&Index";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.searchToolStripMenuItem.Text = "&Search";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // advancedDataGridView1
@@ -213,11 +221,12 @@ namespace DECOGenerator
             this.advancedDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.advancedDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.advancedDataGridView1.DateWithTime = true;
-            this.advancedDataGridView1.Location = new System.Drawing.Point(12, 53);
+            this.advancedDataGridView1.Location = new System.Drawing.Point(10, 40);
+            this.advancedDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.advancedDataGridView1.Name = "advancedDataGridView1";
             this.advancedDataGridView1.RowHeadersWidth = 51;
             this.advancedDataGridView1.RowTemplate.Height = 29;
-            this.advancedDataGridView1.Size = new System.Drawing.Size(1291, 474);
+            this.advancedDataGridView1.Size = new System.Drawing.Size(1130, 356);
             this.advancedDataGridView1.TabIndex = 7;
             this.advancedDataGridView1.TimeFilter = false;
             this.advancedDataGridView1.SortStringChanged += new System.EventHandler(this.advancedDataGridView1_SortStringChanged);
@@ -228,9 +237,9 @@ namespace DECOGenerator
             // 
             this.Total.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Total.AutoSize = true;
-            this.Total.Location = new System.Drawing.Point(1121, 540);
+            this.Total.Location = new System.Drawing.Point(981, 405);
             this.Total.Name = "Total";
-            this.Total.Size = new System.Drawing.Size(42, 20);
+            this.Total.Size = new System.Drawing.Size(32, 15);
             this.Total.TabIndex = 8;
             this.Total.Text = "Total";
             // 
@@ -238,9 +247,9 @@ namespace DECOGenerator
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1021, 540);
+            this.label1.Location = new System.Drawing.Point(893, 405);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.Size = new System.Drawing.Size(80, 15);
             this.label1.TabIndex = 9;
             this.label1.Text = "Total records: ";
             // 
@@ -248,9 +257,9 @@ namespace DECOGenerator
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1177, 540);
+            this.label2.Location = new System.Drawing.Point(1030, 405);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 10;
             this.label2.Text = "Total Cols: ";
             // 
@@ -258,9 +267,9 @@ namespace DECOGenerator
             // 
             this.TotalF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.TotalF.AutoSize = true;
-            this.TotalF.Location = new System.Drawing.Point(1254, 540);
+            this.TotalF.Location = new System.Drawing.Point(1097, 405);
             this.TotalF.Name = "TotalF";
-            this.TotalF.Size = new System.Drawing.Size(49, 20);
+            this.TotalF.Size = new System.Drawing.Size(38, 15);
             this.TotalF.TabIndex = 11;
             this.TotalF.Text = "TotalF";
             // 
@@ -293,9 +302,9 @@ namespace DECOGenerator
             // 
             // Deco_Generator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1315, 580);
+            this.ClientSize = new System.Drawing.Size(1151, 435);
             this.Controls.Add(this.TotalF);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -303,6 +312,7 @@ namespace DECOGenerator
             this.Controls.Add(this.advancedDataGridView1);
             this.Controls.Add(this.topMenuStrip);
             this.MainMenuStrip = this.topMenuStrip;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Deco_Generator";
             this.Text = "DECOGenerator V.0.01";
             this.Load += new System.EventHandler(this.Deco_Generator_Load);
@@ -344,6 +354,7 @@ namespace DECOGenerator
         private System.Windows.Forms.DataGridViewTextBoxColumn YEAR;
         private System.Windows.Forms.DataGridViewTextBoxColumn SUR;
         private System.Windows.Forms.ToolStripSeparator saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
 

@@ -334,6 +334,11 @@ namespace DECOGenerator
         {
 
         }
+
+        private void topMenuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 
 }
