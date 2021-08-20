@@ -81,7 +81,7 @@ namespace DECOGenerator
             this.topMenuStrip.Size = new System.Drawing.Size(1151, 24);
             this.topMenuStrip.TabIndex = 6;
             this.topMenuStrip.Text = "menuStrip1";
-            this.topMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.topMenuStrip_ItemClicked);
+            
             // 
             // fileToolStripMenuItem
             // 
@@ -232,9 +232,6 @@ namespace DECOGenerator
             this.advancedDataGridView1.Size = new System.Drawing.Size(1130, 313);
             this.advancedDataGridView1.TabIndex = 7;
             this.advancedDataGridView1.TimeFilter = false;
-            this.advancedDataGridView1.SortStringChanged += new System.EventHandler(this.advancedDataGridView1_SortStringChanged);
-            this.advancedDataGridView1.FilterStringChanged += new System.EventHandler(this.advancedDataGridView1_FilterStringChanged);
-            this.advancedDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.advancedDataGridView1_CellContentClick);
             // 
             // Total
             // 

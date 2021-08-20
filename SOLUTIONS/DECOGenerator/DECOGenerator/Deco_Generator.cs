@@ -197,22 +197,12 @@ namespace DECOGenerator
             }
         }
 
-        private void releaseObject(object obj)
-        {
-
-        }
-
-
-
         // Export DataGrid View to Excel file. Package Microsoft.Office.Interop.Excel need to be isntalled.
         private void ExportTool_StripMenuItem_Click(object sender, EventArgs e)
         {
-            /*CopyAllToClipboard();
-            Microsoft.Office.Interop.Excel.Application xlexel = new Microsoft.Office.Interop.Excel.Application();
-            Microsoft.Office.Interop.Excel.Workbook xlWorkBook;
-            Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet;
+            if (backgroundWorker.IsBusy)
+                return;
 
-            xlexel.Visible = true;*/
             using (SaveFileDialog sfd = new SaveFileDialog() 
             {
                 Filter = saveFileDialogBox.Filter = "Excel Files (*.xlsx)|*.xlsx" + "|" +
@@ -225,9 +215,12 @@ namespace DECOGenerator
             {
                 if (saveFileDialogBox.ShowDialog() != DialogResult.Cancel)
                 {
+                    progressBar1.Minimum = 0;
+                    progressBar1.Value = 0;
+                    backgroundWorker.RunWorkerAsync(sfd.FileName);
 
-                    
-                    try
+                  /*
+                   * try
                     {
                         Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
                         ExcelApp.Application.Workbooks.Add(Type.Missing);
@@ -253,102 +246,75 @@ namespace DECOGenerator
                         ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
                         ExcelApp.ActiveWorkbook.Saved = true;
                         ExcelApp.Quit();
-                        backgroundWorker.RunWorkerAsync(sfd.FileName);
+                        //backgroundWorker.RunWorkerAsync(sfd.FileName);
 
                     }
                     catch (Exception ex)
                     {
-
                         MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-
+                  */
                     
                 }
             
             }
-
-            /*     saveFileDialog1.Title = 
-             saveFileDialog1.Filter = "Excel Files (*.xlsx)|*.xlsx" + "|" +
-                      "Text Files (*.txt)|*.txt" + "|" +
-                     "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
-                     "All Files (*.*)|*.*";
-             saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-
-             */
-
-            /* This method doesn't work.
-             * 
-             * DataTable data = table;
-             var excel = new OfficeOpenXml.ExcelPackage();
-             var ws = excel.Workbook.Worksheets.Add("worksheet-name");
-             // you can also use LoadFromCollection with an `IEnumerable<SomeType>`
-             ws.Cells["A1"].LoadFromDataTable(data, true, OfficeOpenXml.Table.TableStyles.Light1);
-             ws.Cells[ws.Dimension.Address.ToString()].AutoFitColumns();
-
-             using (var file = File.Create(saveFileDialog1.FileName))
-                 excel.SaveAs(file);
-            */
-            /*
-            if (sfd.Rows.Count > 0)
-            {
-                Microsoft.Office.Interop.Excel.Application excelExport = new Microsoft.Office.Interop.Excel.Application();
-                excelExport.Application.Workbooks.Add(Type.Missing);
-                for (int i = 0; i < dataGridView1.Columns.Count + 1; i++)
-                {
-                    excelExport.Cells[1, i] = "dasdas";
-                }
-
-                for (int i = 0; i < dataGridView1.Rows.Count; i++)
-                {
-                    for (int j = 0; j <  dataGridView1.Columns.Count; j++)
-                    {
-                        excelExport.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value;
-                    }
-                }
-
-                excelExport.Columns.AutoFit();
-                excelExport.Visible = true;
-            }
-
-        */
-        }
-
+ 
+        } 
      
-
-        private void advancedDataGridView1_SortStringChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void advancedDataGridView1_FilterStringChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void advancedDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void topMenuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
 
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
+            int process = advancedDataGridView1.Rows.Count;
+            int index = 1;
+            try
+            {
 
+                Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
+                ExcelApp.Application.Workbooks.Add(Type.Missing);
+                
+
+                if (!backgroundWorker.CancellationPending)
+                {
+                    
+
+
+                    //storing header part in excel.
+                    for (int i = 1; i < advancedDataGridView1.Columns.Count; i++)
+                    {
+                        ExcelApp.Cells[1, i] = advancedDataGridView1.Columns[i - 1].HeaderText;
+                    }
+                    //storing each row and column value to excel.
+
+                    for (int i = 0; i < advancedDataGridView1.Rows.Count; i++)                 
+                    {
+
+                        for (int j = 0; j < advancedDataGridView1.Columns.Count; j++)
+                        {
+                            ExcelApp.Cells[i + 2, j + 1] = advancedDataGridView1.Rows[i].Cells[j].Value.ToString();
+                            
+                        }
+                        backgroundWorker.ReportProgress(index++ * 100 / process);
+                    }
+                }
+              
+
+                ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
+                ExcelApp.ActiveWorkbook.Saved = true;
+                ExcelApp.Quit();
+                //backgroundWorker.RunWorkerAsync(sfd.FileName);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
         }
 
         private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             progressBar1.Value = e.ProgressPercentage;
-            lablStatusBar.Text = string.Format("Processing...{0}", e.ProgressPercentage);
+            lablStatusBar.Text = string.Format("Processing...{0} %", e.ProgressPercentage);
             progressBar1.Update();
         }
 
