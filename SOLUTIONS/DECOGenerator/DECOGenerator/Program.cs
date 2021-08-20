@@ -17,7 +17,7 @@ namespace DECOGenerator
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Deco_Generator());
+            Application.Run(new Claim_Generator());
         }
     }
 }

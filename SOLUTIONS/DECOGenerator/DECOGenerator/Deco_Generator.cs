@@ -15,9 +15,9 @@ using System.Windows.Forms;
 
 namespace DECOGenerator
 {
-    public partial class Deco_Generator : Form
+    public partial class Claim_Generator : Form
     {
-        public Deco_Generator()
+        public Claim_Generator()
         {
             InitializeComponent();
             UpdateSubtitle(); // Display initial value
@@ -29,15 +29,31 @@ namespace DECOGenerator
 
         }
 
+        //Updating row and column counter
         private void UpdateSubtitle()
         {
             Total.Text = advancedDataGridView1.RowCount.ToString();
             TotalF.Text = advancedDataGridView1.ColumnCount.ToString();
         }
 
+        // removing from string array items with value equal "" (spaces).
+        private string[] removeSpaces(string[] data)
+        {
+            var list = new List<string>();
+
+            foreach (var item in data)
+            {
+                if (item != "")
+                {
+
+                    list.Add(item);
+                }
+            }
+
+            return list.ToArray();
+        }
 
 
-        
         System.Data.DataTable table = new System.Data.DataTable();
         private void Deco_Generator_Load(object sender, EventArgs e)
         {
@@ -102,78 +118,34 @@ namespace DECOGenerator
                     string[] data;
 
                     for (int i = 0; i < lines.Length; i++)
-                    {
-                            
+                    {                            
                         
                         data = lines[i].ToString().Split(' ');
 
-                         string[] p = removeSpaces(data);
+                         string[] newData = removeSpaces(data);
                         
-                        string[] row = new string[p.Length];
+                        string[] row = new string[newData.Length];
 
-                        for (int j = 0; j < p.Length; j++)
+                        for (int j = 0; j < newData.Length; j++)
                         {
 
-                            row[j] = p[j].Trim();
+                            row[j] = newData[j].Trim();
 
                         }
 
                         table.Rows.Add(row);
                     }
 
-
-                    //----------------------------------------------------------------->
-
-                    /*
-                    var lines = File.ReadAllLines(openFileDialogBox.FileName.ToString());
-                    string[] data;
-
-                    for (int i = 0; i < lines.Length; i++)
-                    {
-                        data = lines[i].ToString().Split(" ");
-
-                        string[] row = new string[data.Length];
-
-                        for (int j = 0; j < data.Length; i++)
-                        {
-                            row[j] = data[j];
-                        }
-
-                        table2.Rows.Add(row);
-                    }
-
-                   // advancedDataGridView1.DataSource = dataTable2;*/
-
-
-                    //-----------------------------------------------------------------------
-
                     MessageBox.Show("Your data have been imported successfuly.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 catch (Exception ex )
                 {
-
                     MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
              
 
             }
-        }
-
-        private string[] removeSpaces(string[] data)
-        {
-            var list = new List<string>();
-
-            foreach (var item in data)
-            {
-                if (item != "")
-                {
-
-                    list.Add(item); 
-                }
-            }
-
-            return list.ToArray();
         }
 
         private void ExitTool_StripMenuItem_Click(object sender, EventArgs e)
@@ -219,42 +191,6 @@ namespace DECOGenerator
                     progressBar1.Value = 0;
                     backgroundWorker.RunWorkerAsync(sfd.FileName);
 
-                  /*
-                   * try
-                    {
-                        Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
-                        ExcelApp.Application.Workbooks.Add(Type.Missing);
-
-                        ExcelApp.Columns.ColumnWidth = 20;
-
-                        //storing header part in excel.
-                        for (int i = 1; i < advancedDataGridView1.Columns.Count; i++)
-                        {
-                            ExcelApp.Cells[1, i] = advancedDataGridView1.Columns[i - 1].HeaderText;
-                        }
-
-                        //storing each row and column value to excel.
-
-                        for (int i = 0; i < advancedDataGridView1.Rows.Count; i++)
-                        {
-                            for (int j = 0; j < advancedDataGridView1.Columns.Count; j++)
-                            {
-                                ExcelApp.Cells[i + 2, j + 1] = advancedDataGridView1.Rows[i].Cells[j].Value.ToString();
-                            }
-                        }
-
-                        ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
-                        ExcelApp.ActiveWorkbook.Saved = true;
-                        ExcelApp.Quit();
-                        //backgroundWorker.RunWorkerAsync(sfd.FileName);
-
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                  */
-                    
                 }
             
             }
@@ -275,9 +211,6 @@ namespace DECOGenerator
 
                 if (!backgroundWorker.CancellationPending)
                 {
-                    
-
-
                     //storing header part in excel.
                     for (int i = 1; i < advancedDataGridView1.Columns.Count; i++)
                     {
@@ -293,6 +226,7 @@ namespace DECOGenerator
                             ExcelApp.Cells[i + 2, j + 1] = advancedDataGridView1.Rows[i].Cells[j].Value.ToString();
                             
                         }
+                    //Progress bar counter incremental.    
                         backgroundWorker.ReportProgress(index++ * 100 / process);
                     }
                 }
@@ -301,8 +235,6 @@ namespace DECOGenerator
                 ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
                 ExcelApp.ActiveWorkbook.Saved = true;
                 ExcelApp.Quit();
-                //backgroundWorker.RunWorkerAsync(sfd.FileName);
-
             }
             catch (Exception ex)
             {
