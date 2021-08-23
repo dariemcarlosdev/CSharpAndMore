@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vO/6G2JpP4489oU4KxLb4KZQ71mJzfeQ6ASWaNIh0kDigXm76w4MqZvZnaESAe5zCrFpc9LsOEVcieCW8qELbA==",
+  "dgSpecHash": "fjdSBLO5cY+3QDCBt+C22pDmGLa6uTrDNgywHR6AXKzhBzStF5L3kpuVV5RvpVLRRSR99EpwBltpvXz46MVLeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj",
+  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\CLAIMGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\335286\\.nuget\\packages\\adgv\\0.1.0.10\\adgv.0.1.0.10.nupkg.sha512",
     "C:\\Users\\335286\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",

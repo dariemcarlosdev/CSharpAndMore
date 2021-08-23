@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "DECOGenerator/1.0.0": {
+      "CLAIMGenerator/1.0.0": {
         "dependencies": {
           "ADGV": "0.1.0.10",
           "ClosedXML": "0.95.4",
           "Interop.Microsoft.Office.Interop.Excel": "1.9.0.0"
         },
         "runtime": {
-          "DECOGenerator.dll": {}
+          "CLAIMGenerator.dll": {}
         }
       },
       "ADGV/0.1.0.10": {
@@ -771,7 +771,7 @@
     }
   },
   "libraries": {
-    "DECOGenerator/1.0.0": {
+    "CLAIMGenerator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

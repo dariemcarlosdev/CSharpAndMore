@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj": {}
+    "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\CLAIMGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj": {
+    "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\CLAIMGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\CLAIMGenerator.csproj",
         "projectName": "CLAIMGenerator",
-        "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\DECOGenerator.csproj",
+        "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\CLAIMGenerator.csproj",
         "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\SOLUTIONS\\DECOGenerator\\DECOGenerator\\obj\\",
         "projectStyle": "PackageReference",

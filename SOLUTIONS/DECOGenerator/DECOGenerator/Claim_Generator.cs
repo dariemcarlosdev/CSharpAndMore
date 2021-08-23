@@ -17,6 +17,8 @@ namespace DECOGenerator
 {
     public partial class Claim_Generator : Form
     {
+        public List<string> layoutFields { get; set; }
+
         public Claim_Generator()
         {
             InitializeComponent();
@@ -55,50 +57,24 @@ namespace DECOGenerator
 
 
         System.Data.DataTable table = new System.Data.DataTable();
+        
         private void Deco_Generator_Load(object sender, EventArgs e)
         {
             //This fields should be created dinamicaly throughout that Layout defined (grab data from db.)
 
-            table.Columns.Add("DIST-INST", typeof(string));
-            table.Columns.Add("SCHL-INST", typeof(string));
-            table.Columns.Add("YEAR", typeof(string));
-            table.Columns.Add("SUR", typeof(string));
-            table.Columns.Add("DIST NAME", typeof(string));
-            table.Columns.Add("LAST NAME", typeof(string));
-            /*table.Columns.Add("FIRST NAME", typeof(string));
-            table.Columns.Add("BIRTHDATE", typeof(string));
-            table.Columns.Add("GRADE", typeof(string));
-            table.Columns.Add("DIST", typeof(string));
-            table.Columns.Add("SCHL", typeof(string));
-            table.Columns.Add("SORT-IND", typeof(string));
-            table.Columns.Add("FLEID", typeof(string));
-            table.Columns.Add("COURSE", typeof(string));
-            table.Columns.Add("SECTION", typeof(string));
-            table.Columns.Add("B-PERIOD", typeof(string));
-            table.Columns.Add("E-PERIOD", typeof(string));
-            table.Columns.Add("FEFP", typeof(string));
-            table.Columns.Add("FTE", typeof(string));
-            table.Columns.Add("MINS", typeof(string));
-            table.Columns.Add("SCHL-FTE", typeof(string));
-            table.Columns.Add("TERM", typeof(string));
-            table.Columns.Add("FTE-CALAB", typeof(string));
-            table.Columns.Add("CALCUL", typeof(string));
-            table.Columns.Add("PRORATE-ID", typeof(string));
-            table.Columns.Add("FUND-GROUP", typeof(string));
-            table.Columns.Add("DUAL-ENRL", typeof(string));
-            table.Columns.Add("FTE-VIRT_EST", typeof(string));
-            table.Columns.Add("MIDDLE NAME", typeof(string));
-            table.Columns.Add("SEX", typeof(string));
-            table.Columns.Add("CLAIM", typeof(string));*/
+            layoutFields =  new List<string> {"DIST-INST","SCHL-INST","YEAR","SURVEY","DIST NAME","LAST NAME","FIRST NAME","BIRTHDATE",
+                                             "AGE", "GRADE","DIST","SCHL","SORT-IND","FLEID","COURSE","SECTION","B-PERIOD","E-PERIOD",
+                                             "FEFP","FTE","MINS","SCHL-FTE","TERM","FTE-CALAB","CALCUL","PRORATE-ID","FUND-GROUP","DUAL-ENRL",
+                                             "FTE-VIRT_EST","MIDDLE NAME","SEX","CLAIM" };
 
+            for (int i = 0; i < layoutFields.Count; i++)
+            {
+                table.Columns.Add(layoutFields[i], typeof(string));
+            }
             // dataGridView1.DataSource = table;
-            // advancedDataGridView1.DataSource = table;
-            
             advancedDataGridView1.DataSource = table;
 
         }
-
-
        
         //Import Text file to DataGrid View.
         private void OpenTool_StripMenuItem_Click(object sender, EventArgs e)
@@ -114,23 +90,23 @@ namespace DECOGenerator
             {
                 try
                 {
-                    string[] lines = File.ReadAllLines(openFileDialogBox.FileName.ToString());
+                    var lines = File.ReadAllLines(openFileDialogBox.FileName.ToString());
+
                     string[] data;
 
-                    for (int i = 0; i < lines.Length; i++)
-                    {                            
-                        
-                        data = lines[i].ToString().Split(' ');
+                    for (int i = 0; i < lines.Length; i++)                    
+                    {
+                                                
+                        //Surely this to method are no needed after apply layout to lines string. Se above.
+                         data = lines[i].ToString().Split(' ');
 
                          string[] newData = removeSpaces(data);
                         
                         string[] row = new string[newData.Length];
-
-                        for (int j = 0; j < newData.Length; j++)
+                         
+                        for (int z = 0; z< newData.Length; z++)
                         {
-
-                            row[j] = newData[j].Trim();
-
+                            row[z] = newData[z].Trim();
                         }
 
                         table.Rows.Add(row);
@@ -196,51 +172,60 @@ namespace DECOGenerator
             }
  
         } 
-     
 
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            int process = advancedDataGridView1.Rows.Count;
+            int processCount = advancedDataGridView1.Rows.Count;
             int index = 1;
-            try
-            {
-
-                Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
-                ExcelApp.Application.Workbooks.Add(Type.Missing);
-                
-
-                if (!backgroundWorker.CancellationPending)
+            var ExcelApp = new Microsoft.Office.Interop.Excel.Application();
+            
+            
+                try
                 {
-                    //storing header part in excel.
-                    for (int i = 1; i < advancedDataGridView1.Columns.Count; i++)
-                    {
-                        ExcelApp.Cells[1, i] = advancedDataGridView1.Columns[i - 1].HeaderText;
-                    }
-                    //storing each row and column value to excel.
 
-                    for (int i = 0; i < advancedDataGridView1.Rows.Count; i++)                 
-                    {
+                    //Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
+                    ExcelApp.Application.Workbooks.Add(Type.Missing);
 
-                        for (int j = 0; j < advancedDataGridView1.Columns.Count; j++)
+
+                    if (!backgroundWorker.CancellationPending)
+                    {
+                        //storing header part in excel.
+                        for (int i = 1; i < advancedDataGridView1.Columns.Count; i++)
                         {
-                            ExcelApp.Cells[i + 2, j + 1] = advancedDataGridView1.Rows[i].Cells[j].Value.ToString();
-                            
+                            ExcelApp.Cells[1, i] = advancedDataGridView1.Columns[i - 1].HeaderText;
                         }
-                    //Progress bar counter incremental.    
-                        backgroundWorker.ReportProgress(index++ * 100 / process);
-                    }
-                }
-              
+                        //storing each row and column value to excel.
 
-                ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
-                ExcelApp.ActiveWorkbook.Saved = true;
-                ExcelApp.Quit();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        for (int i = 0; i < advancedDataGridView1.Rows.Count; i++)
+                        {
+
+                            for (int j = 0; j < advancedDataGridView1.Columns.Count; j++)
+                            {
+                                ExcelApp.Cells[i + 2, j + 1] = advancedDataGridView1.Rows[i].Cells[j].Value.ToString();
+
+                            }
+                            //Progress bar counter incremental.    
+                            backgroundWorker.ReportProgress((index++) * 100 / processCount);
+                        }
+                    }
+
+
+                    ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
+                    ExcelApp.ActiveWorkbook.Saved = true;
+                    ExcelApp.Quit();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
+               
+            
+
+           
+            
                 
-            }
         }
 
         private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
