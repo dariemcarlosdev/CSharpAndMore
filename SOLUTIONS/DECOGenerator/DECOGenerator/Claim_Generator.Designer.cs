@@ -342,7 +342,7 @@ namespace DECOGenerator
             this.MainMenuStrip = this.topMenuStrip;
             this.Name = "Claim_Generator";
             this.Text = "CLAIMGenerator V.0.01";
-            this.Load += new System.EventHandler(this.Deco_Generator_Load);
+            this.Load += new System.EventHandler(this.Claim_File_Generator_Load);
             this.topMenuStrip.ResumeLayout(false);
             this.topMenuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).EndInit();

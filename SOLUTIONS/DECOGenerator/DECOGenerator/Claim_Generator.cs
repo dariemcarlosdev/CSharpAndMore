@@ -58,7 +58,7 @@ namespace DECOGenerator
 
         System.Data.DataTable table = new System.Data.DataTable();
         
-        private void Deco_Generator_Load(object sender, EventArgs e)
+        private void Claim_File_Generator_Load(object sender, EventArgs e)
         {
             //This fields should be created dinamicaly throughout that Layout defined (grab data from db.)
 
@@ -124,6 +124,7 @@ namespace DECOGenerator
             }
         }
 
+        //Exit functionality option.
         private void ExitTool_StripMenuItem_Click(object sender, EventArgs e)
         
         {
@@ -209,7 +210,6 @@ namespace DECOGenerator
                         }
                     }
 
-
                     ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialogBox.FileName.ToString());
                     ExcelApp.ActiveWorkbook.Saved = true;
                     ExcelApp.Quit();
@@ -218,15 +218,8 @@ namespace DECOGenerator
                 {
                     MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                }
-
-               
-            
-
-           
-            
-                
-        }
+                }          
+         }
 
         private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
