@@ -1,4 +1,5 @@
 ﻿
+using CLAIMGenerator;
 using ClosedXML.Excel;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace DECOGenerator
 {
     public partial class Claim_Generator : Form
     {
-        public List<string> layoutFields { get; set; }
+        public List<string> layoutFieldsList { get; set; }
 
         public Claim_Generator()
         {
@@ -62,14 +63,15 @@ namespace DECOGenerator
         {
             //This fields should be created dinamicaly throughout that Layout defined (grab data from db.)
 
-            layoutFields =  new List<string> {"DIST-INST","SCHL-INST","YEAR","SURVEY","DIST NAME","LAST NAME","FIRST NAME","BIRTHDATE",
-                                             "AGE", "GRADE","DIST","SCHL","SORT-IND","FLEID","COURSE","SECTION","B-PERIOD","E-PERIOD",
-                                             "FEFP","FTE","MINS","SCHL-FTE","TERM","FTE-CALAB","CALCUL","PRORATE-ID","FUND-GROUP","DUAL-ENRL",
-                                             "FTE-VIRT_EST","MIDDLE NAME","SEX","CLAIM" };
+            layoutFieldsList =  new List<string> {"DIST-INST","SCHL-INST","YEAR","SURVEY","DIST NAME","LAST NAME","FIRST NAME","BIRTHDATE",
+                                                  "AGE", "GRADE","DIST","SCHL","SORT-IND","FLEID","COURSE","SECTION","B-PERIOD","E-PERIOD",
+                                                  "FEFP","FTE","MINS","SCHL-FTE","TERM","FTE-CALAB","CALCUL","PRORATE-ID","FUND-GROUP","DUAL-ENRL",
+                                                  "FTE-VIRT_EST","MIDDLE NAME","SEX","CLAIM" };
 
-            for (int i = 0; i < layoutFields.Count; i++)
+            for (int i = 0; i < layoutFieldsList.Count; i++)
             {
-                table.Columns.Add(layoutFields[i], typeof(string));
+                table.Columns.Add(layoutFieldsList[i], typeof(string));
+                
             }
             // dataGridView1.DataSource = table;
             advancedDataGridView1.DataSource = table;
@@ -96,17 +98,21 @@ namespace DECOGenerator
 
                     for (int i = 0; i < lines.Length; i++)                    
                     {
-                                                
-                        //Surely this to method are no needed after apply layout to lines string. Se above.
-                         data = lines[i].ToString().Split(' ');
 
-                         string[] newData = removeSpaces(data);
+                        //Using extension method to insert string in a given list of position indexs.
                         
-                        string[] row = new string[newData.Length];
+                        string line = lines[i].ToString().InsertInPositions(new List<int> {2,8,13,15,38,56,69,78,81,84,87,107,109,124,132,138,141,144,148,154,159,164,166,172,174,184,186,188,194,205}, "/");                       
+                        
+                        //Create new string array splitting by character.
+                        data = line.ToString().Split("/");
+
+                        //string[] newData = removeSpaces(data);
+                        
+                        string[] row = new string[data.Length];
                          
-                        for (int z = 0; z< newData.Length; z++)
+                        for (int z = 0; z < data.Length ; z++)
                         {
-                            row[z] = newData[z].Trim();
+                            row[z] = data[z].Trim();
                         }
 
                         table.Rows.Add(row);
@@ -128,7 +134,7 @@ namespace DECOGenerator
         private void ExitTool_StripMenuItem_Click(object sender, EventArgs e)
         
         {
-            if (MessageBox.Show("Are You Sure you want to Exit?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure you want to Exit?", "Exit", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 System.Windows.Forms.Application.ExitThread();
             }
