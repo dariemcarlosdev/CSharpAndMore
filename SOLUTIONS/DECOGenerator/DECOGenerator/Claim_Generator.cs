@@ -124,8 +124,7 @@ namespace DECOGenerator
                 catch (Exception ex )
                 {
                     MessageBox.Show(ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-             
+                }            
 
             }
         }
@@ -186,13 +185,10 @@ namespace DECOGenerator
             int index = 1;
             var ExcelApp = new Microsoft.Office.Interop.Excel.Application();
             
-            
                 try
                 {
-
                     //Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
                     ExcelApp.Application.Workbooks.Add(Type.Missing);
-
 
                     if (!backgroundWorker.CancellationPending)
                     {
@@ -242,6 +238,34 @@ namespace DECOGenerator
 
                 MessageBox.Show("You have successfully exported your data.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        DataTable OrignalADGVdt = null;
+        private void advancedDataGridView1_FilterStringChanged(object sender, EventArgs e)
+        {
+            
+            var fdgv = advancedDataGridView1;
+            DataTable dt = null;
+            if (OrignalADGVdt == null)
+            {
+                OrignalADGVdt = (DataTable)fdgv.DataSource;
+            }
+            if (fdgv.FilterString.Length > 0)
+            {
+                dt = (DataTable)fdgv.DataSource;
+            }
+            else//Clear Filter
+            {
+                dt = OrignalADGVdt;
+            }
+
+            fdgv.DataSource = dt.Select(fdgv.FilterString).CopyToDataTable();
+
+        }
+
+        private void advancedDataGridView1_SortStringChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 

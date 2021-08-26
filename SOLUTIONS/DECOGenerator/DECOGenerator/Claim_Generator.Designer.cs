@@ -213,7 +213,7 @@ namespace DECOGenerator
             | System.Windows.Forms.AnchorStyles.Right)));
             this.advancedDataGridView1.AutoGenerateContextFilters = true;
             this.advancedDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlLight;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -221,15 +221,18 @@ namespace DECOGenerator
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.advancedDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.advancedDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.advancedDataGridView1.ColumnHeadersHeight = 29;
             this.advancedDataGridView1.DateWithTime = true;
             this.advancedDataGridView1.Location = new System.Drawing.Point(11, 53);
             this.advancedDataGridView1.Name = "advancedDataGridView1";
-            this.advancedDataGridView1.RowHeadersWidth = 51;
+            this.advancedDataGridView1.RowHeadersWidth = 31;
             this.advancedDataGridView1.RowTemplate.Height = 29;
+            this.advancedDataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.advancedDataGridView1.Size = new System.Drawing.Size(1291, 417);
             this.advancedDataGridView1.TabIndex = 7;
             this.advancedDataGridView1.TimeFilter = true;
+            this.advancedDataGridView1.SortStringChanged += new System.EventHandler(this.advancedDataGridView1_SortStringChanged);
+            this.advancedDataGridView1.FilterStringChanged += new System.EventHandler(this.advancedDataGridView1_FilterStringChanged);
             // 
             // Total
             // 
