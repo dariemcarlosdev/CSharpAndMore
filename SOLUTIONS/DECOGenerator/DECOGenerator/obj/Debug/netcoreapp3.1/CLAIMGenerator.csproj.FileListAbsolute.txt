@@ -23,4 +23,3 @@ C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerat
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\CLAIMGenerator.dll
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\CLAIMGenerator.pdb
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\CLAIMGenerator.genruntimeconfig.cache
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\SOLUTIONS\DECOGenerator\DECOGenerator\obj\Debug\netcoreapp3.1\CLAIMGenerator.csprojAssemblyReference.cache

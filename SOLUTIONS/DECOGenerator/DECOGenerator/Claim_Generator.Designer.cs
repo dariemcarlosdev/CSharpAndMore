@@ -1,4 +1,6 @@
 ﻿
+using DocumentFormat.OpenXml.Wordprocessing;
+
 namespace DECOGenerator
 {
     partial class Claim_Generator
@@ -64,6 +66,9 @@ namespace DECOGenerator
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lablStatusBar = new System.Windows.Forms.Label();
             this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
+            this.btnFirst = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.lblPage = new System.Windows.Forms.Label();
             this.topMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -225,10 +230,11 @@ namespace DECOGenerator
             this.advancedDataGridView1.DateWithTime = true;
             this.advancedDataGridView1.Location = new System.Drawing.Point(11, 53);
             this.advancedDataGridView1.Name = "advancedDataGridView1";
+            this.advancedDataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.advancedDataGridView1.RowHeadersWidth = 31;
             this.advancedDataGridView1.RowTemplate.Height = 29;
             this.advancedDataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.advancedDataGridView1.Size = new System.Drawing.Size(1291, 417);
+            this.advancedDataGridView1.Size = new System.Drawing.Size(1291, 376);
             this.advancedDataGridView1.TabIndex = 7;
             this.advancedDataGridView1.TimeFilter = true;
             this.advancedDataGridView1.SortStringChanged += new System.EventHandler(this.advancedDataGridView1_SortStringChanged);
@@ -329,11 +335,46 @@ namespace DECOGenerator
             this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
             this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
             // 
+            // btnFirst
+            // 
+            this.btnFirst.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnFirst.Location = new System.Drawing.Point(531, 448);
+            this.btnFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(58, 31);
+            this.btnFirst.TabIndex = 14;
+            this.btnFirst.Text = "<<";
+            this.btnFirst.UseVisualStyleBackColor = true;
+            // 
+            // btnNext
+            // 
+            this.btnNext.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnNext.Location = new System.Drawing.Point(658, 448);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(54, 31);
+            this.btnNext.TabIndex = 15;
+            this.btnNext.Text = ">>";
+            this.btnNext.UseVisualStyleBackColor = true;
+            // 
+            // lblPage
+            // 
+            this.lblPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblPage.AutoSize = true;
+            this.lblPage.Location = new System.Drawing.Point(610, 453);
+            this.lblPage.Name = "lblPage";
+            this.lblPage.Size = new System.Drawing.Size(30, 20);
+            this.lblPage.TabIndex = 16;
+            this.lblPage.Text = "???";
+            // 
             // Claim_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1315, 565);
+            this.Controls.Add(this.lblPage);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnFirst);
             this.Controls.Add(this.lablStatusBar);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.TotalF);
@@ -388,6 +429,9 @@ namespace DECOGenerator
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label lablStatusBar;
         private System.ComponentModel.BackgroundWorker backgroundWorker;
+        private System.Windows.Forms.Button btnFirst;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Label lblPage;
     }
 }
 

@@ -56,15 +56,13 @@ namespace DECOGenerator
             return list.ToArray();
         }
 
-
-        System.Data.DataTable table = new System.Data.DataTable();
-        
+       readonly System.Data.DataTable table = new System.Data.DataTable();
         private void Claim_File_Generator_Load(object sender, EventArgs e)
         {
             //This fields should be created dinamicaly throughout that Layout defined (grab data from db.)
 
-            layoutFieldsList =  new List<string> {"DIST-INST","SCHL-INST","YEAR","SURVEY","DIST NAME","LAST NAME","FIRST NAME","BIRTHDATE",
-                                                  "AGE", "GRADE","DIST","SCHL","SORT-IND","FLEID","COURSE","SECTION","B-PERIOD","E-PERIOD",
+            layoutFieldsList = new List<string> {"DIST-INST","SCHL-INST","YEAR","SURVEY","DIST NAME","LAST NAME","FIRST NAME","BIRTHDATE",
+                                          "AGE", "GRADE","DIST","SCHL","SORT-IND","FLEID","COURSE","SECTION","B-PERIOD","E-PERIOD",
                                                   "FEFP","FTE","MINS","SCHL-FTE","TERM","FTE-CALAB","CALCUL","PRORATE-ID","FUND-GROUP","DUAL-ENRL",
                                                   "FTE-VIRT_EST","MIDDLE NAME","SEX","CLAIM" };
 
@@ -73,9 +71,7 @@ namespace DECOGenerator
                 table.Columns.Add(layoutFieldsList[i], typeof(string));
                 
             }
-            // dataGridView1.DataSource = table;
             advancedDataGridView1.DataSource = table;
-
         }
        
         //Import Text file to DataGrid View.
@@ -105,7 +101,7 @@ namespace DECOGenerator
                         
                         //Create new string array splitting by character.
                         data = line.ToString().Split("/");
-
+                                                
                         //string[] newData = removeSpaces(data);
                         
                         string[] row = new string[data.Length];
