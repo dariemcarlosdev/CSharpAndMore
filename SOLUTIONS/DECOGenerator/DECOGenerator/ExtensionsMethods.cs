@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Data;
+using System.Reflection;
 
 namespace CLAIMGenerator
 {
@@ -22,10 +23,34 @@ namespace CLAIMGenerator
 
         //Extension Method to convert Datatable to Generic List.
 
-        public static List<DataRow> DataTableToList(this DataTable dt)
+        public static List<T> DataTableToList<T>(DataTable dt)
         {
-            List<DataRow> list = dt.Rows.Cast<DataRow>().ToList();
-            return list;
+            List <T> data = new List<T>();
+            foreach (DataRow row in dt.Rows)
+            {
+                T item = GetItem<T>(row);
+                data.Add(item);
+            }
+
+            return data;
+        }
+
+        private static T GetItem<T>(DataRow dr)
+        {
+            Type temp = typeof(T);
+            T obj = Activator.CreateInstance<T>();
+
+            foreach (DataColumn column in dr.Table.Columns)
+            {
+                foreach (PropertyInfo pro in temp.GetProperties())
+                {
+                    if (pro.Name == column.ColumnName)
+                        pro.SetValue(obj, dr[column.ColumnName], null);
+                    else
+                        continue;
+                }
+            }
+            return obj;
         }
     }
 

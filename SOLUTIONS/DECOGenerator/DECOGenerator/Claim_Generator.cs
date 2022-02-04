@@ -61,17 +61,21 @@ namespace DECOGenerator
         {
             //This fields should be created dinamicaly throughout that Layout defined (grab data from db.)
 
-            layoutFieldsList = new List<string> {"DIST-INST","SCHL-INST","YEAR","SURVEY","DIST NAME","LAST NAME","FIRST NAME","BIRTHDATE",
+            layoutFieldsList = new List<string> {"DIST-INST","SCHL-INST","YEAR","SURVEY","DIST NAME","LAST NAME","FIRST NAME","BIRTH DATE",
                                           "AGE", "GRADE","DIST","SCHL","SORT-IND","FLEID","COURSE","SECTION","B-PERIOD","E-PERIOD",
                                                   "FEFP","FTE","MINS","SCHL-FTE","TERM","FTE-CALAB","CALCUL","PRORATE-ID","FUND-GROUP","DUAL-ENRL",
                                                   "FTE-VIRT_EST","MIDDLE NAME","SEX","CLAIM" };
 
-            for (int i = 0; i < layoutFieldsList.Count; i++)
+            foreach (var item in layoutFieldsList)
             {
-                table.Columns.Add(layoutFieldsList[i], typeof(string));
+                                
+                table.Columns.Add(item, typeof(string));
                 
             }
             advancedDataGridView1.DataSource = table;
+
+            
+
         }
        
         //Import Text file to DataGrid View.
