@@ -1,0 +1,15 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\bin\Debug\net5.0\NinjaUnitTest.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\bin\Debug\net5.0\NinjaUnitTest.deps.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\bin\Debug\net5.0\NinjaUnitTest.runtimeconfig.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\bin\Debug\net5.0\NinjaUnitTest.runtimeconfig.dev.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\bin\Debug\net5.0\NinjaUnitTest.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\bin\Debug\net5.0\ref\NinjaUnitTest.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\bin\Debug\net5.0\NinjaUnitTest.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\obj\Debug\net5.0\NinjaUnitTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\obj\Debug\net5.0\NinjaUnitTest.AssemblyInfoInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\obj\Debug\net5.0\NinjaUnitTest.AssemblyInfo.cs
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\obj\Debug\net5.0\NinjaUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\obj\Debug\net5.0\NinjaUnitTest.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\obj\Debug\net5.0\ref\NinjaUnitTest.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\obj\Debug\net5.0\NinjaUnitTest.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\UNIT.TEST\NinjaUnitTest\NinjaUnitTest\obj\Debug\net5.0\NinjaUnitTest.genruntimeconfig.cache
