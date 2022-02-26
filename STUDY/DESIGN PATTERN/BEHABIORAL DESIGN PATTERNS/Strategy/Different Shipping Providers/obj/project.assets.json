@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Dariem Carlos\\.nuget\\packages\\": {}
+    "C:\\Users\\335286\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\Different Shipping Providers.csproj",
+      "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\BEHABIORAL DESIGN PATTERNS\\Strategy\\Different Shipping Providers\\Different Shipping Providers.csproj",
       "projectName": "Different Shipping Providers",
-      "projectPath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\Different Shipping Providers.csproj",
-      "packagesPath": "C:\\Users\\Dariem Carlos\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning\\C#\\STUDY\\DESIGN PATTERN\\BEHABIORAL STRATEGY PATTERN\\Different Shipping Providers\\obj\\",
+      "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\BEHABIORAL DESIGN PATTERNS\\Strategy\\Different Shipping Providers\\Different Shipping Providers.csproj",
+      "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\DESIGN PATTERN\\BEHABIORAL DESIGN PATTERNS\\Strategy\\Different Shipping Providers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dariem Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\335286\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.211\\RuntimeIdentifierGraph.json"
       }
     }
   }
