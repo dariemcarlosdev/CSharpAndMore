@@ -1,0 +1,16 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\bin\Debug\net5.0\VirtualMethodTestProject.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\bin\Debug\net5.0\VirtualMethodTestProject.deps.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\bin\Debug\net5.0\VirtualMethodTestProject.runtimeconfig.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\bin\Debug\net5.0\VirtualMethodTestProject.runtimeconfig.dev.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\bin\Debug\net5.0\VirtualMethodTestProject.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\bin\Debug\net5.0\ref\VirtualMethodTestProject.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\bin\Debug\net5.0\VirtualMethodTestProject.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\VirtualMethodTestProject.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\VirtualMethodTestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\VirtualMethodTestProject.AssemblyInfoInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\VirtualMethodTestProject.AssemblyInfo.cs
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\VirtualMethodTestProject.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\VirtualMethodTestProject.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\ref\VirtualMethodTestProject.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\VirtualMethodTestProject.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\VIRTUAL METHODS\VirtualMethodTestProject\obj\Debug\net5.0\VirtualMethodTestProject.genruntimeconfig.cache
