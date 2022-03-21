@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseStrings\bin\Debug\ReverseStrings.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseStrings\bin\Debug\ReverseStrings.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseStrings\bin\Debug\ReverseStrings.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseStrings\obj\Debug\ReverseStrings.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseStrings\obj\Debug\ReverseStrings.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseStrings\obj\Debug\ReverseStrings.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseStrings\obj\Debug\ReverseStrings.pdb

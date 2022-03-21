@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\SearchInsertPosition\bin\Debug\SearchInsertPosition.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\SearchInsertPosition\bin\Debug\SearchInsertPosition.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\SearchInsertPosition\bin\Debug\SearchInsertPosition.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\SearchInsertPosition\obj\Debug\SearchInsertPosition.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\SearchInsertPosition\obj\Debug\SearchInsertPosition.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\SearchInsertPosition\obj\Debug\SearchInsertPosition.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\SearchInsertPosition\obj\Debug\SearchInsertPosition.pdb

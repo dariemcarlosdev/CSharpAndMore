@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\MiddleOfLinkedList\bin\Debug\MiddleOfLinkedList.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\MiddleOfLinkedList\bin\Debug\MiddleOfLinkedList.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\MiddleOfLinkedList\bin\Debug\MiddleOfLinkedList.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\MiddleOfLinkedList\obj\Debug\MiddleOfLinkedList.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\MiddleOfLinkedList\obj\Debug\MiddleOfLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\MiddleOfLinkedList\obj\Debug\MiddleOfLinkedList.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\MiddleOfLinkedList\obj\Debug\MiddleOfLinkedList.pdb

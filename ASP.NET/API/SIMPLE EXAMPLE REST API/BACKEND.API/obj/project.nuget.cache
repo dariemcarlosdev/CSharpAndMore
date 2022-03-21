@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iJjqhTipoVNKZrQFwDEu2wTiyG+trpj2J7v0LSN0RDcrGBYHXaIzqBlvGqBqDlThebZOkuqM5oGnk0Hgi3QJcw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\ASP.NET\\API\\SIMPLE EXAMPLE REST API\\BACKEND.API\\BACKEND.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\335286\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512"
+  ],
+  "logs": []
+}

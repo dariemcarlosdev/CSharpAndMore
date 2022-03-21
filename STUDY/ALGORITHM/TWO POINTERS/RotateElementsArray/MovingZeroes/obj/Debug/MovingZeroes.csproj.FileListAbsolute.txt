@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\MovingZeroes\bin\Debug\MovingZeroes.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\MovingZeroes\bin\Debug\MovingZeroes.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\MovingZeroes\bin\Debug\MovingZeroes.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\MovingZeroes\obj\Debug\MovingZeroes.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\MovingZeroes\obj\Debug\MovingZeroes.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\MovingZeroes\obj\Debug\MovingZeroes.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\MovingZeroes\obj\Debug\MovingZeroes.csprojAssemblyReference.cache

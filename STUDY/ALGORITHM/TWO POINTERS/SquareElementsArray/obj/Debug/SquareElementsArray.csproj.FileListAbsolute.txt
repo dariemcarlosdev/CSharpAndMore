@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\bin\Debug\SquareElementsArray.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\bin\Debug\SquareElementsArray.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\bin\Debug\SquareElementsArray.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\obj\Debug\SquareElementsArray.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\obj\Debug\SquareElementsArray.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\obj\Debug\SquareElementsArray.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\obj\Debug\SquareElementsArray.pdb

@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\RotateArrayElements\bin\Debug\RotateArrayElements.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\RotateArrayElements\bin\Debug\RotateArrayElements.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\RotateArrayElements\bin\Debug\RotateArrayElements.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\RotateArrayElements\obj\Debug\RotateArrayElements.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\RotateArrayElements\obj\Debug\RotateArrayElements.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\RotateArrayElements\obj\Debug\RotateArrayElements.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\RotateElementsArray\RotateArrayElements\obj\Debug\RotateArrayElements.pdb

@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseWordsInString\bin\Debug\ReverseWordsInString.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseWordsInString\bin\Debug\ReverseWordsInString.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseWordsInString\bin\Debug\ReverseWordsInString.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseWordsInString\obj\Debug\ReverseWordsInString.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseWordsInString\obj\Debug\ReverseWordsInString.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseWordsInString\obj\Debug\ReverseWordsInString.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TWO POINTERS\SquareElementsArray\ReverseWordsInString\obj\Debug\ReverseWordsInString.pdb

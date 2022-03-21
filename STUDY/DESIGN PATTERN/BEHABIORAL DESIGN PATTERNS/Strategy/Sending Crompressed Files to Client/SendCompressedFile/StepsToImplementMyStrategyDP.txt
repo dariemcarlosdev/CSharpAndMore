@@ -1,0 +1,11 @@
+﻿1- Create an Abstract Strategy. (Using Interfaces)
+Strategy (ICompression): The Strategy declares an interface that is going to be implemented by all supported algorithms.
+
+2- Creating concrete Strategy.
+ConcreteStrategy (RarCompression and ZipCompression): These are classes and they implement the algorithm defined by the Strategy (ICompression) interface.
+
+3- Creating context.
+Context (CompressionContext): This is a class which maintains a reference to a Strategy object, and then uses that reference to call the algorithm defined by a particular ConcreteStrategy (i.e. either RarCompression or ZipCompression).
+
+4.Client.
+

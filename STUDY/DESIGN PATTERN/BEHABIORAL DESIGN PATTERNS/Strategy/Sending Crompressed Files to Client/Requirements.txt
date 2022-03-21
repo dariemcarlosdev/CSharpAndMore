@@ -1,0 +1,11 @@
+Business requirements:
+
+Compress Folder and dend it to the Client.
+
+
+Solutions:
+
+Solution1: Compress the folder in .rar
+Solution2: Compress the folder in .zip
+
+As per the strategy design pattern, for the particular problem (task) there are multiple solutions and which solution to be used will be decided by the client at runtime. So, in my example, the client will decide at runtime in which format he wants the file.

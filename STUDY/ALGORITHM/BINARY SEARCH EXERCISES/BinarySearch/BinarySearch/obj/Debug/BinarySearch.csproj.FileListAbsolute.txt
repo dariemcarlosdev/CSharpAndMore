@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\PRACTICAL EXERCISES\EXAM1\BinarySearch\bin\Debug\BinarySearch.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\PRACTICAL EXERCISES\EXAM1\BinarySearch\bin\Debug\BinarySearch.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\PRACTICAL EXERCISES\EXAM1\BinarySearch\bin\Debug\BinarySearch.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\PRACTICAL EXERCISES\EXAM1\BinarySearch\obj\Debug\BinarySearch.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\PRACTICAL EXERCISES\EXAM1\BinarySearch\obj\Debug\BinarySearch.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\PRACTICAL EXERCISES\EXAM1\BinarySearch\obj\Debug\BinarySearch.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\PRACTICAL EXERCISES\EXAM1\BinarySearch\obj\Debug\BinarySearch.pdb

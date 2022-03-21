@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\MinCost\obj\Debug\MinCost.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\MinCost\obj\Debug\MinCost.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\MinCost\bin\Debug\MinCost.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\MinCost\bin\Debug\MinCost.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\MinCost\bin\Debug\MinCost.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\MinCost\obj\Debug\MinCost.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\MinCost\obj\Debug\MinCost.pdb

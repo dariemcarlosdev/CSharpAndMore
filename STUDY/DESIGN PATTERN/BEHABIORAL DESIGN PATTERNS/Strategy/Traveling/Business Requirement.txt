@@ -1,0 +1,11 @@
+
+Let's suppose you want to go to the Airport. There three different kinds of transport modes. What can you use? You can use Auto, or Train, or Taxi, or Bus to go Airport. So, you have four options and you can choose any one option to go Airport. The distance from your home to the airport is 100 Km.
+
+Problem:
+
+Go to Airport.
+
+Solutions:
+
+4 posibles solutions (Strategies). Use Auto, Train, Taxi, or Bus to go to the Airport. I have to choise one solution at the run - time, base on the coste, convenience and time.
+

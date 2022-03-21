@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL DESIGN PATTERNS\Strategy\Traveling\TravelingStrategy\bin\Debug\TravelingStrategy.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL DESIGN PATTERNS\Strategy\Traveling\TravelingStrategy\bin\Debug\TravelingStrategy.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL DESIGN PATTERNS\Strategy\Traveling\TravelingStrategy\bin\Debug\TravelingStrategy.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL DESIGN PATTERNS\Strategy\Traveling\TravelingStrategy\obj\Debug\TravelingStrategy.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL DESIGN PATTERNS\Strategy\Traveling\TravelingStrategy\obj\Debug\TravelingStrategy.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL DESIGN PATTERNS\Strategy\Traveling\TravelingStrategy\obj\Debug\TravelingStrategy.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\BEHABIORAL DESIGN PATTERNS\Strategy\Traveling\TravelingStrategy\obj\Debug\TravelingStrategy.pdb

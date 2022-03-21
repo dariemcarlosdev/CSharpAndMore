@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\SLIDING WINDOW\StringPermutation\bin\Debug\StringPermutation.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\SLIDING WINDOW\StringPermutation\bin\Debug\StringPermutation.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\SLIDING WINDOW\StringPermutation\bin\Debug\StringPermutation.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\SLIDING WINDOW\StringPermutation\obj\Debug\StringPermutation.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\SLIDING WINDOW\StringPermutation\obj\Debug\StringPermutation.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\SLIDING WINDOW\StringPermutation\obj\Debug\StringPermutation.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\SLIDING WINDOW\StringPermutation\obj\Debug\StringPermutation.pdb
