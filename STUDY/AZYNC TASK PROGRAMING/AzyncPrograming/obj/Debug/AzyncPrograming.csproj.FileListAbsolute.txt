@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\AZYNC TASK PROGRAMING\AzyncPrograming\bin\Debug\AzyncPrograming.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\AZYNC TASK PROGRAMING\AzyncPrograming\bin\Debug\AzyncPrograming.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\AZYNC TASK PROGRAMING\AzyncPrograming\bin\Debug\AzyncPrograming.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\AZYNC TASK PROGRAMING\AzyncPrograming\obj\Debug\AzyncPrograming.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\AZYNC TASK PROGRAMING\AzyncPrograming\obj\Debug\AzyncPrograming.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\AZYNC TASK PROGRAMING\AzyncPrograming\obj\Debug\AzyncPrograming.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\AZYNC TASK PROGRAMING\AzyncPrograming\obj\Debug\AzyncPrograming.pdb
