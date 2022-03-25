@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\CutomersDAO\bin\Debug\CutomersDAO.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\CutomersDAO\bin\Debug\CutomersDAO.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\CutomersDAO\bin\Debug\CutomersDAO.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\CutomersDAO\obj\Debug\CutomersDAO.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\CutomersDAO\obj\Debug\CutomersDAO.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\CutomersDAO\obj\Debug\CutomersDAO.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DESIGN PATTERN\DEPENDENCY INJECTION DESIGN PATTERN\ProAndMethDI\CutomersDAO\obj\Debug\CutomersDAO.pdb

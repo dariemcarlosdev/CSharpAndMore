@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DELEGATES\DelegateClass\bin\Debug\DelegateClass.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DELEGATES\DelegateClass\bin\Debug\DelegateClass.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DELEGATES\DelegateClass\bin\Debug\DelegateClass.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DELEGATES\DelegateClass\obj\Debug\DelegateClass.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DELEGATES\DelegateClass\obj\Debug\DelegateClass.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DELEGATES\DelegateClass\obj\Debug\DelegateClass.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\DELEGATES\DelegateClass\obj\Debug\DelegateClass.pdb
