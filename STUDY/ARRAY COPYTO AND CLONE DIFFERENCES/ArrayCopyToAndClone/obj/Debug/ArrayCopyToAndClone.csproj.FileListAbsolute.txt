@@ -1,0 +1,6 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ARRAY COPYTO AND CLONE DIFFERENCES\ArrayCopyToAndClone\bin\Debug\ArrayCopyToAndClone.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ARRAY COPYTO AND CLONE DIFFERENCES\ArrayCopyToAndClone\bin\Debug\ArrayCopyToAndClone.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ARRAY COPYTO AND CLONE DIFFERENCES\ArrayCopyToAndClone\bin\Debug\ArrayCopyToAndClone.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ARRAY COPYTO AND CLONE DIFFERENCES\ArrayCopyToAndClone\obj\Debug\ArrayCopyToAndClone.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ARRAY COPYTO AND CLONE DIFFERENCES\ArrayCopyToAndClone\obj\Debug\ArrayCopyToAndClone.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ARRAY COPYTO AND CLONE DIFFERENCES\ArrayCopyToAndClone\obj\Debug\ArrayCopyToAndClone.pdb
