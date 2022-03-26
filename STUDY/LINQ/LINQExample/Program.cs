@@ -14,7 +14,9 @@ namespace LINQExample
             mobile.Add(new Mobile { Brand = "Iphone", Model = "S8", Year = 2018 });
             mobile.Add(new Mobile { Brand = "Samsung", Model ="Z12", Year = 2017} );
 
+            //Linq syntax.
             var result = from item in mobile where item.Brand.Contains("Iphone") select item;
+            
             foreach (var item in result)
             {
                 Console.WriteLine("{0} {1} {2}",item.Brand ,item.Model ,item.Year);
