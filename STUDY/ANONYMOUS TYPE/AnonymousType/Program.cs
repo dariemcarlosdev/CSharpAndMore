@@ -8,7 +8,8 @@ namespace AnonymousType
 {
     public static class Anonymous
     {
-        //Anonymoust allow us to create new types without having to define them.
+        
+        //Anonymoust allow us to create new types without having to define them. They are only available inside the code block where it's defined.
         public static void Print() {
            //Here we define read-only properties in this single object without especifying the data type, so we use Anonymous type.
            //the compiler (CRL) has the responsability to generate the data type.
@@ -28,6 +29,7 @@ namespace AnonymousType
         static void Main(string[] args)
         {
             Anonymous.Print();
+            
         }
     }
 }
