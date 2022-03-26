@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\GENERICS\Generics\bin\Debug\Generics.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\GENERICS\Generics\bin\Debug\Generics.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\GENERICS\Generics\bin\Debug\Generics.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\GENERICS\Generics\obj\Debug\Generics.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\GENERICS\Generics\obj\Debug\Generics.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\GENERICS\Generics\obj\Debug\Generics.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\GENERICS\Generics\obj\Debug\Generics.pdb
