@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\STRUCT\Struct\bin\Debug\Struct.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\STRUCT\Struct\bin\Debug\Struct.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\STRUCT\Struct\bin\Debug\Struct.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\STRUCT\Struct\obj\Debug\Struct.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\STRUCT\Struct\obj\Debug\Struct.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\STRUCT\Struct\obj\Debug\Struct.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\STRUCT\Struct\obj\Debug\Struct.pdb
