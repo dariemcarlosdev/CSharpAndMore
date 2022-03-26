@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ANONYMOUS TYPE\AnonymousType\bin\Debug\AnonymousType.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ANONYMOUS TYPE\AnonymousType\bin\Debug\AnonymousType.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ANONYMOUS TYPE\AnonymousType\bin\Debug\AnonymousType.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ANONYMOUS TYPE\AnonymousType\obj\Debug\AnonymousType.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ANONYMOUS TYPE\AnonymousType\obj\Debug\AnonymousType.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ANONYMOUS TYPE\AnonymousType\obj\Debug\AnonymousType.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ANONYMOUS TYPE\AnonymousType\obj\Debug\AnonymousType.pdb
