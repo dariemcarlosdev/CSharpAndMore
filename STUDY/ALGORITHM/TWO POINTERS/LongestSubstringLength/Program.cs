@@ -25,8 +25,8 @@ namespace LongestSubstringLength
                 }
              //if tem contains element of s_to_chararray.
                 else
-                {   
-                    //get index of item in temp.
+                {
+                    //get index of item in tempCharList.
                     int indexFoundChar = tempCharList.IndexOf(item);
                     //skip number of elements in temp array. number of elements to skips are indexFound + 1.
                     tempCharList = tempCharList.Skip(indexFoundChar + 1).ToList();
