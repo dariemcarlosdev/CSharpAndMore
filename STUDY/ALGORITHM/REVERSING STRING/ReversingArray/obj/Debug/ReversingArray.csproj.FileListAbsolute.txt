@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\REVERSING STRING\ReversingArray\bin\Debug\ReversingArray.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\REVERSING STRING\ReversingArray\bin\Debug\ReversingArray.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\REVERSING STRING\ReversingArray\bin\Debug\ReversingArray.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\REVERSING STRING\ReversingArray\obj\Debug\ReversingArray.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\REVERSING STRING\ReversingArray\obj\Debug\ReversingArray.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\REVERSING STRING\ReversingArray\obj\Debug\ReversingArray.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\REVERSING STRING\ReversingArray\obj\Debug\ReversingArray.pdb
