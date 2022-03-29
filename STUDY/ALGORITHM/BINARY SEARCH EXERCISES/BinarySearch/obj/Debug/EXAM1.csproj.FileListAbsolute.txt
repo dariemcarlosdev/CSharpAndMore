@@ -12,3 +12,10 @@ C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINAR
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\TEST 1\obj\Debug\EXAM1.csproj.CoreCompileInputs.cache
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\TEST 1\obj\Debug\EXAM1.exe
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\TEST 1\obj\Debug\EXAM1.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\BinarySearch\bin\Debug\EXAM1.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\BinarySearch\bin\Debug\EXAM1.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\BinarySearch\bin\Debug\EXAM1.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\BinarySearch\obj\Debug\EXAM1.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\BinarySearch\obj\Debug\EXAM1.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\BinarySearch\obj\Debug\EXAM1.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\BinarySearch\obj\Debug\EXAM1.pdb

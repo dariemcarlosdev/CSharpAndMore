@@ -100,7 +100,7 @@ Explanation: 2 does not exist in nums so return -1
             static void Main(string[] args)
             {
             Console.WriteLine(Solution.BinarySearch(new int[] { -1, 0, 3, 5, 9, 12 }, 9));
-            Console.WriteLine(Solution.BinarySearchRecursive(new int[] { -1, 0, 3, 5, 9, 12 }, 2, 0, 8));
+            Console.WriteLine(Solution.BinarySearchRecursive(new int[] { -1, 0, 3, 5, 9, 12 }, 9,0,7));
             }
         }
     }
