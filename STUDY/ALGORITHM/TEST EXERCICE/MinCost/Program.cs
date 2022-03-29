@@ -27,10 +27,10 @@ namespace MinCost
                     {
                         continue;
                     }
-                    else if (C[i] == C[i + 1])
-                    {
-                        continue;
-                    }
+                    //else if (C[i] == C[i + 1])
+                    //{
+                    //    continue;
+                    //}
 
                    minimumCost += Math.Min(C[i], C[i + 1]);
                 }
@@ -44,6 +44,7 @@ namespace MinCost
             Console.WriteLine(Solution.solution("abccbd", new int[] { 0, 1, 2, 3, 4, 5 }));
             Console.WriteLine(Solution.solution("aabbcc", new int[] { 1, 2, 1, 2, 1, 2 }));
             Console.WriteLine(Solution.solution("aaaa", new int[] { 3, 4, 5, 6 }));
+            Console.WriteLine(Solution.solution("aaaa", new int[] { 3, 4, 5, 5}));
             Console.WriteLine(Solution.solution("ababa", new int[] { 10, 5, 10, 5, 10 }));
             Console.WriteLine(Solution.solution("a", new int[] { 10 }));
 
