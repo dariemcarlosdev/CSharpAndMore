@@ -58,12 +58,9 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
             for (int i = numbs.Length - 1 ; i >= 0; i-- )
             {
                 numbs[i] = array_output[i - k > 0 ? i + k - numbs.Length : i + k ];
-            }
-
-            for (int i = 0; i < numbs.Length; i++)
-            {
                 Console.Write("{0} ", numbs[i]);
             }
+
 
             Console.WriteLine();
         }
