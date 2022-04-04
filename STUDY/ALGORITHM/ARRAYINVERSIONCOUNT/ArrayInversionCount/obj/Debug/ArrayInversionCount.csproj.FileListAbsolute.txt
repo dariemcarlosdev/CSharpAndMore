@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\ARRAYINVERSIONCOUNT\ArrayInversionCount\bin\Debug\ArrayInversionCount.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\ARRAYINVERSIONCOUNT\ArrayInversionCount\bin\Debug\ArrayInversionCount.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\ARRAYINVERSIONCOUNT\ArrayInversionCount\bin\Debug\ArrayInversionCount.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\ARRAYINVERSIONCOUNT\ArrayInversionCount\obj\Debug\ArrayInversionCount.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\ARRAYINVERSIONCOUNT\ArrayInversionCount\obj\Debug\ArrayInversionCount.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\ARRAYINVERSIONCOUNT\ArrayInversionCount\obj\Debug\ArrayInversionCount.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\ARRAYINVERSIONCOUNT\ArrayInversionCount\obj\Debug\ArrayInversionCount.pdb

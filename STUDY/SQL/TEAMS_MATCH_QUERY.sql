@@ -1,4 +1,8 @@
 /****** Script for SelectTopNRows command from SSMS  ******/
+use TEST
+
+go
+
 SELECT *
   FROM [TEST].[dbo].[MATCHES]
 
@@ -53,9 +57,5 @@ WHILE (@LoopCounter IS NOT NULL AND @LoopCounter <= @MaxMatchesID)
 	    RIGHT JOIN TEAMS TM ON T.TEAM_NAME = TM.TEAM_ID
 	    GROUP BY TM.TEAM_NAME,TM.TEAM_ID,T.POINTS
 	    ORDER BY NUM_POINT DESC
-		
-
-		
-		
 
 	DROP TABLE #TEMP

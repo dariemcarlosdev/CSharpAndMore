@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\COUNTBOUNDEDSLICES\CountBoundedSlices\bin\Debug\CountBoundedSlices.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\COUNTBOUNDEDSLICES\CountBoundedSlices\bin\Debug\CountBoundedSlices.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\COUNTBOUNDEDSLICES\CountBoundedSlices\bin\Debug\CountBoundedSlices.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\COUNTBOUNDEDSLICES\CountBoundedSlices\obj\Debug\CountBoundedSlices.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\COUNTBOUNDEDSLICES\CountBoundedSlices\obj\Debug\CountBoundedSlices.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\COUNTBOUNDEDSLICES\CountBoundedSlices\obj\Debug\CountBoundedSlices.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\COUNTBOUNDEDSLICES\CountBoundedSlices\obj\Debug\CountBoundedSlices.pdb

@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\DisappearingPairs\bin\Debug\DisappearingPairs.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\DisappearingPairs\bin\Debug\DisappearingPairs.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\DisappearingPairs\bin\Debug\DisappearingPairs.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\DisappearingPairs\obj\Debug\DisappearingPairs.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\DisappearingPairs\obj\Debug\DisappearingPairs.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\DisappearingPairs\obj\Debug\DisappearingPairs.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\DisappearingPairs\obj\Debug\DisappearingPairs.pdb

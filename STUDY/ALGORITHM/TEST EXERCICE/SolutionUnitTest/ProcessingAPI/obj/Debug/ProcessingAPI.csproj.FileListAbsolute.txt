@@ -1,0 +1,6 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\ProcessingAPI\obj\Debug\ProcessingAPI.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\ProcessingAPI\bin\Debug\ProcessingAPI.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\ProcessingAPI\bin\Debug\ProcessingAPI.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\ProcessingAPI\bin\Debug\ProcessingAPI.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\ProcessingAPI\obj\Debug\ProcessingAPI.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\TEST EXERCICE\SolutionUnitTest\ProcessingAPI\obj\Debug\ProcessingAPI.pdb

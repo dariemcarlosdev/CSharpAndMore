@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\SearchTarget\bin\Debug\SearchTarget.exe.config
+C:\Users\335286\source\repos\SearchTarget\bin\Debug\SearchTarget.exe
+C:\Users\335286\source\repos\SearchTarget\bin\Debug\SearchTarget.pdb
+C:\Users\335286\source\repos\SearchTarget\obj\Debug\SearchTarget.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\SearchTarget\obj\Debug\SearchTarget.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\SearchTarget\obj\Debug\SearchTarget.exe
+C:\Users\335286\source\repos\SearchTarget\obj\Debug\SearchTarget.pdb
