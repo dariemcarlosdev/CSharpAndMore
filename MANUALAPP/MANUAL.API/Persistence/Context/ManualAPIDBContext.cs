@@ -18,7 +18,6 @@ namespace MANUAL.API.Persistence.Context
 
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Models.Task> Tasks { get; set; }
-        public DbSet<Job> Jobs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,11 +25,7 @@ namespace MANUAL.API.Persistence.Context
 
             //configuration for seeding data for Job
 
-            modelBuilder.Entity<Job>().HasData
-                (
-                new Job { JobId=1, JobName = "W23233", JobDescription = "DASDADADASD" },
-                new Job { JobId= 2, JobName = "W1212S", JobDescription = "32323DSD" }
-                );
+         
 
         }
     }

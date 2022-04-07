@@ -4,16 +4,14 @@ using MANUAL.API.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MANUAL.API.Migrations
 {
     [DbContext(typeof(ManualAPIDBContext))]
-    [Migration("20220406225303_Initial")]
-    partial class Initial
+    partial class ManualAPIDBContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,6 +33,9 @@ namespace MANUAL.API.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MyProperty")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -46,46 +47,7 @@ namespace MANUAL.API.Migrations
 
                     b.HasIndex("TaskId");
 
-                    b.ToTable("employees");
-                });
-
-            modelBuilder.Entity("MANUAL.API.Models.Job", b =>
-                {
-                    b.Property<int>("JobId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("JobDescription")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("JobName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("TaskId")
-                        .HasColumnType("int");
-
-                    b.HasKey("JobId");
-
-                    b.HasIndex("TaskId");
-
-                    b.ToTable("Jobs");
-
-                    b.HasData(
-                        new
-                        {
-                            
-                            JobDescription = "DASDADADASD",
-                            JobName = "W23233"
-                        },
-                        new
-                        {
-                            
-                            JobDescription = "32323DSD",
-                            JobName = "W1212S"
-                        });
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("MANUAL.API.Models.Task", b =>
@@ -110,6 +72,9 @@ namespace MANUAL.API.Migrations
                     b.Property<DateTime?>("DueDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Jobs")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("StartedOn")
                         .HasColumnType("datetime2");
 
@@ -129,18 +94,9 @@ namespace MANUAL.API.Migrations
                     b.Navigation("Task");
                 });
 
-            modelBuilder.Entity("MANUAL.API.Models.Job", b =>
-                {
-                    b.HasOne("MANUAL.API.Models.Task", null)
-                        .WithMany("JobsRelated")
-                        .HasForeignKey("TaskId");
-                });
-
             modelBuilder.Entity("MANUAL.API.Models.Task", b =>
                 {
                     b.Navigation("Employees");
-
-                    b.Navigation("JobsRelated");
                 });
 #pragma warning restore 612, 618
         }

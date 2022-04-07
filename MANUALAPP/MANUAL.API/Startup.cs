@@ -32,7 +32,7 @@ namespace MANUAL.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            var _AppConnString = Configuration.GetConnectionString("ManualAPIContext");
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -40,7 +40,7 @@ namespace MANUAL.API
             });
             
             services.AddDbContext<ManualAPIDBContext>( options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ManualAPIContext")));
+                    options.UseSqlServer(_AppConnString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
             services.AddCors();
         }
