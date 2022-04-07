@@ -28,7 +28,7 @@
   <ItemGroup>
     <Folder Include="Domain\Services\" />
     <Folder Include="Domain\Repository\" />
-    <Folder Include="Persistence\Repositorires\" />
+    <Folder Include="DAL\Repositorires\" />
   </ItemGroup>
 
 </Project>
