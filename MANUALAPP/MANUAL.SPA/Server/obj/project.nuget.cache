@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bOkJJRliBvv/AIML2ykB/PauzK9NySsyvYWG8SQ5fScu/+ByevKbLwYOXOzpC0y78/h9azsfE+ZwuvTphKDMBQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\MANUALAPP\\MANUAL.SPA\\Server\\MANUAL.SPA.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\335286\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\5.0.15\\microsoft.aspnetcore.components.webassembly.server.5.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

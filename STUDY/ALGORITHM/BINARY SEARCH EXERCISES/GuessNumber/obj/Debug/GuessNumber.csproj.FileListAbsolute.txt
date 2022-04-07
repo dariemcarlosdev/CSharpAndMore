@@ -1,0 +1,7 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\GuessNumber\bin\Debug\GuessNumber.exe.config
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\GuessNumber\bin\Debug\GuessNumber.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\GuessNumber\bin\Debug\GuessNumber.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\GuessNumber\obj\Debug\GuessNumber.csprojAssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\GuessNumber\obj\Debug\GuessNumber.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\GuessNumber\obj\Debug\GuessNumber.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\BINARY SEARCH EXERCISES\GuessNumber\obj\Debug\GuessNumber.pdb

@@ -1,3 +1,4 @@
+using MANUAL.API.Persistence.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,6 +12,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+
+
 
 namespace MANUAL.API
 {
@@ -32,11 +38,17 @@ namespace MANUAL.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MANUAL.API", Version = "v1" });
             });
+            
+            services.AddDbContext<ManualAPIDBContext>( options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("ManualAPIContext")));
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            InitializeDatabase(app);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -54,6 +66,14 @@ namespace MANUAL.API
             {
                 endpoints.MapControllers();
             });
+        }
+
+        private void InitializeDatabase(IApplicationBuilder app)
+        {
+            using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                scope.ServiceProvider.GetRequiredService<ManualAPIDBContext>().Database.Migrate();
+            }
         }
     }
 }
