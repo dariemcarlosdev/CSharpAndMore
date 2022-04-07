@@ -48,6 +48,35 @@ namespace MANUAL.API.Migrations
                     b.HasIndex("TaskId");
 
                     b.ToTable("Employees");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EmployeeNo = 2222222,
+                            LastName = "DADDADAD",
+                            MyProperty = 0,
+                            Name = "DASDASD54",
+                            TaskId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            EmployeeNo = 3333333,
+                            LastName = "fafasdsd",
+                            MyProperty = 0,
+                            Name = "zasfsdffsd",
+                            TaskId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            EmployeeNo = 3333333,
+                            LastName = "fafasdsd",
+                            MyProperty = 0,
+                            Name = "zasfsdffsd",
+                            TaskId = 2
+                        });
                 });
 
             modelBuilder.Entity("MANUAL.API.Models.Task", b =>
@@ -81,6 +110,26 @@ namespace MANUAL.API.Migrations
                     b.HasKey("TaskId");
 
                     b.ToTable("Tasks", "Employee");
+
+                    b.HasData(
+                        new
+                        {
+                            TaskId = 1,
+                            CompletedDate = new DateTime(2022, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "dadsa",
+                            DueDate = new DateTime(2022, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Jobs = "dadasdas,dadsad"
+                        },
+                        new
+                        {
+                            TaskId = 2,
+                            CompletedDate = new DateTime(2022, 2, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "dadsa",
+                            DueDate = new DateTime(2022, 2, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Jobs = "dadsad,dadasd"
+                        });
                 });
 
             modelBuilder.Entity("MANUAL.API.Models.Employee", b =>

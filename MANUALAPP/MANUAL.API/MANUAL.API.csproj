@@ -28,7 +28,8 @@
   <ItemGroup>
     <Folder Include="Domain\Services\" />
     <Folder Include="Domain\Repository\" />
-    <Folder Include="DAL\Repositorires\" />
+    <Folder Include="Data\Repositorires\" />
+    <Folder Include="DTO\" />
   </ItemGroup>
 
 </Project>

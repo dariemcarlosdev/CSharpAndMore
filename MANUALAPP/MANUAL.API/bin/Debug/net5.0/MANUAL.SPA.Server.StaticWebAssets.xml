@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\MANUALAPP\MANUAL.SPA\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\MANUALAPP\MANUAL.SPA\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\MANUALAPP\MANUAL.SPA\Client\wwwroot\" />
+</StaticWebAssets>
