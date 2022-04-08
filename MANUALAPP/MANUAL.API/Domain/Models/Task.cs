@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MANUAL.API.Models
 {
-    [Table("Tasks", Schema = "Employee")]
+    [Table("Tasks")]
     public class Task
     {
         [Key]
@@ -16,10 +16,17 @@ namespace MANUAL.API.Models
         [MaxLength(50)]
         public string Description { get; set; }
         public string Jobs { get; set; }
-        public DateTime? DueDate { get; set; }
-        public DateTime? StartedOn { get; set; }
-        public DateTime? CompletedDate { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        [Required]
+        [DataType(DataType.Date)]
+        public DateTime DueDate { get; set; }
+        [Required]
+        [DataType(DataType.Date)]
+        public DateTime StartedOn { get; set; }
+        [Required]
+        [DataType(DataType.Date)]
+        public DateTime CompletedDate { get; set; }
+        [Required]
+        [DataType(DataType.Date)]
         public DateTime CreatedDate { get; set; }
         public ICollection<Employee> Employees { get; set; }
     }

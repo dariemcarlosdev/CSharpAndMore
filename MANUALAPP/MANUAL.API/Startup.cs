@@ -55,6 +55,11 @@ namespace MANUAL.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MANUAL.API v1"));
             }
+            else
+            {   //security feauture
+                //This method tell a browser when we return a response to use HTTPS 
+               // app.UseHsts();
+            }
 
             app.UseHttpsRedirection();
 

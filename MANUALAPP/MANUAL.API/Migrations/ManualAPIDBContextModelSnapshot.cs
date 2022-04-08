@@ -19,6 +19,21 @@ namespace MANUAL.API.Migrations
                 .HasAnnotation("ProductVersion", "5.0.15")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("EmployeeTask", b =>
+                {
+                    b.Property<int>("EmployeesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TasksTaskId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EmployeesId", "TasksTaskId");
+
+                    b.HasIndex("TasksTaskId");
+
+                    b.ToTable("EmployeeTask");
+                });
+
             modelBuilder.Entity("MANUAL.API.Models.Employee", b =>
                 {
                     b.Property<int>("Id")
@@ -27,25 +42,19 @@ namespace MANUAL.API.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("EmployeeNo")
-                        .HasMaxLength(7)
+                        .HasMaxLength(10)
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MyProperty")
-                        .HasColumnType("int");
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TaskId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("TaskId");
 
                     b.ToTable("Employees");
 
@@ -54,28 +63,22 @@ namespace MANUAL.API.Migrations
                         {
                             Id = 1,
                             EmployeeNo = 2222222,
-                            LastName = "DADDADAD",
-                            MyProperty = 0,
-                            Name = "DASDASD54",
-                            TaskId = 1
+                            LastName = "zzzzzzzz",
+                            Name = "DASDASD54"
                         },
                         new
                         {
                             Id = 2,
                             EmployeeNo = 3333333,
-                            LastName = "fafasdsd",
-                            MyProperty = 0,
-                            Name = "zasfsdffsd",
-                            TaskId = 1
+                            LastName = "zzzzzzzz",
+                            Name = "zasfsdffsd"
                         },
                         new
                         {
                             Id = 3,
                             EmployeeNo = 3333333,
                             LastName = "fafasdsd",
-                            MyProperty = 0,
-                            Name = "zasfsdffsd",
-                            TaskId = 2
+                            Name = "zasfsdffsd"
                         });
                 });
 
@@ -86,11 +89,10 @@ namespace MANUAL.API.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime?>("CompletedDate")
+                    b.Property<DateTime>("CompletedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CreatedDate")
-                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -98,54 +100,55 @@ namespace MANUAL.API.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime?>("DueDate")
+                    b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Jobs")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("StartedOn")
+                    b.Property<DateTime>("StartedOn")
                         .HasColumnType("datetime2");
 
                     b.HasKey("TaskId");
 
-                    b.ToTable("Tasks", "Employee");
+                    b.ToTable("Tasks");
 
                     b.HasData(
                         new
                         {
                             TaskId = 1,
                             CompletedDate = new DateTime(2022, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2022, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "dadsa",
                             DueDate = new DateTime(2022, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Jobs = "dadasdas,dadsad"
+                            Jobs = "dadasdas,dadsad",
+                            StartedOn = new DateTime(2022, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             TaskId = 2,
                             CompletedDate = new DateTime(2022, 2, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2022, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "dadsa",
                             DueDate = new DateTime(2022, 2, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Jobs = "dadsad,dadasd"
+                            Jobs = "dadsad,dadasd",
+                            StartedOn = new DateTime(2022, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
-            modelBuilder.Entity("MANUAL.API.Models.Employee", b =>
+            modelBuilder.Entity("EmployeeTask", b =>
                 {
-                    b.HasOne("MANUAL.API.Models.Task", "Task")
-                        .WithMany("Employees")
-                        .HasForeignKey("TaskId")
+                    b.HasOne("MANUAL.API.Models.Employee", null)
+                        .WithMany()
+                        .HasForeignKey("EmployeesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Task");
-                });
-
-            modelBuilder.Entity("MANUAL.API.Models.Task", b =>
-                {
-                    b.Navigation("Employees");
+                    b.HasOne("MANUAL.API.Models.Task", null)
+                        .WithMany()
+                        .HasForeignKey("TasksTaskId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

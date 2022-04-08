@@ -12,17 +12,15 @@ namespace MANUAL.API.Models
     {
         [Key]
         public int Id { get; set; }
-        
-        
         [Required]
-        [MaxLength(7)]
+        [MaxLength(10)]
         public int EmployeeNo { get; set; }
         [Required]
         public string Name { get; set; }
-        public int MyProperty { get; set; }
+        [Required]
+        [MaxLength(10)]
         public string LastName{ get; set; }
-        public int TaskId  { get; set; }
-        public Task Task { get; set; }
+        public ICollection<Task> Tasks { get; set; }
 
     }
 }
