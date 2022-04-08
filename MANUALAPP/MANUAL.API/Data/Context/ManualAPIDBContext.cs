@@ -24,17 +24,17 @@ namespace MANUAL.API.Persistence.Context
             base.OnModelCreating(modelBuilder);
 
             //configuration for seeding data for Job
-            modelBuilder.Entity<Models.Task>().HasData(
-                new Models.Task() { TaskId = 1, CompletedDate = DateTime.Parse("03/12/2022"), CreatedDate = DateTime.Now, Description = "dadsa", DueDate = DateTime.Parse("03/23/22"), Jobs = "dadasdas,dadsad", StartedOn = DateTime.Parse("03/23/22") },
-                new Models.Task() { TaskId = 2, CompletedDate = DateTime.Parse("02/12/2022"), CreatedDate = DateTime.Now, Description = "dadsa", DueDate = DateTime.Parse("02/23/22"), Jobs = "dadsad,dadasd", StartedOn = DateTime.Parse("03/23/22") }
-                );
-            modelBuilder.Entity<Employee>().HasData(
-                new Employee() { Id = 1, EmployeeNo = 2222222, LastName = "DADDADAD", Name = "DASDASD54"},
-                new Employee() { Id = 2, EmployeeNo = 3333333, LastName = "fafasdsd", Name = "zasfsdffsd"},
-                new Employee() { Id = 3, EmployeeNo = 3333333, LastName = "fafasdsd", Name = "zasfsdffsd"}
-                );
+            //modelBuilder.Entity<Models.Task>().HasData(
+            //    new Models.Task() { TaskId = 1, CompletedDate = DateTime.Parse("03/12/2022"), CreatedDate = DateTime.Now, Description = "dadsa", DueDate = DateTime.Parse("03/23/22"), Jobs = "dadasdas,dadsad", StartedOn = DateTime.Parse("03/23/22") },
+            //    new Models.Task() { TaskId = 2, CompletedDate = DateTime.Parse("02/12/2022"), CreatedDate = DateTime.Now, Description = "dadsa", DueDate = DateTime.Parse("02/23/22"), Jobs = "dadsad,dadasd", StartedOn = DateTime.Parse("03/23/22") }
+            //    );
+            //modelBuilder.Entity<Employee>().HasData(
+            //    new Employee() { EmployeeId = 1, EmployeeNo = 2222222, LastName = "DADDADAD", Name = "DASDASD54"},
+            //    new Employee() { EmployeeId = 2, EmployeeNo = 3333333, LastName = "fafasdsd", Name = "zasfsdffsd"},
+            //    new Employee() { EmployeeId = 3, EmployeeNo = 3333333, LastName = "fafasdsd", Name = "zasfsdffsd"}
+            //    );
 
-
+            //Creating join table with FLUENT.API
         }
     }
 }
