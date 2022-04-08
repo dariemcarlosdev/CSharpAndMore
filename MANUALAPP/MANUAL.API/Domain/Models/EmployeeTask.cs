@@ -12,9 +12,9 @@ namespace MANUAL.API.Domain.Models
     {   
         [Key, Column(Order = 1)]
         public int EmployeeId { get; set; }
+        public Employee Employee { get; set; }
         [Key, Column(Order = 2)]
         public int TaskId { get; set; }
-        public Employee Employee { get; set; }
         public API.Models.Task Task { get; set; }
     }
 }
