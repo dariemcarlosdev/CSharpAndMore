@@ -183,3 +183,4 @@ C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\MANUALAPP\MANUAL.API\
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\MANUALAPP\MANUAL.API\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\MANUALAPP\MANUAL.API\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\MANUALAPP\MANUAL.API\obj\Debug\net5.0\MANUAL.API.csproj.AssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\MANUALAPP\MANUAL.API\obj\Debug\net5.0\MANUAL.API.csprojAssemblyReference.cache
