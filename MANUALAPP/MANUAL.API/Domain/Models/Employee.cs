@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MANUAL.API.Models
+namespace MANUAL.API.Domain.Models
 {
     [Table("Employees")]
     public class Employee
@@ -20,7 +20,7 @@ namespace MANUAL.API.Models
         [Required]
         [MaxLength(10)]
         public string LastName{ get; set; }
-        public ICollection<Task> Tasks { get; set; }
+        public ICollection<EmployeeTask> EmployeeTasks { get; set; }
 
     }
 }

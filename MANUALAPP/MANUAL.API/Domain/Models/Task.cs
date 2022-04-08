@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MANUAL.API.Models
+namespace MANUAL.API.Domain.Models
 {
     [Table("Tasks")]
     public class Task
@@ -28,6 +28,6 @@ namespace MANUAL.API.Models
         [Required]
         [DataType(DataType.Date)]
         public DateTime CreatedDate { get; set; }
-        public ICollection<Employee> Employees { get; set; }
+        public ICollection<EmployeeTask> EmployeeTasks { get; set; }
     }
 }

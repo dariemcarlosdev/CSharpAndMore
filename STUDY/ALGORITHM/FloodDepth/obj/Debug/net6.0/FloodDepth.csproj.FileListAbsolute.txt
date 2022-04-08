@@ -1,0 +1,15 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\bin\Debug\net6.0\FloodDepth.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\bin\Debug\net6.0\FloodDepth.deps.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\bin\Debug\net6.0\FloodDepth.runtimeconfig.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\bin\Debug\net6.0\FloodDepth.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\bin\Debug\net6.0\ref\FloodDepth.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\bin\Debug\net6.0\FloodDepth.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\FloodDepth.csproj.AssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\FloodDepth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\FloodDepth.AssemblyInfoInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\FloodDepth.AssemblyInfo.cs
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\FloodDepth.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\FloodDepth.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\ref\FloodDepth.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\FloodDepth.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FloodDepth\obj\Debug\net6.0\FloodDepth.genruntimeconfig.cache

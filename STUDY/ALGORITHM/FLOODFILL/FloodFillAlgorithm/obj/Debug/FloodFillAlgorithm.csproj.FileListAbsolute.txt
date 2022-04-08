@@ -1,6 +1,0 @@
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FLOODFILL\FloodFillAlgorithm\bin\Debug\FloodFillAlgorithm.exe.config
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FLOODFILL\FloodFillAlgorithm\bin\Debug\FloodFillAlgorithm.exe
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FLOODFILL\FloodFillAlgorithm\bin\Debug\FloodFillAlgorithm.pdb
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FLOODFILL\FloodFillAlgorithm\obj\Debug\FloodFillAlgorithm.csproj.CoreCompileInputs.cache
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FLOODFILL\FloodFillAlgorithm\obj\Debug\FloodFillAlgorithm.exe
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\ALGORITHM\FLOODFILL\FloodFillAlgorithm\obj\Debug\FloodFillAlgorithm.pdb
