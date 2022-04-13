@@ -32,12 +32,15 @@ namespace MANUAL.API
                     var context = services.GetRequiredService<ManualAPIDBContext>();
                     DBInitializer.Initialize(context); //apply all migrations
                     //SeedData.Initialize(services); // Insert default data
+                    DBInitializer.SeedDdata(context);
                 }
                 catch (Exception ex)
                 {
 
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "An arror occur during seed migration");
+                    //re-throew the exception
+                    throw ex.InnerException;
                 }
             }
 

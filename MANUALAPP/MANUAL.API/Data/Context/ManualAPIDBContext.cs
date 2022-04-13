@@ -32,7 +32,7 @@ namespace MANUAL.API.Persistence.Context
             modelBuilder.Entity<EmployeeTask>()
                 .HasKey( et => new { et.EmployeeId, et.TaskId });
 
-            modelBuilder.Entity<EmployeeTask>().HasOne(et => et.Task).WithMany(t => t .EmployeeTasks).HasForeignKey(et => et.TaskId);
+            modelBuilder.Entity<EmployeeTask>().HasOne(et => et.Task).WithMany(t => t.EmployeeTasks).HasForeignKey(et => et.TaskId);
             modelBuilder.Entity<EmployeeTask>().HasOne(et => et.Employee).WithMany(e => e.EmployeeTasks).HasForeignKey(et => et.EmployeeId);
             
 

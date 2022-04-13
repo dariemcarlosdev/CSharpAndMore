@@ -41,6 +41,7 @@ namespace MANUAL.API
             
             services.AddDbContext<ManualAPIDBContext>( options =>
                     options.UseSqlServer(_AppConnString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+            
 
             services.AddCors();
         }
@@ -60,6 +61,8 @@ namespace MANUAL.API
                 //This method tell a browser when we return a response to use HTTPS 
                // app.UseHsts();
             }
+
+
 
             app.UseHttpsRedirection();
 
