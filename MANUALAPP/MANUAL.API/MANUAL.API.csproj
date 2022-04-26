@@ -28,8 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\Services\" />
+    <Folder Include="Domain\Services\Comunications\" />
     <Folder Include="DTO\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
