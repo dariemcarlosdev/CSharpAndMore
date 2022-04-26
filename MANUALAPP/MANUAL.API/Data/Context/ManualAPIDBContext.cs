@@ -32,9 +32,9 @@ namespace MANUAL.API.Persistence.Context
             modelBuilder.Entity<EmployeeTask>()
                 .HasKey( et => new { et.EmployeeId, et.TaskId });
 
-            modelBuilder.Entity<EmployeeTask>().HasOne(et => et.Task).WithMany(t => t.EmployeeTasks).HasForeignKey(et => et.TaskId);
-            modelBuilder.Entity<EmployeeTask>().HasOne(et => et.Employee).WithMany(e => e.EmployeeTasks).HasForeignKey(et => et.EmployeeId);
-            
+            modelBuilder.Entity<EmployeeTask>().HasOne(et => et.Task).WithMany(t => t.EmployeeTasks).HasForeignKey(et => et.TaskId).OnDelete(DeleteBehavior.Cascade).IsRequired();
+            modelBuilder.Entity<EmployeeTask>().HasOne(et => et.Employee).WithMany(e => e.EmployeeTasks).HasForeignKey(et => et.EmployeeId).OnDelete(DeleteBehavior.Cascade).IsRequired();
+
 
             //configuration for seeding data for Job
             //modelBuilder.Entity<Models.Task>().HasData(
@@ -47,7 +47,15 @@ namespace MANUAL.API.Persistence.Context
             //    new Employee() { EmployeeId = 3, EmployeeNo = 3333333, LastName = "fafasdsd", Name = "zasfsdffsd"}
             //    );
 
-            //Creating join table with FLUENT.API
+            
+          
+        }
+    }
+
+    public class ManuaAPIDBContext2 : DbContext
+    {
+        public ManuaAPIDBContext2( DbContextOptions<ManuaAPIDBContext2> options) : base(options)
+        {
         }
     }
 }

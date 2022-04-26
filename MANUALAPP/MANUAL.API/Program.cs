@@ -26,7 +26,8 @@ namespace MANUAL.API
                     var environment = services.GetRequiredService<Microsoft.Extensions.Hosting.IHostEnvironment>();
                     if (environment.IsDevelopment())
                     {
-                        Console.WriteLine("is devolepment environment");
+                        Console.WriteLine("App running on devolepment environment");
+                       
                     }
 
                     var context = services.GetRequiredService<ManualAPIDBContext>();

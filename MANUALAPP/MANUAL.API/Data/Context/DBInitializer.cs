@@ -20,14 +20,23 @@ namespace MANUAL.API.Persistence.Context
 
             //Seeding Employees TABLE.
 
-            var Employee1 = new Employee {EmployeeId=1, Name="dadsad",LastName="dads", EmployeeNo= 232123 };
-            var Employee2 = new Employee { EmployeeId = 2, Name = "dadsad", LastName = "dads", EmployeeNo = 232123 };
+            var Employee1 = new Employee { Name="dadsad",LastName="dads", EmployeeNo= 232123 };
+            var Employee2 = new Employee {  Name = "dadsad", LastName = "dads", EmployeeNo = 232123 };
 
-            var Task1 = new Task { TaskId = 1, CompletedDate=DateTime.Now, CreatedDate=DateTime.Now, Description="dadsd", DueDate=DateTime.Now,StartedOn=DateTime.Now };
-            var Task2 = new Task { TaskId = 2, CompletedDate = DateTime.Now, CreatedDate = DateTime.Now, Description = "dadsd", DueDate = DateTime.Now, StartedOn = DateTime.Now };
+            var Task1 = new Task {  CompletedDate=DateTime.Now, CreatedDate=DateTime.Now, Description="dadsd", DueDate=DateTime.Now,StartedOn=DateTime.Now, Jobs="dadsad, dadsa" };
+            var Task2 = new Task {  CompletedDate = DateTime.Now, CreatedDate = DateTime.Now, Description = "dadsd", DueDate = DateTime.Now, StartedOn = DateTime.Now };
 
 
             //Seeding Task TABLE.
+
+            var EmployeeTask = new EmployeeTask()  { Employee = Employee1, Task =Task1};
+            var EmployeeTask1 = new EmployeeTask() { Employee = Employee1, Task = Task2 };
+            var EmployeeTask3 = new EmployeeTask() { Employee = Employee2, Task = Task2 };
+
+
+            context.EmployeeTasks.Add(EmployeeTask);
+            context.EmployeeTasks.Add(EmployeeTask1);
+            context.EmployeeTasks.Add(EmployeeTask3);
 
 
 
