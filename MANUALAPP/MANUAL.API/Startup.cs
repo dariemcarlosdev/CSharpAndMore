@@ -15,8 +15,8 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-
-
+using MANUAL.API.Domain.Repository;
+using MANUAL.API.Data.Repositorires;
 
 namespace MANUAL.API
 {
@@ -41,7 +41,10 @@ namespace MANUAL.API
             
             services.AddDbContext<ManualAPIDBContext>( options =>
                     options.UseSqlServer(_AppConnString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
-            
+
+            //Adding the Unity of work to the DI Continer.
+
+            services.AddScoped<IUnityOfWork, UnityOfWork>();
 
             services.AddCors();
         }
