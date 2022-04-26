@@ -46,6 +46,11 @@ namespace MANUAL.API
 
             services.AddScoped<IUnityOfWork, UnityOfWork>();
 
+            //Adding Repositories to DI Container.
+
+            services.AddScoped<ITaskRepository, TaskRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
             services.AddCors();
         }
 
@@ -62,7 +67,11 @@ namespace MANUAL.API
             else
             {   //security feauture
                 //This method tell a browser when we return a response to use HTTPS 
-               // app.UseHsts();
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+
+                //for now we are allowing all origins
+                app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             }
 
 
