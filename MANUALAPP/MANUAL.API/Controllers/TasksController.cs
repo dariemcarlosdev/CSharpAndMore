@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MANUAL.API.Domain.Models;
 using MANUAL.API.Persistence.Context;
-using Task = MANUAL.API.Domain.Models.Task; //avoiding name conflict with System.Threading.Task.
+using TaskEntity = MANUAL.API.Domain.Models.TaskEntity; //avoiding name conflict with System.Threading.Task.
 
 namespace MANUAL.API.Controllers
 {
@@ -24,14 +24,14 @@ namespace MANUAL.API.Controllers
 
         // GET: api/Tasks
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Task>>> GetTasks()
+        public async Task<ActionResult<IEnumerable<TaskEntity>>> GetTasks()
         {
             return await _context.Tasks.ToListAsync();
         }
 
         // GET: api/Tasks/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Task>> GetTask(int id)
+        public async Task<ActionResult<TaskEntity>> GetTask(int id)
         {
             var task = await _context.Tasks.FindAsync(id);
 
@@ -46,7 +46,7 @@ namespace MANUAL.API.Controllers
         // PUT: api/Tasks/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTask(int id, Task task)
+        public async Task<IActionResult> PutTask(int id, TaskEntity task)
         {
             if (id != task.TaskId)
             {
@@ -77,7 +77,7 @@ namespace MANUAL.API.Controllers
         // POST: api/Tasks
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Task>> PostTask(Task task)
+        public async Task<ActionResult<TaskEntity>> PostTask(TaskEntity task)
         {
             _context.Tasks.Add(task);
             await _context.SaveChangesAsync();

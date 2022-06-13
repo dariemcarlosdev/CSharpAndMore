@@ -1,0 +1,2 @@
+﻿1. Create a Generic Repository since both Entity use same methods.
+2. GUID no included in Model/Entity would be added later.

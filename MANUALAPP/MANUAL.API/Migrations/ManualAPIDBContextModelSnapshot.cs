@@ -19,7 +19,7 @@ namespace MANUAL.API.Migrations
                 .HasAnnotation("ProductVersion", "5.0.15")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("MANUAL.API.Domain.Models.Employee", b =>
+            modelBuilder.Entity("MANUAL.API.Domain.Models.EmployeeEntity", b =>
                 {
                     b.Property<int>("EmployeeId")
                         .ValueGeneratedOnAdd()
@@ -27,24 +27,25 @@ namespace MANUAL.API.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("EmployeeNo")
-                        .HasMaxLength(10)
+                        .HasMaxLength(6)
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("MANUAL.API.Domain.Models.EmployeeTask", b =>
+            modelBuilder.Entity("MANUAL.API.Domain.Models.EmployeeTaskEntity", b =>
                 {
                     b.Property<int>("EmployeeId")
                         .HasColumnType("int");
@@ -52,14 +53,19 @@ namespace MANUAL.API.Migrations
                     b.Property<int>("TaskId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
                     b.HasKey("EmployeeId", "TaskId");
 
                     b.HasIndex("TaskId");
 
-                    b.ToTable("EmployeeTasks");
+                    b.ToTable("Employee_Tasks");
                 });
 
-            modelBuilder.Entity("MANUAL.API.Domain.Models.Task", b =>
+            modelBuilder.Entity("MANUAL.API.Domain.Models.TaskEntity", b =>
                 {
                     b.Property<int>("TaskId")
                         .ValueGeneratedOnAdd()
@@ -69,7 +75,7 @@ namespace MANUAL.API.Migrations
                     b.Property<DateTime>("CompletedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("DateOfTaskCreation")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -80,7 +86,14 @@ namespace MANUAL.API.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool?>("IsCompleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsEnable")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Jobs")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("StartedOn")
@@ -91,15 +104,15 @@ namespace MANUAL.API.Migrations
                     b.ToTable("Tasks");
                 });
 
-            modelBuilder.Entity("MANUAL.API.Domain.Models.EmployeeTask", b =>
+            modelBuilder.Entity("MANUAL.API.Domain.Models.EmployeeTaskEntity", b =>
                 {
-                    b.HasOne("MANUAL.API.Domain.Models.Employee", "Employee")
+                    b.HasOne("MANUAL.API.Domain.Models.EmployeeEntity", "Employee")
                         .WithMany("EmployeeTasks")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MANUAL.API.Domain.Models.Task", "Task")
+                    b.HasOne("MANUAL.API.Domain.Models.TaskEntity", "Task")
                         .WithMany("EmployeeTasks")
                         .HasForeignKey("TaskId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -110,12 +123,12 @@ namespace MANUAL.API.Migrations
                     b.Navigation("Task");
                 });
 
-            modelBuilder.Entity("MANUAL.API.Domain.Models.Employee", b =>
+            modelBuilder.Entity("MANUAL.API.Domain.Models.EmployeeEntity", b =>
                 {
                     b.Navigation("EmployeeTasks");
                 });
 
-            modelBuilder.Entity("MANUAL.API.Domain.Models.Task", b =>
+            modelBuilder.Entity("MANUAL.API.Domain.Models.TaskEntity", b =>
                 {
                     b.Navigation("EmployeeTasks");
                 });

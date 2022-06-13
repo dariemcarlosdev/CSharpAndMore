@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MANUAL.API.Domain.Models;
-using Task = MANUAL.API.Domain.Models.Task;
+using TaskEntity = MANUAL.API.Domain.Models.TaskEntity;
 
 namespace MANUAL.API.Persistence.Context
 {
@@ -20,18 +20,18 @@ namespace MANUAL.API.Persistence.Context
 
             //Seeding Employees TABLE.
 
-            var Employee1 = new Employee { Name="dadsad",LastName="dads", EmployeeNo= 232123 };
-            var Employee2 = new Employee {  Name = "dadsad", LastName = "dads", EmployeeNo = 232123 };
+            var Employee1 = new EmployeeEntity { Name="dadsad",LastName="dads", EmployeeNo= 232123 };
+            var Employee2 = new EmployeeEntity {  Name = "dadsad", LastName = "dads", EmployeeNo = 232123 };
 
-            var Task1 = new Task {  CompletedDate=DateTime.Now, CreatedDate=DateTime.Now, Description="dadsd", DueDate=DateTime.Now,StartedOn=DateTime.Now, Jobs="dadsad, dadsa" };
-            var Task2 = new Task {  CompletedDate = DateTime.Now, CreatedDate = DateTime.Now, Description = "dadsd", DueDate = DateTime.Now, StartedOn = DateTime.Now };
+            var Task1 = new TaskEntity {  CompletedDate=  DateTime.Now, DateOfTaskCreation= Convert.ToDateTime(DateTime.Now.ToString("MM-dd-yyyy")), Description="dadsd", DueDate=DateTime.Now,StartedOn=DateTime.Now, Jobs="dadsad, dadsa" };
+            var Task2 = new TaskEntity {  CompletedDate = DateTime.Now, DateOfTaskCreation = Convert.ToDateTime(DateTime.Now.ToString("MM-dd-yyyy")), Description = "dadsd", DueDate = DateTime.Now, StartedOn = DateTime.Now, Jobs = "dadsad, dadsa" };
 
 
             //Seeding Task TABLE.
 
-            var EmployeeTask = new EmployeeTask()  { Employee = Employee1, Task =Task1};
-            var EmployeeTask1 = new EmployeeTask() { Employee = Employee1, Task = Task2 };
-            var EmployeeTask3 = new EmployeeTask() { Employee = Employee2, Task = Task2 };
+            var EmployeeTask = new EmployeeTaskEntity()  { Employee = Employee1, Task =Task1};
+            var EmployeeTask1 = new EmployeeTaskEntity() { Employee = Employee1, Task = Task2 };
+            var EmployeeTask3 = new EmployeeTaskEntity() { Employee = Employee2, Task = Task2 };
 
 
             context.EmployeeTasks.Add(EmployeeTask);

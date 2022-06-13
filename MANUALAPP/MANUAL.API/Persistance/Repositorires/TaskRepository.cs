@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MANUAL.API.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using Task = MANUAL.API.Domain.Models.Task;
+using TaskEntity = MANUAL.API.Domain.Models.TaskEntity;
 
 namespace MANUAL.API.Data.Repositorires
 {
@@ -16,22 +16,22 @@ namespace MANUAL.API.Data.Repositorires
         {
         }
 
-        public async System.Threading.Tasks.Task AddAsync(Domain.Models.Task task)
+        public async System.Threading.Tasks.Task AddAsync(Domain.Models.TaskEntity task)
         {
           await _manualAPIDBContext.Tasks.AddAsync(task);
         }
 
-        public void Delete(Domain.Models.Task task)
+        public void Delete(Domain.Models.TaskEntity task)
         {
             _manualAPIDBContext.Tasks.Remove(task);
         }
 
-        public async Task<Task> FindByIdAsync(int id)
+        public async Task<TaskEntity> FindByIdAsync(int id)
         {
           return  await _manualAPIDBContext.Tasks.FindAsync(id);
         }
 
-        public async Task<IEnumerable<Task>> ListAsync()
+        public async Task<IEnumerable<TaskEntity>> ListAsync()
         {
            return await _manualAPIDBContext.Tasks.ToListAsync();
         }
@@ -46,7 +46,7 @@ namespace MANUAL.API.Data.Repositorires
             return false;
         }
 
-        public void Update(Task task)
+        public void Update(TaskEntity task)
         {
             _manualAPIDBContext.Tasks.Update(task);
         }

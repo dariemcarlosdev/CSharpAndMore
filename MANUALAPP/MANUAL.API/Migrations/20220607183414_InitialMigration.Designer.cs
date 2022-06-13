@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MANUAL.API.Migrations
 {
     [DbContext(typeof(ManualAPIDBContext))]
-    [Migration("20220420185859_Update_dbContext")]
-    partial class Update_dbContext
+    [Migration("20220607183414_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,17 +29,18 @@ namespace MANUAL.API.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("EmployeeNo")
-                        .HasMaxLength(10)
+                        .HasMaxLength(6)
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("EmployeeId");
 
@@ -71,7 +72,7 @@ namespace MANUAL.API.Migrations
                     b.Property<DateTime>("CompletedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("DateOfTaskCreation")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -82,7 +83,14 @@ namespace MANUAL.API.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool?>("IsCompleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsEnable")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Jobs")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("StartedOn")

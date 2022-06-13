@@ -10,6 +10,9 @@ using MANUAL.API.Persistence.Context;
 
 namespace MANUAL.API.Controllers
 {
+    //Aplying Repository Design Pattern the controller don't talk with the EF data Context directly class directly *here need to be implemented.
+    //There are no queries or any other data access code written in the action methods of the Employee Controller. All these operations (i.e. CRUD operations) are wrapped by the Employee Repository.
+    //The controller use the methods defined in Employee Repository to perfom the required database operations (CRUD).
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeesController : ControllerBase
@@ -23,14 +26,14 @@ namespace MANUAL.API.Controllers
 
         // GET: api/Employees
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
+        public async Task<ActionResult<IEnumerable<EmployeeEntity>>> GetEmployees()
         {
             return await _context.Employees.ToListAsync();
         }
 
         // GET: api/Employees/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Employee>> GetEmployee(int id)
+        public async Task<ActionResult<EmployeeEntity>> GetEmployee(int id)
         {
             var employee = await _context.Employees.FindAsync(id);
 
@@ -45,7 +48,7 @@ namespace MANUAL.API.Controllers
         // PUT: api/Employees/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEmployee(int id, Employee employee)
+        public async Task<IActionResult> PutEmployee(int id, EmployeeEntity employee)
         {
             if (id != employee.EmployeeId)
             {
@@ -76,7 +79,7 @@ namespace MANUAL.API.Controllers
         // POST: api/Employees
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Employee>> PostEmployee(Employee employee)
+        public async Task<ActionResult<EmployeeEntity>> PostEmployee(EmployeeEntity employee)
         {
             _context.Employees.Add(employee);
             await _context.SaveChangesAsync();

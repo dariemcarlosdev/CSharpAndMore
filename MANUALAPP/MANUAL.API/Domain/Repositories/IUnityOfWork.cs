@@ -15,13 +15,13 @@ namespace MANUAL.API.Domain.Repository
      Implementing Unit of Work Pattern, which consist of this class receive our Context instance as a dependency and expose methods to Start, Complete or Abort transactions.
      
      */
-    interface IUnityOfWork
-    {
+        public interface IUnityOfWork
+        {
         public void Start();
 
         public void Abort();
-        public Task CompleteAsync();
+        public Task SaveAsync();
 
         public Task Dispose();
-    }
+        }
 }

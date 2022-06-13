@@ -16,12 +16,12 @@ namespace MANUAL.API.Data.Repositorires
         {
         }
 
-        public async Task AddAsync(Employee employee)
+        public async Task AddAsync(EmployeeEntity employee)
         {
             await _manualAPIDBContext.Employees.AddAsync(employee);
         }
 
-        public void Delete(Employee employee)
+        public void Delete(EmployeeEntity employee)
         {
             _manualAPIDBContext.Employees.Remove(employee);
         }
@@ -36,19 +36,19 @@ namespace MANUAL.API.Data.Repositorires
             return false;
         }
 
-        public async Task<Employee> FindByIdAsync(int id)
+        public async Task<EmployeeEntity> FindByIdAsync(int id)
         {
            var employee = await _manualAPIDBContext.Employees.FindAsync(id);
 
             return employee;
         }
 
-        public async Task<IEnumerable<Employee>> ListAsync()
+        public async Task<IEnumerable<EmployeeEntity>> ListAsync()
         {
             return await _manualAPIDBContext.Employees.ToListAsync();
         }
 
-        public void Update(Employee employee)
+        public void Update(EmployeeEntity employee)
         {
              _manualAPIDBContext.Employees.Update(employee);
         }
