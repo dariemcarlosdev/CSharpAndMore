@@ -27,6 +27,20 @@ namespace MANUAL.API.Data.Repositorires
             return await SaveAsync();
         }
 
+
+        public async Task<bool> SoftDeleteTaskAsync(int taskId)
+        {
+            var _existTask = await FindByIdAsync(taskId);
+
+            if (_existTask == null)
+            {
+                _existTask.IsDeleted = true;
+                return await SaveAsync();
+            }
+
+            return false;
+        }
+
         public async Task<TaskEntity> FindByIdAsync(int id)
         {
           return  await _manualAPIDBContext.Tasks.FindAsync(id);
@@ -81,18 +95,6 @@ namespace MANUAL.API.Data.Repositorires
         }
 
 
-        public async Task<bool> SoftDeleteTaskAsync(int taskId)
-        {
-            var _existTask = await FindByIdAsync(taskId);
-
-            if (_existTask == null)
-            {
-                _existTask.IsDeleted = true;
-                return await SaveAsync();
-            }
-
-            return false;
-        }
 
 
         private async Task<bool> SaveAsync()

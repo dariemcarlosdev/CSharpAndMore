@@ -42,7 +42,7 @@ namespace MANUAL.API.Domain.Repository
         /// Return a company record
         /// </summary>
         /// <param name="taskId"></param>
-        /// <returns>Entites.Company</returns
+        /// <returns>Entites.Company</returns>
         public Task<TaskEntity> FindByIdAsync(int taskId);
 
 
@@ -79,14 +79,14 @@ namespace MANUAL.API.Domain.Repository
         /// Update a record as Deleted=True
         /// </summary>
         /// <param name="taskId"></param>
-        /// <returns>bool</returns>
+        /// <returns>bool: true or false</returns>
         Task<bool> SoftDeleteTaskAsync(int taskId);
 
         /// <summary>
         /// Permanently remove a record from db
         /// </summary>
         /// <param name="task"></param>
-        /// <returns></returns>
+        /// <returns>bool: True or False</returns>
         public Task<bool> HardDeleteTaskAsync(TaskEntity task);
     }
 }

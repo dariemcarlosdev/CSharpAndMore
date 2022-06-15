@@ -11,17 +11,17 @@ namespace MANUAL.API.Domain.ContractServices
         
     {
         /// <sumary>
-        /// Return list of task
+        /// Return list of task which are not marked as deleted.
         /// </sumary>
         /// <return>Instance of type List of TaskDto</return>
-        Task<ServiceResponse<List<TaskDto>>> GetListTasksAsync();
+        Task<ServiceResponse<List<TaskDto>>> GetTasksAsync();
 
         /// <summary>
         /// Return company record.
         /// </summary>
         /// <param ="TaskId"></param>
         /// <returns>Instance of type TaskDto</returns>
-        Task<ServiceResponse<TaskDto>> GetTaskByIdAsync(int taskId);
+        Task<ServiceResponse<TaskDto>> GetByIdAsync(int taskId);
 
         //GUID no included in Model/Entity would be added later and this method will be implemented as well.
         /// <summary>
@@ -51,6 +51,6 @@ namespace MANUAL.API.Domain.ContractServices
         /// </summary>
         /// <param name="TaskId"></param>
         /// <returns>an instance of string type</returns>
-        Task<ServiceResponse<string>> DeleteTaskAsync(int taskId);
+        Task<ServiceResponse<string>> SoftDeleteTaskAsync(int taskId);
     }
 }

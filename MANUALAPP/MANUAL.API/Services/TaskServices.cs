@@ -26,7 +26,7 @@ namespace MANUAL.API.Services
             _unityOfWork = unityOfWork;
         }
 
-        public async Task<ServiceResponse<List<TaskDto>>> GetListTasksAsync()
+        public async Task<ServiceResponse<List<TaskDto>>> GetTasksAsync()
         {
             var _response = new ServiceResponse<List<TaskDto>>();
 
@@ -50,7 +50,7 @@ namespace MANUAL.API.Services
             {
                 _response.Success = false;
                 _response.Data = null;
-                _response.Message = "API response NOT OK";
+                _response.Message = "API response ERROR";
                 _response.ErrorMessages = new List<string> { Convert.ToString(ex.Message) };
                 
             }
@@ -58,13 +58,13 @@ namespace MANUAL.API.Services
             return _response;
         }
 
-        public async Task<ServiceResponse<TaskDto>> GetTaskByIdAsync(int taskId)
+        public async Task<ServiceResponse<TaskDto>> GetByIdAsync(int taskId)
         {
             var _response = new ServiceResponse<TaskDto>();
             
             try
             {
-                var _task = await _taskRepository.FindTaskByIdAsync(taskId);
+                var _task = await _taskRepository.FindByIdAsync(taskId);
 
                 if (_task == null)
                 {
@@ -88,7 +88,7 @@ namespace MANUAL.API.Services
 
                 _response.Success = false;
                 _response.Data = null;
-                _response.Message = "API response NOT OK";
+                _response.Message = "API response ERROR";
                 _response.ErrorMessages = new List<string>{ Convert.ToString(ex.Message)};
             }
 
@@ -131,48 +131,71 @@ namespace MANUAL.API.Services
 
                 _response.Success = false;
                 _response.Data = null;
-                _response.Message = "API response NOT OK";
+                _response.Message = "API response ERROR";
                 _response.ErrorMessages = new List<string> { Convert.ToString(ex.Message) };
             }
 
             return _response;
         }
 
-        public async Task<ServiceResponse<string>> DeleteTaskAsync(int taskId)
+        public async Task<ServiceResponse<string>> SoftDeleteTaskAsync(int taskId)
         {
             var _response = new ServiceResponse<string>();
 
             try
             {
                 //checking if Task exist
-
-                var _existingTask = _taskRepository.FindTaskByIdAsync(taskId);
+                var _existingTask = _taskRepository.TaskExistAsync(taskId);
+                
                 if (_existingTask == null)
                 {
                     _response.Success = false;
-                    _response.Message = "API response NOT OK";
+                    _response.Message = "API response NOT OK, Task NOT FOUND";
                     _response.Data = null;
 
                     return _response;
                 }
 
-                if (await _taskRepository.)
+                if (!await _taskRepository.SoftDeleteTaskAsync(taskId))
                 {
+                    _response.Success = false;
+                    _response.Message = "Repo Error";
 
+                    return _response;
                 }
+
+                _response.Success = true;
+                _response.Message = "Task Deleted";
             }
             catch (Exception ex)
             {
 
-                throw;
+                _response.Success = false;
+                _response.Data = null;
+                _response.Message = "API response ERROR";
+                _response.ErrorMessages = new List<string> { Convert.ToString(ex.Message)};
             }
 
             return _response;
         }
 
-        public Task<ServiceResponse<TaskDto>> UpdateTaskAsync(UpdateTaskDto updateTaskDto)
+        public async Task<ServiceResponse<TaskDto>> UpdateTaskAsync(UpdateTaskDto updateTaskDto)
         {
-            throw new NotImplementedException();
+            var _response = new ServiceResponse<TaskDto>();
+
+            try
+            {
+                //try if record Exist.
+            }
+            catch (Exception ex)
+            {
+                _response.Success = false;
+                _response.Data = null;
+                _response.Message = "API response ERROR";
+                _response.ErrorMessages = new List<string> { Convert.ToString(ex.Message) };
+            }
+
+            return _response;
         }
     }
 }
