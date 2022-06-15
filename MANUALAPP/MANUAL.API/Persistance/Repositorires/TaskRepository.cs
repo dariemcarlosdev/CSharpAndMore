@@ -6,7 +6,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using MANUAL.API.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using TaskEntity = MANUAL.API.Domain.Models.TaskEntity;
 
 namespace MANUAL.API.Data.Repositorires
 {
@@ -16,14 +15,16 @@ namespace MANUAL.API.Data.Repositorires
         {
         }
 
-        public async System.Threading.Tasks.Task AddAsync(Domain.Models.TaskEntity task)
+        public async Task AddAsync(TaskEntity task)
         {
           await _manualAPIDBContext.Tasks.AddAsync(task);
         }
 
-        public void Delete(Domain.Models.TaskEntity task)
+        public async Task<bool> HardDeleteTaskAsync(TaskEntity task)
         {
             _manualAPIDBContext.Tasks.Remove(task);
+
+            return await SaveAsync();
         }
 
         public async Task<TaskEntity> FindByIdAsync(int id)
@@ -31,9 +32,15 @@ namespace MANUAL.API.Data.Repositorires
           return  await _manualAPIDBContext.Tasks.FindAsync(id);
         }
 
-        public async Task<IEnumerable<TaskEntity>> ListAsync()
+        public async Task<IEnumerable<TaskEntity>> GetAllTasksAsync()
         {
            return await _manualAPIDBContext.Tasks.ToListAsync();
+        }
+
+
+        public async Task<IEnumerable<TaskEntity>> GetTasksAsync()
+        {
+            return await _manualAPIDBContext.Tasks.Where(t => t.IsDeleted == false).ToListAsync();
         }
 
         public async Task<bool> TaskExistAsync(string description)
@@ -46,11 +53,51 @@ namespace MANUAL.API.Data.Repositorires
             return false;
         }
 
-        public void Update(TaskEntity task)
+        public async Task<bool> TaskExistAsync(int taskId)
         {
-            _manualAPIDBContext.Tasks.Update(task);
+            if (await _manualAPIDBContext.Tasks.AnyAsync(t => t.TaskId == taskId))
+            {
+                return true;
+            }
+
+            return false;
         }
 
-       
+        public async Task<bool> UpdateTaskAsync(TaskEntity task)
+        {
+           _manualAPIDBContext.Tasks.Update(task);
+            return await SaveAsync();
+        }
+
+
+        public async Task<IEnumerable<TaskEntity>> GetDeletedTasksAsync()
+        {
+            return await _manualAPIDBContext.Tasks.Where(t => t.IsDeleted == true).ToListAsync();
+        }
+
+        public async Task<IEnumerable<TaskEntity>> GetDisabledTasksAsync()
+        {
+            return await _manualAPIDBContext.Tasks.Where(t => t.IsEnable == false).ToListAsync();
+        }
+
+
+        public async Task<bool> SoftDeleteTaskAsync(int taskId)
+        {
+            var _existTask = await FindByIdAsync(taskId);
+
+            if (_existTask == null)
+            {
+                _existTask.IsDeleted = true;
+                return await SaveAsync();
+            }
+
+            return false;
+        }
+
+
+        private async Task<bool> SaveAsync()
+        {
+            return await _manualAPIDBContext.SaveChangesAsync() > 0 ? true : false;
+        }
     }
 }

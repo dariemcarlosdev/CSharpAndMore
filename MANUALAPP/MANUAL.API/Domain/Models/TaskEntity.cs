@@ -45,6 +45,8 @@ namespace MANUAL.API.Domain.Models
         public bool? IsCompleted { get; set; }
         
         public bool? IsEnable { get; set; }
+
+        public bool? IsDeleted { get; set; }
         public ICollection<EmployeeTaskEntity> EmployeesTasks { get; set; }
 
         

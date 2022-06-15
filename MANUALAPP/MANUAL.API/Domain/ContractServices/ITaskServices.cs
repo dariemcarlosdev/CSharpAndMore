@@ -13,14 +13,14 @@ namespace MANUAL.API.Domain.ContractServices
         /// <sumary>
         /// Return list of task
         /// </sumary>
-        /// <return>List of TaskDto</return>
+        /// <return>Instance of type List of TaskDto</return>
         Task<ServiceResponse<List<TaskDto>>> GetListTasksAsync();
-        
+
         /// <summary>
         /// Return company record.
         /// </summary>
         /// <param ="TaskId"></param>
-        /// <returns>TaskDto</returns>
+        /// <returns>Instance of type TaskDto</returns>
         Task<ServiceResponse<TaskDto>> GetTaskByIdAsync(int taskId);
 
         //GUID no included in Model/Entity would be added later and this method will be implemented as well.
@@ -35,7 +35,7 @@ namespace MANUAL.API.Domain.ContractServices
         /// Add new Task Record record in db
         /// </summary>
         /// <param name="createTaskDto"></param>
-        /// <returns>TaskDto</returns>
+        /// <returns>Instance of type TaskDto</returns>
         /// 
         Task<ServiceResponse<TaskDto>> AddTaskAsync(CreateTaskDto createTaskDto);
 
@@ -43,14 +43,14 @@ namespace MANUAL.API.Domain.ContractServices
         /// Update Task record
         /// </summary>
         /// <param name="updateTaskDto"></param>
-        /// <returns>CompanyDto</returns>
+        /// <returns>Instance of type CompanyDto</returns>
         Task<ServiceResponse<TaskDto>> UpdateTaskAsync(UpdateTaskDto updateTaskDto);
 
         /// <summary>
         /// Delete Task record
         /// </summary>
         /// <param name="TaskId"></param>
-        /// <returns>bool</returns>
+        /// <returns>an instance of string type</returns>
         Task<ServiceResponse<string>> DeleteTaskAsync(int taskId);
     }
 }

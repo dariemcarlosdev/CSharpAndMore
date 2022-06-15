@@ -14,11 +14,79 @@ namespace MANUAL.API.Domain.Repository
     {
         //define all possible opperations for this Entity including CRUDS operations and any other one related to this entity.
 
-        public Task<IEnumerable<TaskEntity>> ListAsync();
-        public Task<TaskEntity> FindByIdAsync(int id);
+        /// <summary>
+        /// Return all task including records marked as deleted and disabled
+        /// </summary>
+        /// <returns>Entites.Company</returns>
+        public Task<IEnumerable<TaskEntity>> GetAllTasksAsync();
+
+        /// <summary>
+        /// Return all Tasks which are not marked as deleted.
+        /// </summary>
+        /// <returns>Models.Tasks</returns>
+        public Task<IEnumerable<TaskEntity>> GetTasksAsync();
+
+        /// <summary>
+        /// Return list of Tasks which are marked as deleted
+        /// </summary>
+        /// <returns>Entites.Company</returns>
+        public Task<IEnumerable<TaskEntity>> GetDeletedTasksAsync();
+
+        /// <summary>
+        /// Return list of Tasks which are marked as disabled
+        /// </summary>
+        /// <returns>Entites.Company</returns>
+        public Task<IEnumerable<TaskEntity>> GetDisabledTasksAsync();
+
+        /// <summary>
+        /// Return a company record
+        /// </summary>
+        /// <param name="taskId"></param>
+        /// <returns>Entites.Company</returns
+        public Task<TaskEntity> FindByIdAsync(int taskId);
+
+
+        /// <summary>
+        /// Add a new record for new Task
+        /// </summary>
+        /// <param name="task"></param>
+        /// <returns>bool</returns>
         public System.Threading.Tasks.Task AddAsync(TaskEntity task);
+
+        /// <summary>
+        /// Return True/False if record exist
+        /// </summary>
+        /// <param name="Description"></param>
+        /// <returns>bool</returns>
         public Task<bool> TaskExistAsync(string description);
-        public void Update(TaskEntity task);
-        public void Delete(Domain.Models.TaskEntity task);
+        
+        /// <summary>
+        /// Return True/False if record exist
+        /// </summary>
+        /// <param name="taskId"></param>
+        /// <returns>bool</returns>
+        public Task<bool> TaskExistAsync(int taskId);
+
+        /// <summary>
+        /// Update a record in db
+        /// </summary>
+        /// <param name="task"></param>
+        /// <returns>bool</returns>
+        public Task<bool> UpdateTaskAsync(TaskEntity task);
+
+
+        /// <summary>
+        /// Update a record as Deleted=True
+        /// </summary>
+        /// <param name="taskId"></param>
+        /// <returns>bool</returns>
+        Task<bool> SoftDeleteTaskAsync(int taskId);
+
+        /// <summary>
+        /// Permanently remove a record from db
+        /// </summary>
+        /// <param name="task"></param>
+        /// <returns></returns>
+        public Task<bool> HardDeleteTaskAsync(TaskEntity task);
     }
 }

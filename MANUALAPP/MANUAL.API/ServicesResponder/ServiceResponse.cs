@@ -12,7 +12,7 @@ namespace MANUAL.API.ServicesResponder
     /// By using a generic type parameter T, I can write a single class that other client code can use without incurring the cost or risk of runtime casts or boxing operations.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class ServiceResponse<T>
+    public class ServiceResponse<T> // here I use <> to specified Parameter Type.
     {
         public ServiceResponse(bool success = true, string message = null, string error = null, List<string> errorMessage= null)
         {

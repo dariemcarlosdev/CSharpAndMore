@@ -12,14 +12,14 @@ namespace MANUAL.API.Domain.ContractServices
         /// <sumary>
         /// Return list of Employee
         /// </sumary>
-        /// <return>List of EmployeeDto</return>
+        /// <return>An instance of List of EmployeeDto type</return>
         Task<ServiceResponse<List<EmployeeDto>>> GetListEmployeesAsync();
 
         /// <summary>
         /// Return company record.
         /// </summary>
         /// <param ="EmployeeId"></param>
-        /// <returns>EmployeeDto</returns>
+        /// <returns>Instance of EmployeeDto type</returns>
         Task<ServiceResponse<EmployeeDto>> GetEmployeeById(int employeeId);
 
         //GUID no included in Model Object/Entity would be added later and this method will be implemented as well.
@@ -34,14 +34,14 @@ namespace MANUAL.API.Domain.ContractServices
         /// Add new Employee Record record in db
         /// </summary>
         /// <param name="createEmployeeDto"></param>
-        /// <returns>EmployeeDto</returns>
+        /// <returns>Instance of EmployeeDto type</returns>
         Task<ServiceResponse<EmployeeDto>> AddEmployeeAsync( CreateEmployeeDto createEmployeeDto);
 
         /// <summary>
         /// Update Employee record
         /// </summary>
         /// <param name="updateEmployeeDto"></param>
-        /// <returns>EmployeeDto</returns>
+        /// <returns>an instance of EmployeeDto type</returns>
         Task<ServiceResponse<EmployeeDto>> UpdateEmployeeAsync(UpdateEmployeeDto updateEmployeeDto);
 
 
@@ -49,7 +49,7 @@ namespace MANUAL.API.Domain.ContractServices
         /// Delete Employee record
         /// </summary>
         /// <param name="EmployeekId"></param>
-        /// <returns>bool</returns>
+        /// <returns>an instance bool</returns>
         Task<ServiceResponse<string>> DeleteEmployeeAsync(int employeeId);
     }
 }

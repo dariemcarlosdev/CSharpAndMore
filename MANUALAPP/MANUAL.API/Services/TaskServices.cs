@@ -33,7 +33,7 @@ namespace MANUAL.API.Services
 
             try
             {
-                var tasksList = await _taskRepository.ListAsync();
+                var tasksList = await _taskRepository.GetTasksAsync();
                 var tasksListDto = new List<TaskDto>();
 
                 foreach (var task in tasksList)
@@ -50,7 +50,7 @@ namespace MANUAL.API.Services
             {
                 _response.Success = false;
                 _response.Data = null;
-                _response.Message = "Error in response";
+                _response.Message = "API response NOT OK";
                 _response.ErrorMessages = new List<string> { Convert.ToString(ex.Message) };
                 
             }
@@ -58,19 +58,116 @@ namespace MANUAL.API.Services
             return _response;
         }
 
-        public Task<ServiceResponse<TaskDto>> GetTaskByIdAsync(int taskId)
+        public async Task<ServiceResponse<TaskDto>> GetTaskByIdAsync(int taskId)
         {
-            throw new NotImplementedException();
+            var _response = new ServiceResponse<TaskDto>();
+            
+            try
+            {
+                var _task = await _taskRepository.FindTaskByIdAsync(taskId);
+
+                if (_task == null)
+                {
+                    _response.Success = false;
+                    _response.Message = "Task not found";
+
+                    return _response;
+                }
+
+                var _taskDto = _mapper.Map<TaskDto>(_task);
+
+                _response.Success = true;
+                _response.Data = _taskDto;
+                _response.Message = "API response OK";
+            }
+
+            
+
+            catch (Exception ex)
+            {
+
+                _response.Success = false;
+                _response.Data = null;
+                _response.Message = "API response NOT OK";
+                _response.ErrorMessages = new List<string>{ Convert.ToString(ex.Message)};
+            }
+
+            return _response;
         }
 
-        public Task<ServiceResponse<TaskDto>> AddTaskAsync(CreateTaskDto createTaskDto)
+        public async Task<ServiceResponse<TaskDto>> AddTaskAsync(CreateTaskDto createTaskDto)
         {
-            throw new NotImplementedException();
+            var _response = new ServiceResponse<TaskDto>();
+
+            try
+            {
+                //Checking if the company already exist.
+                if ( await _taskRepository.TaskExistAsync(createTaskDto.Description))
+                {
+                    _response.Message = "The Task exist";
+                    _response.Success = false;
+                    _response.Data = null;
+
+                    return _response;
+                }
+
+                
+                var _newTask = new Domain.Models.TaskEntity()
+                {
+                      Description = createTaskDto.Description
+                    , DateOfTaskCreation = createTaskDto.DateOfTaskCreation
+                    , CompletedDate = createTaskDto.CompletedDate
+                    , DueDate = createTaskDto.DueDate
+                    , IsCompleted = createTaskDto.IsCompleted
+                    , IsEnable = createTaskDto.IsEnable
+                    , StartedOn = createTaskDto.StartedOn
+
+                    //*Here check if do I need to add a list of employees when I am crating a new Taks.
+                };
+
+            }
+            catch (Exception ex)
+            {
+
+                _response.Success = false;
+                _response.Data = null;
+                _response.Message = "API response NOT OK";
+                _response.ErrorMessages = new List<string> { Convert.ToString(ex.Message) };
+            }
+
+            return _response;
         }
 
-        public Task<ServiceResponse<string>> DeleteTaskAsync(int taskId)
+        public async Task<ServiceResponse<string>> DeleteTaskAsync(int taskId)
         {
-            throw new NotImplementedException();
+            var _response = new ServiceResponse<string>();
+
+            try
+            {
+                //checking if Task exist
+
+                var _existingTask = _taskRepository.FindTaskByIdAsync(taskId);
+                if (_existingTask == null)
+                {
+                    _response.Success = false;
+                    _response.Message = "API response NOT OK";
+                    _response.Data = null;
+
+                    return _response;
+                }
+
+                if (await _taskRepository.)
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+            return _response;
         }
 
         public Task<ServiceResponse<TaskDto>> UpdateTaskAsync(UpdateTaskDto updateTaskDto)
