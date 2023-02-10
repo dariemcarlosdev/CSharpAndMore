@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My ASP.NET Core App", "My ASP.NET Core App.csproj", "{323FB391-1230-47F0-84C6-F2952CA15591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NET Core App TEST", "ASP.NET Core App TEST.csproj", "{323FB391-1230-47F0-84C6-F2952CA15591}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching_Logging Service", "..\Sample_Caching\Caching_Logging Service.csproj", "{ECAD2BAD-43F1-4E88-99F9-C97736A5AEA9}"
 EndProject

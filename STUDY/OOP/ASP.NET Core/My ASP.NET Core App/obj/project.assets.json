@@ -199,9 +199,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\My ASP.NET Core App\\My ASP.NET Core App.csproj",
-      "projectName": "My ASP.NET Core App",
-      "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\My ASP.NET Core App\\My ASP.NET Core App.csproj",
+      "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\My ASP.NET Core App\\ASP.NET Core App TEST.csproj",
+      "projectName": "ASP.NET Core App TEST",
+      "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\My ASP.NET Core App\\ASP.NET Core App TEST.csproj",
       "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\My ASP.NET Core App\\obj\\",
       "projectStyle": "PackageReference",

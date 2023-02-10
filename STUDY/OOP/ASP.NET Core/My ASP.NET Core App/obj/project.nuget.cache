@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zfPKbZMcFoeOI8vbM/tamxidYT3tv4oZ76Ex+OwuOvROVZfGWLKIu9TDBX0M51AENqDS1RlEkU2Z2NUp6QXGQQ==",
+  "dgSpecHash": "VMmNXll99308Ad2/xmZR5BUdUBy9lY6YpdMWS7UxSIyw41lfFuiUnaI5kXRaA+VePt4S9j+ca0UhKzAyJNNhZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\My ASP.NET Core App\\My ASP.NET Core App.csproj",
+  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\My ASP.NET Core App\\ASP.NET Core App TEST.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\335286\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\335286\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

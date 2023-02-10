@@ -11,7 +11,6 @@ C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Cor
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.csproj.AssemblyReference.cache
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.AssemblyInfoInputs.cache
 C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.AssemblyInfo.cs
