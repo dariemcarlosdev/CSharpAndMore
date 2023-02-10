@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7DRabxm26APDtsrR4Fb6SgQA7AMj01hcP/6TetY6aLtcLX54C/6bWYM1RlSqJT8/CETqIgaPoDrsIQdb/+zRRg==",
+  "dgSpecHash": "oW85B3d3kDmFK22Pn/40sc7DZaHpMSGNq/kJUEWT+CZh5rxPj9JWHDKSa8SQJTreH2K4vl0Z+i/jaiksq6bGVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\Sample_Caching\\Sample_Caching_Logging.csproj",
+  "projectFilePath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\Sample_Caching\\Caching_Logging Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\335286\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.17\\microsoft.aspnetcore.jsonpatch.5.0.17.nupkg.sha512",
     "C:\\Users\\335286\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.17\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.17.nupkg.sha512",

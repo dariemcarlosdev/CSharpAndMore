@@ -35,6 +35,7 @@ namespace Sample_Caching.Controllers
         }
 
         [HttpGet]
+        [Produces("application/json")]
         [Route("GetAllEmployees")]
 
         //An asynchronous tasks can complete in the background(the process or thread is not busy or blocked) and notifies when it is completed so that
@@ -63,7 +64,7 @@ namespace Sample_Caching.Controllers
                 //var employees = await _cacheProvider.GetDataCachedResponseAsync();//Await: When we want to call an async function asynchronously then we use this await keyword.
 
 
-                Task employees = _cacheProvider.GetDataCachedResponseAsync();
+                var employees = _cacheProvider.GetDataCachedResponseAsync();
                 _logger.LogInformation("\n Task {0} has started - started time: {1}.", employees.Id.ToString(), timer.Elapsed.ToString());
                 //I'm using Ilogger instance to log relevant events in EmployeeController.
 

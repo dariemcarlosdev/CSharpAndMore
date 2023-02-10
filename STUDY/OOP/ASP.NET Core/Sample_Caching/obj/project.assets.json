@@ -1507,9 +1507,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\Sample_Caching\\Sample_Caching_Logging.csproj",
-      "projectName": "Sample_Caching_Logging",
-      "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\Sample_Caching\\Sample_Caching_Logging.csproj",
+      "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\Sample_Caching\\Caching_Logging Service.csproj",
+      "projectName": "Caching_Logging Service",
+      "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\Sample_Caching\\Caching_Logging Service.csproj",
       "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\STUDY\\OOP\\ASP.NET Core\\Sample_Caching\\obj\\",
       "projectStyle": "PackageReference",
