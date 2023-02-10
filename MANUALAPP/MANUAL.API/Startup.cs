@@ -18,6 +18,8 @@ using Microsoft.EntityFrameworkCore.Design;
 using MANUAL.API.Domain.Repository;
 using MANUAL.API.Data.Repositorires;
 using MANUAL.API.Mapping;
+using MANUAL.API.Domain.ContractServices;
+using MANUAL.API.Services;
 
 namespace MANUAL.API
 {
@@ -37,7 +39,7 @@ namespace MANUAL.API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "AspNetRestApiCore", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TasksMngr ASP.NET CORE", Version = "v1" });
             });
             
             services.AddDbContext<ManualAPIDBContext>( options =>
@@ -51,6 +53,11 @@ namespace MANUAL.API
 
             services.AddScoped<ITaskRepository, TaskRepository>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            
+            //Registering Services in my DI Container for resolving Dependency injection.
+            services.AddScoped<ITaskServices, TaskServices>();
+            services.AddScoped<IEmployeeServices, EmployeeServices>();
+
 
             //Register AutoMapper in my DI Container for dependency Injection.
 
@@ -68,7 +75,7 @@ namespace MANUAL.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MANUAL.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "APP.API v1"));
             }
             else
             {   //security feauture

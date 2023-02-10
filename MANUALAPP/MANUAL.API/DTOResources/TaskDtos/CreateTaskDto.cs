@@ -17,10 +17,10 @@ namespace MANUAL.API.DTOResources
         [Required(ErrorMessage = "Jobs asociated to this task must be passed")]
         public string Jobs { get; set; }
        
-        [Required(ErrorMessage ="Task Creation Date is required")]
-        [DataType(DataType.Date)]
-        [Display(Name = "Task Creation Date")]
-        public DateTime DateOfTaskCreation { get; set; }
+        //[Required(ErrorMessage ="Task Creation Date is required")]
+        //[DataType(DataType.Date)]
+        //[Display(Name = "Task Creation Date")]
+        //public DateTime DateOfTaskCreation { get; set; }
         
         [Required(ErrorMessage ="You must set a start Date")]
         [DataType(DataType.Date)]
@@ -30,8 +30,8 @@ namespace MANUAL.API.DTOResources
         [DataType(DataType.Date)]
         public DateTime DueDate { get; set; }
        
-        [DataType(DataType.Date)]
-        public DateTime CompletedDate { get; set; }
+        //[DataType(DataType.Date)]
+        //public DateTime CompletedDate { get; set; }
 
         [Required()]
         [Display(Name = "Is it Completed?")]
@@ -40,5 +40,8 @@ namespace MANUAL.API.DTOResources
         [Required()]
         [Display(Name = "Is it Enable?")]
         public bool? IsEnable { get; set; }
+        [Required()]
+        [Display(Name = "Employees assigned to")]
+        public IList<string> Employees { get; set; }
     }
 }

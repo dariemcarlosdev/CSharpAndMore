@@ -16,7 +16,10 @@ namespace MANUAL.API
     {
         public static void Main(string[] args)
         {
+
+
             var host = CreateHostBuilder(args).Build();
+
             using (var scope = host.Services.CreateScope())
             {
 
@@ -31,7 +34,8 @@ namespace MANUAL.API
                     }
 
                     var context = services.GetRequiredService<ManualAPIDBContext>();
-                    DBInitializer.Initialize(context); //apply all migrations
+                    //apply all migrations
+                    DBInitializer.Initialize(context);
                     //SeedData.Initialize(services); // Insert default data
                     DBInitializer.SeedDdata(context);
                 }

@@ -42,9 +42,9 @@ namespace MANUAL.API.DTOResources
         [Display(Name = "Is it Enable?")]
         public bool? IsEnable { get; set; }
 
-        //Adding Collection of EmployeeDTO to TaskDto
+        //Adding Collection of EmployeeDTO to TasKDTO
 
-        public IList<EmployeeDto> employeesDtos { get; set; }
+        public IList<string> Employees { get; set; }
 
     }
 }

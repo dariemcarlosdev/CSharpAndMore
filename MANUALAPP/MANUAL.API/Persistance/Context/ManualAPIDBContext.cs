@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 using MANUAL.API.Domain.Models;
 using Microsoft.EntityFrameworkCore; //use DbContext for EF Core
 using EF6 = System.Data.Entity; // use EF6.DbContext for the EF6 version
-using TaskEntity = MANUAL.API.Domain.Models.TaskEntity; //To avoid name convention name with Threading.Task.
 
 namespace MANUAL.API.Persistence.Context
 {
     public class ManualAPIDBContext : DbContext
     {
-        public ManualAPIDBContext()
-        {
-        }
 
         public ManualAPIDBContext(DbContextOptions<ManualAPIDBContext> options) : base(options)
         {

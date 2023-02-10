@@ -41,5 +41,8 @@ namespace MANUAL.API.DTOResources
 
         [Display(Name = "Is it Enable?")]
         public bool? IsEnable { get; set; }
+
+        [Display(Name = "Is is Deleted?")]
+        public bool? IsDeleted { get; set; }
     }
 }

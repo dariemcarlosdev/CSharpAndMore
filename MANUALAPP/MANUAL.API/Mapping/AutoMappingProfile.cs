@@ -23,7 +23,7 @@ namespace MANUAL.API.Mapping
      As soon as our application starts and initializes AutoMapper, AutoMapper will scan our application and look for classes that inherit from the Profile class and load their mapping configurations.
 
 
-    If we have property with diferents names in our source and destination objects we hace to costumize the mapping configuration for each individual property using ForMember method.
+    If we have property with diferents names in our source and destination objects we have to costumize the mapping configuration for each individual property using ForMember method.
 
         eg:
 
@@ -55,7 +55,7 @@ namespace MANUAL.API.Mapping
             //Create mapping for entity relasionships many-to-many hidding the relation/join table table . Ref https://stackoverflow.com/questions/60261273/how-to-map-a-dto-with-a-many-to-many-relationship-to-a-ef-core-entity-with-a-rel
             //Here I am mapping Employee(Type EmployeeEntity) into employeeDtos (Type Ilist<EmployeeDto>), selecting de Employee form EmployeesTasks.dotnet
 
-            CreateMap<TaskEntity, TaskDto>().ForMember(dto => dto.employeesDtos, opt => opt.MapFrom( x => x.EmployeesTasks.Select(y => y.Employee).ToList())).ReverseMap();
+            CreateMap<TaskEntity, TaskDto>().ForMember(dto => dto.Employees, opt => opt.MapFrom( x => x.EmployeesTasks.Select(y => y.Employee.Name + " " + y.Employee.LastName).ToList())).ReverseMap();
 
             //-----------------------------------------
             /*

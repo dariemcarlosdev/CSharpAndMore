@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\MANUALAPP\\MANUAL.API\\MANUAL.API.csproj",
-        "projectName": "MANUAL.API",
+        "projectName": "APP.API",
         "projectPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\MANUALAPP\\MANUAL.API\\MANUAL.API.csproj",
         "packagesPath": "C:\\Users\\335286\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\335286\\source\\repos\\dariemcarlosdev\\CSharpAndMore\\MANUALAPP\\MANUAL.API\\obj\\",
@@ -48,9 +48,17 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.19.0, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

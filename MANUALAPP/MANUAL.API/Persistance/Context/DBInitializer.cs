@@ -12,6 +12,7 @@ namespace MANUAL.API.Persistence.Context
     {
         //Create automatic migration
         public static void Initialize(ManualAPIDBContext context) {
+            
             context.Database.Migrate();
 
         }
@@ -20,16 +21,16 @@ namespace MANUAL.API.Persistence.Context
 
             //Seeding Employees TABLE.
 
-            var Employee1 = new EmployeeEntity { Name="dadsad",LastName="dads", EmployeeNo= 232123 };
-            var Employee2 = new EmployeeEntity {  Name = "dadsad", LastName = "dads", EmployeeNo = 232123 };
+            var Employee1 = new EmployeeEntity { Name="Dariem",LastName="Macias", EmployeeNo= 232124 };
+            var Employee2 = new EmployeeEntity {  Name = "Carlos", LastName = "Mora", EmployeeNo = 232123 };
 
-            var Task1 = new TaskEntity {  CompletedDate=  DateTime.Now, DateOfTaskCreation= Convert.ToDateTime(DateTime.Now.ToString("MM-dd-yyyy")), Description="dadsd", DueDate=DateTime.Now,StartedOn=DateTime.Now, Jobs="dadsad, dadsa" };
-            var Task2 = new TaskEntity {  CompletedDate = DateTime.Now, DateOfTaskCreation = Convert.ToDateTime(DateTime.Now.ToString("MM-dd-yyyy")), Description = "dadsd", DueDate = DateTime.Now, StartedOn = DateTime.Now, Jobs = "dadsad, dadsa" };
+            var Task1 = new TaskEntity {  CompletedDate=  DateTime.Now, DateOfTaskCreation= Convert.ToDateTime(DateTime.Now.ToString("MM-dd-yyyy")), Description="dadsd", DueDate=DateTime.Now,StartedOn=DateTime.Now, Jobs="dadsad, dadsa", IsCompleted = false, IsDeleted=false, IsEnable=true };
+            var Task2 = new TaskEntity {  CompletedDate = DateTime.Now, DateOfTaskCreation = Convert.ToDateTime(DateTime.Now.ToString("MM-dd-yyyy")), Description = "dadsd", DueDate = DateTime.Now, StartedOn = DateTime.Now, Jobs = "dadsad, dadsa", IsCompleted=true, IsDeleted=true, IsEnable=false };
 
 
             //Seeding Task TABLE.
 
-            var EmployeeTask = new EmployeeTaskEntity()  { Employee = Employee1, Task =Task1};
+            var EmployeeTask = new EmployeeTaskEntity() { Employee = Employee1, Task = Task1 };
             var EmployeeTask1 = new EmployeeTaskEntity() { Employee = Employee1, Task = Task2 };
             var EmployeeTask3 = new EmployeeTaskEntity() { Employee = Employee2, Task = Task2 };
 

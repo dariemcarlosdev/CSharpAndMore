@@ -19,9 +19,6 @@ namespace MANUAL.API.Data.Repositorires
             _manualAPIDBContext = manualAPIDBContext;
         }
 
-        protected BaseRepository()
-        {
-            _manualAPIDBContext = new ManualAPIDBContext();
-        }
+      
     }
 }

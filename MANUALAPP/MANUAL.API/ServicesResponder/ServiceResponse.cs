@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MANUAL.API.ServicesResponder
 {
-    //I will use this Generic class to wrap our API response to provide a more meaningful response when a request is sent to our API.
+    //I will use this Generic class to wrap our API response to provide a more meaningfull response when a request is sent to our API.
     /// <summary>
     /// Generic wrapper for web api response. 
     /// This class is a Generic classes whom encapsulate operations that are not specific to a particular data type until the class and/or their methods are declared and instantiated .

@@ -72,7 +72,7 @@ namespace MANUAL.API.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("CompletedDate")
+                    b.Property<DateTime?>("CompletedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DateOfTaskCreation")
@@ -87,6 +87,9 @@ namespace MANUAL.API.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<bool?>("IsCompleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<bool?>("IsEnable")
@@ -107,13 +110,13 @@ namespace MANUAL.API.Migrations
             modelBuilder.Entity("MANUAL.API.Domain.Models.EmployeeTaskEntity", b =>
                 {
                     b.HasOne("MANUAL.API.Domain.Models.EmployeeEntity", "Employee")
-                        .WithMany("EmployeeTasks")
+                        .WithMany("EmployeesTasks")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MANUAL.API.Domain.Models.TaskEntity", "Task")
-                        .WithMany("EmployeeTasks")
+                        .WithMany("EmployeesTasks")
                         .HasForeignKey("TaskId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -125,12 +128,12 @@ namespace MANUAL.API.Migrations
 
             modelBuilder.Entity("MANUAL.API.Domain.Models.EmployeeEntity", b =>
                 {
-                    b.Navigation("EmployeeTasks");
+                    b.Navigation("EmployeesTasks");
                 });
 
             modelBuilder.Entity("MANUAL.API.Domain.Models.TaskEntity", b =>
                 {
-                    b.Navigation("EmployeeTasks");
+                    b.Navigation("EmployeesTasks");
                 });
 #pragma warning restore 612, 618
         }

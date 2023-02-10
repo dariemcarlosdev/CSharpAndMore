@@ -1,0 +1,16 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\bin\Debug\net5.0\CSharp.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\bin\Debug\net5.0\CSharp.deps.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\bin\Debug\net5.0\CSharp.runtimeconfig.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\bin\Debug\net5.0\CSharp.runtimeconfig.dev.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\bin\Debug\net5.0\CSharp.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\bin\Debug\net5.0\ref\CSharp.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\bin\Debug\net5.0\CSharp.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\CSharp.csproj.AssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\CSharp.AssemblyInfoInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\CSharp.AssemblyInfo.cs
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\CSharp.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\CSharp.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\ref\CSharp.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\CSharp.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\CSharp\obj\Debug\net5.0\CSharp.genruntimeconfig.cache

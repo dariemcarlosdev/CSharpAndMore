@@ -29,6 +29,7 @@ namespace MANUAL.API.Domain.Models
         [MaxLength(50)]
         public string LastName{ get; set; }
         public ICollection<EmployeeTaskEntity> EmployeesTasks;
+
         public string GetFullName()
         {
             return $"{this.Name}, {this.LastName}";

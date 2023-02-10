@@ -18,32 +18,32 @@ namespace MANUAL.API.Domain.Repository
         /// Return all task including records marked as deleted and disabled
         /// </summary>
         /// <returns>Entites.Company</returns>
-        public Task<IEnumerable<TaskEntity>> GetAllTasksAsync();
+        Task<IEnumerable<TaskEntity>> GetAllTasksAsync();
 
         /// <summary>
         /// Return all Tasks which are not marked as deleted.
         /// </summary>
         /// <returns>Models.Tasks</returns>
-        public Task<IEnumerable<TaskEntity>> GetTasksAsync();
+        Task<IEnumerable<TaskEntity>> GetTasksAsync();
 
         /// <summary>
         /// Return list of Tasks which are marked as deleted
         /// </summary>
         /// <returns>Entites.Company</returns>
-        public Task<IEnumerable<TaskEntity>> GetDeletedTasksAsync();
+        Task<IEnumerable<TaskEntity>> GetDeletedTasksAsync();
 
         /// <summary>
         /// Return list of Tasks which are marked as disabled
         /// </summary>
         /// <returns>Entites.Company</returns>
-        public Task<IEnumerable<TaskEntity>> GetDisabledTasksAsync();
+        Task<IEnumerable<TaskEntity>> GetDisabledTasksAsync();
 
         /// <summary>
         /// Return a company record
         /// </summary>
         /// <param name="taskId"></param>
         /// <returns>Entites.Company</returns>
-        public Task<TaskEntity> FindByIdAsync(int taskId);
+       Task<TaskEntity> FindByIdAsync(int taskId);
 
 
         /// <summary>
@@ -51,28 +51,28 @@ namespace MANUAL.API.Domain.Repository
         /// </summary>
         /// <param name="task"></param>
         /// <returns>bool</returns>
-        public System.Threading.Tasks.Task AddAsync(TaskEntity task);
+        Task<bool> AddAsync(TaskEntity task);
 
         /// <summary>
         /// Return True/False if record exist
         /// </summary>
         /// <param name="Description"></param>
         /// <returns>bool</returns>
-        public Task<bool> TaskExistAsync(string description);
+        Task<bool> TaskExistAsync(string description);
         
         /// <summary>
         /// Return True/False if record exist
         /// </summary>
         /// <param name="taskId"></param>
         /// <returns>bool</returns>
-        public Task<bool> TaskExistAsync(int taskId);
+        Task<bool> TaskExistAsync(int taskId);
 
         /// <summary>
         /// Update a record in db
         /// </summary>
         /// <param name="task"></param>
         /// <returns>bool</returns>
-        public Task<bool> UpdateTaskAsync(TaskEntity task);
+        bool UpdateTask(TaskEntity task);
 
 
         /// <summary>
@@ -87,6 +87,6 @@ namespace MANUAL.API.Domain.Repository
         /// </summary>
         /// <param name="task"></param>
         /// <returns>bool: True or False</returns>
-        public Task<bool> HardDeleteTaskAsync(TaskEntity task);
+        bool HardDeleteTask(TaskEntity task);
     }
 }

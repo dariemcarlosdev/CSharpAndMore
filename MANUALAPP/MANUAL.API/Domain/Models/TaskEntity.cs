@@ -32,10 +32,10 @@ namespace MANUAL.API.Domain.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime StartedOn { get; set; }
-        [Required]
+       
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime CompletedDate { get; set; }
+        public DateTime? CompletedDate { get; set; }
         [Required]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
@@ -47,6 +47,8 @@ namespace MANUAL.API.Domain.Models
         public bool? IsEnable { get; set; }
 
         public bool? IsDeleted { get; set; }
+
+        //Navigation property.
         public ICollection<EmployeeTaskEntity> EmployeesTasks { get; set; }
 
         

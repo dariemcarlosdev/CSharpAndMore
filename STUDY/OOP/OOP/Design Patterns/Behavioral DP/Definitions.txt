@@ -1,0 +1,8 @@
+﻿
+Behivioral design pattern deals with comunications and interactions between Classes and Objects. The interaction between object should be in such a way that
+the objects can talk to each other and still are loosely coupled.
+
+When to use Behivioral Design Patterns?
+
+When we want to change the behavior of a class without affect other classes.
+For example, we have an Invoice class that currently applying taxes as 18%. Tomorrow if we want to add another extra tax. That means we are changing the behavior of a class.

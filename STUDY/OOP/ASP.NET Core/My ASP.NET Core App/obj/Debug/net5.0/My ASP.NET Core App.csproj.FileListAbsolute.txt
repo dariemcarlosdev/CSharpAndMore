@@ -1,0 +1,28 @@
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\appsettings.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\My ASP.NET Core App.exe
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\My ASP.NET Core App.deps.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\My ASP.NET Core App.runtimeconfig.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\My ASP.NET Core App.runtimeconfig.dev.json
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\My ASP.NET Core App.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\ref\My ASP.NET Core App.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\My ASP.NET Core App.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.csproj.AssemblyReference.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.AssemblyInfoInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.AssemblyInfo.cs
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.csproj.CoreCompileInputs.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\scopedcss\bundle\My ASP.NET Core App.styles.css
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\staticwebassets\My ASP.NET Core App.StaticWebAssets.Manifest.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.RazorTargetAssemblyInfo.cache
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.csproj.CopyComplete
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\ref\My ASP.NET Core App.dll
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.pdb
+C:\Users\335286\source\repos\dariemcarlosdev\CSharpAndMore\STUDY\OOP\ASP.NET Core\My ASP.NET Core App\obj\Debug\net5.0\My ASP.NET Core App.genruntimeconfig.cache

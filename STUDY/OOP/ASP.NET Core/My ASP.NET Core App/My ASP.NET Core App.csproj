@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>My_ASP.NET_Core_App</RootNamespace>
+    <StartupObject>My_ASP.NET_Core_App.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="My ASP.NET Core App.csproj.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>
